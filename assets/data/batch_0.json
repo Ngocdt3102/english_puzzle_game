@@ -1,0 +1,1562 @@
+[
+    {
+        "level_id": 1,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "HOUSE",
+        "phonetic": "/haʊs/",
+        "definition": "A building that people, usually one family, live in.",
+        "example": "They are living in a big house with a garden."
+        },
+        "sub_words": [
+        {
+            "word": "NEIGHBOR",
+            "clue_for_game": "A person who lives near you.",
+            "char_to_extract": "H",
+            "extract_index": 4,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈneɪbə(r)/",
+            "full_definition": "A person who lives next to or near you.",
+            "example": "Our neighbors are very friendly."
+            }
+        },
+        {
+            "word": "COUSIN",
+            "clue_for_game": "The child of your aunt or uncle.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkʌzn/",
+            "full_definition": "A child of your uncle or aunt.",
+            "example": "My cousin and I often play together."
+            }
+        },
+        {
+            "word": "ADULT",
+            "clue_for_game": "A person who is fully grown.",
+            "char_to_extract": "U",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈædʌlt/",
+            "full_definition": "A person who is fully grown and developed.",
+            "example": "Children must be with an adult."
+            }
+        },
+        {
+            "word": "KITCHEN",
+            "clue_for_game": "The room where you cook food.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkɪtʃɪn/",
+            "full_definition": "A room in which food is cooked.",
+            "example": "She is cleaning the kitchen."
+            }
+        },
+        {
+            "word": "GLASSES",
+            "clue_for_game": "Used to help you see better.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɡlɑːsɪz/",
+            "full_definition": "Two lenses in a frame that rests on the nose and ears.",
+            "example": "He wears glasses for reading."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 2,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "TABLE",
+        "phonetic": "/ˈteɪbl/",
+        "definition": "A piece of furniture with a flat top and legs.",
+        "example": "We sit around the table for dinner."
+        },
+        "sub_words": [
+        {
+            "word": "STREET",
+            "clue_for_game": "A public road in a city or town.",
+            "char_to_extract": "T",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/striːt/",
+            "full_definition": "A public road with houses on one or both sides.",
+            "example": "I live on a quiet street."
+            }
+        },
+        {
+            "word": "STAIRS",
+            "clue_for_game": "A set of steps inside a building.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/steəz/",
+            "full_definition": "A set of steps leading from one floor to another.",
+            "example": "She ran up the stairs."
+            }
+        },
+        {
+            "word": "NUMBER",
+            "clue_for_game": "A word or symbol that represents an amount.",
+            "char_to_extract": "B",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈnʌmbə(r)/",
+            "full_definition": "A symbol used for counting.",
+            "example": "What is your house number?"
+            }
+        },
+        {
+            "word": "FAMILY",
+            "clue_for_game": "A group of people related to each other.",
+            "char_to_extract": "L",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfæməli/",
+            "full_definition": "A group consisting of parents and their children.",
+            "example": "He has a very large family."
+            }
+        },
+        {
+            "word": "SHOWER",
+            "clue_for_game": "You stand under this to wash your body.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʃaʊə(r)/",
+            "full_definition": "A device that sprays water to wash the body.",
+            "example": "I take a shower every morning."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 3,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "CHILD",
+        "phonetic": "/tʃaɪld/",
+        "definition": "A young human being.",
+        "example": "The child is playing in the garden."
+        },
+        "sub_words": [
+        {
+            "word": "CHAIRS",
+            "clue_for_game": "Items used for sitting.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃeəz/",
+            "full_definition": "Plural of chair; seats for one person.",
+            "example": "We need more chairs."
+            }
+        },
+        {
+            "word": "FATHER",
+            "clue_for_game": "A male parent.",
+            "char_to_extract": "H",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfɑːðə(r)/",
+            "full_definition": "A person's male parent.",
+            "example": "My father works in a bank."
+            }
+        },
+        {
+            "word": "WEDDING",
+            "clue_for_game": "A marriage ceremony.",
+            "char_to_extract": "I",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈwedɪŋ/",
+            "full_definition": "A marriage ceremony and any celebrations such as a meal or a party that follow it.",
+            "example": "I'm going to my sister's wedding."
+            }
+        },
+        {
+            "word": "SCHOOL",
+            "clue_for_game": "A place where children go to learn.",
+            "char_to_extract": "L",
+            "extract_index": 5,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skuːl/",
+            "full_definition": "A place where children go to be educated.",
+            "example": "It's time to go to school."
+            }
+        },
+        {
+            "word": "FRIEND",
+            "clue_for_game": "A person you know well and like.",
+            "char_to_extract": "D",
+            "extract_index": 5,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/frend/",
+            "full_definition": "A person you know well and like.",
+            "example": "She is my best friend."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 4,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SPOON",
+        "phonetic": "/spuːn/",
+        "definition": "An object used for eating or serving food.",
+        "example": "Use a spoon to stir your tea."
+        },
+        "sub_words": [
+        {
+            "word": "WINDOW",
+            "clue_for_game": "An opening in a wall to let light in.",
+            "char_to_extract": "O",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈwɪndəʊ/",
+            "full_definition": "An opening in the wall of a building to let in light.",
+            "example": "Please open the window."
+            }
+        },
+        {
+            "word": "SUPPER",
+            "clue_for_game": "A light meal eaten in the evening.",
+            "char_to_extract": "P",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsʌpə(r)/",
+            "full_definition": "A main meal eaten in the evening.",
+            "example": "What are we having for supper?"
+            }
+        },
+        {
+            "word": "GARDEN",
+            "clue_for_game": "An area of land next to a house for plants.",
+            "char_to_extract": "N",
+            "extract_index": 5,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɡɑːdn/",
+            "full_definition": "A piece of land next to a house for growing flowers.",
+            "example": "The kids are playing in the garden."
+            }
+        },
+        {
+            "word": "SINGLE",
+            "clue_for_game": "Not married.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈsɪŋɡl/",
+            "full_definition": "Not married or having a romantic relationship with somebody.",
+            "example": "He's still single."
+            }
+        },
+        {
+            "word": "COOKER",
+            "clue_for_game": "A large piece of equipment for cooking food.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkʊkə(r)/",
+            "full_definition": "A large piece of equipment for cooking food, containing an oven and a hob.",
+            "example": "I've bought a new gas cooker."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 5,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PLANT",
+        "phonetic": "/plɑːnt/",
+        "definition": "A living thing that grows in the earth.",
+        "example": "This plant needs more sunlight."
+        },
+        "sub_words": [
+        {
+            "word": "PARENTS",
+            "clue_for_game": "A person's father and mother.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpeərənts/",
+            "full_definition": "A person's father and mother.",
+            "example": "My parents live in the countryside."
+            }
+        },
+        {
+            "word": "HALLWAY",
+            "clue_for_game": "A passage in a building.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈhɔːlweɪ/",
+            "full_definition": "A passage in a building that leads to other rooms.",
+            "example": "The hallway is dark."
+            }
+        },
+        {
+            "word": "VILLAGE",
+            "clue_for_game": "A very small town in the country.",
+            "char_to_extract": "A",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈvɪlɪdʒ/",
+            "full_definition": "A group of houses smaller than a town.",
+            "example": "He grew up in a small village."
+            }
+        },
+        {
+            "word": "DINNER",
+            "clue_for_game": "The main meal of the day.",
+            "char_to_extract": "N",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdɪnə(r)/",
+            "full_definition": "The main meal of the day.",
+            "example": "What's for dinner?"
+            }
+        },
+        {
+            "word": "TRASH",
+            "clue_for_game": "Things that you throw away because you no longer want them.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træʃ/",
+            "full_definition": "Things that you throw away.",
+            "example": "Put the trash in the bin."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 6,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+            "word": "PHONE",
+            "phonetic": "/fəʊn/",
+            "definition": "A device used for speaking to people.",
+            "example": "My phone is ringing."
+        },
+        "sub_words": [
+            {
+                "word": "PARENT",
+                "clue_for_game": "A mother or a father.",
+                "char_to_extract": "P",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈpeərənt/",
+                    "full_definition": "A mother or father of a person.",
+                    "example": "Children need their parents' love."
+                }
+            },
+            {
+                "word": "NEPHEW",
+                "clue_for_game": "The son of your brother or sister.",
+                "char_to_extract": "H",
+                "extract_index": 3,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈnefjuː/",
+                    "full_definition": "The son of your brother or sister.",
+                    "example": "I bought a toy for my nephew."
+                }
+            },
+            {
+                "word": "PERSON",
+                "clue_for_game": "A human being.",
+                "char_to_extract": "O",
+                "extract_index": 4,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈpɜːsn/",
+                    "full_definition": "A human being considered as an individual.",
+                    "example": "She is a very kind person."
+                }
+            },
+            {
+                "word": "GRAND",
+                "clue_for_game": "Very large or important.",
+                "char_to_extract": "N",
+                "extract_index": 3,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/ɡrænd/",
+                    "full_definition": "Impressive and large or important.",
+                    "example": "They live in a grand old house."
+                }
+            },
+            {
+                "word": "UNCLES",
+                "clue_for_game": "The brothers of your parents.",
+                "char_to_extract": "E",
+                "extract_index": 4,
+                "map_to_main_index": 4,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈʌŋklz/",
+                    "full_definition": "Plural of uncle.",
+                    "example": "I have two uncles."
+                }
+            }
+        ]
+    },
+    {
+        "level_id": 7,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "CLOCK",
+        "phonetic": "/klɒk/",
+        "definition": "An instrument for showing time.",
+        "example": "The clock is five minutes fast."
+        },
+        "sub_words": [
+        {
+            "word": "PICTURE",
+            "clue_for_game": "A painting, drawing or photograph.",
+            "char_to_extract": "C",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpɪktʃə(r)/",
+            "full_definition": "A painting or drawing.",
+            "example": "He hung a picture on the wall."
+            }
+        },
+        {
+            "word": "BOTTLE",
+            "clue_for_game": "A glass or plastic container for liquids.",
+            "char_to_extract": "L",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbɒtl/",
+            "full_definition": "A glass or plastic container with a narrow neck.",
+            "example": "A bottle of water, please."
+            }
+        },
+        {
+            "word": "SECOND",
+            "clue_for_game": "A unit of time.",
+            "char_to_extract": "O",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsekənd/",
+            "full_definition": "A unit of time; 60 seconds make one minute.",
+            "example": "Wait a second, please."
+            }
+        },
+        {
+            "word": "BACKYARD",
+            "clue_for_game": "A small area with grass behind a house.",
+            "char_to_extract": "C",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˌbækˈjɑːd/",
+            "full_definition": "An area of land behind a house.",
+            "example": "The dog is in the backyard."
+            }
+        },
+        {
+            "word": "SNACKS",
+            "clue_for_game": "Small amounts of food.",
+            "char_to_extract": "K",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/snæks/",
+            "full_definition": "Small amounts of food eaten between meals.",
+            "example": "Do you have any snacks?"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 8,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+            "word": "BREAD",
+            "phonetic": "/bred/",
+            "definition": "Food made from flour and water.",
+            "example": "Fresh bread smells amazing."
+        },
+        "sub_words": [
+            {
+                "word": "BOWL",
+                "clue_for_game": "A deep round dish used for soup or cereal.",
+                "char_to_extract": "B",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/bəʊl/",
+                    "full_definition": "A deep round dish with an open top.",
+                    "example": "A bowl of soup."
+                }
+            },
+            {
+                "word": "SQUARE",
+                "clue_for_game": "A shape with four equal sides.",
+                "char_to_extract": "R",
+                "extract_index": 4,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/skweə(r)/",
+                    "full_definition": "A geometric shape with four equal sides.",
+                    "example": "The rug is a large square."
+                }
+            },
+            {
+                "word": "ROASTED",
+                "clue_for_game": "Cooked in an oven.",
+                "char_to_extract": "E",
+                "extract_index": 5,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/ˈrəʊstɪd/",
+                    "full_definition": "Cooked by roasting.",
+                    "example": "Roasted peanuts."
+                }
+            },
+            {
+                "word": "MARRIED",
+                "clue_for_game": "Legally joined as partners.",
+                "char_to_extract": "A",
+                "extract_index": 1,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/ˈmærid/",
+                    "full_definition": "Joined in marriage.",
+                    "example": "A happily married couple."
+                }
+            },
+            {
+                "word": "KIND",
+                "clue_for_game": "Caring about others; gentle, friendly and generous.",
+                "char_to_extract": "D",
+                "extract_index": 3,
+                "map_to_main_index": 4,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/kaɪnd/",
+                    "full_definition": "Caring about others.",
+                    "example": "Be kind to animals."
+                }
+            }
+        ]
+    },
+    {
+        "level_id": 9,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+            "word": "SMILE",
+            "phonetic": "/smaɪl/",
+            "definition": "A happy facial expression.",
+            "example": "She has a wide smile."
+        },
+        "sub_words": [
+            {
+                "word": "STAIRS",
+                "clue_for_game": "Steps to go up.",
+                "char_to_extract": "S",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/steəz/",
+                    "full_definition": "Internal stairs.",
+                    "example": "Walk down the stairs."
+                }
+            },
+            {
+                "word": "MOTHER",
+                "clue_for_game": "A female parent.",
+                "char_to_extract": "M",
+                "extract_index": 0,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈmʌðə(r)/",
+                    "full_definition": "A person's female parent.",
+                    "example": "My mother is a teacher."
+                }
+            },
+            {
+                "word": "LIVING",
+                "clue_for_game": "Alive now; room where people relax.",
+                "char_to_extract": "I",
+                "extract_index": 1,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/ˈlɪvɪŋ/",
+                    "full_definition": "Alive.",
+                    "example": "Living things."
+                }
+            },
+            {
+                "word": "LOVELY",
+                "clue_for_game": "Beautiful; attractive.",
+                "char_to_extract": "L",
+                "extract_index": 0,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Adjective",
+                    "phonetic": "/ˈlʌvli/",
+                    "full_definition": "Beautiful.",
+                    "example": "A lovely house."
+                }
+            },
+            {
+                "word": "UNCLES",
+                "clue_for_game": "Parent's brothers.",
+                "char_to_extract": "E",
+                "extract_index": 4,
+                "map_to_main_index": 4,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈʌŋklz/",
+                    "full_definition": "Male relatives.",
+                    "example": "My uncles are engineers."
+                }
+            }
+        ]
+    },
+    {
+        "level_id": 10,
+        "theme": "Family & Home",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "RADIO",
+        "phonetic": "/ˈreɪdiəʊ/",
+        "definition": "A device for receiving broadcasts.",
+        "example": "Turn on the radio."
+        },
+        "sub_words": [
+        {
+            "word": "RUG",
+            "clue_for_game": "A piece of thick material used for covering part of a floor.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rʌɡ/",
+            "full_definition": "Small carpet.",
+            "example": "A colorful rug."
+            }
+        },
+        {
+            "word": "READY",
+            "clue_for_game": "Fully prepared for something.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈredi/",
+            "full_definition": "Prepared.",
+            "example": "Are you ready?"
+            }
+        },
+        {
+            "word": "BRIDGE",
+            "clue_for_game": "Connects two sides.",
+            "char_to_extract": "D",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/brɪdʒ/",
+            "full_definition": "Way over a river.",
+            "example": "The bridge is made of stone."
+            }
+        },
+        {
+            "word": "MARRIED",
+            "clue_for_game": "United in law.",
+            "char_to_extract": "I",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈmærid/",
+            "full_definition": "Legally wedded.",
+            "example": "A married man."
+            }
+        },
+        {
+            "word": "SHOWER",
+            "clue_for_game": "Bathroom device.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʃaʊə(r)/",
+            "full_definition": "Apparatus for washing.",
+            "example": "The shower is broken."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 11,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "OFFICE",
+        "phonetic": "/ˈɒfɪs/",
+        "definition": "A room or building where people work at desks.",
+        "example": "The company moved to a new office."
+        },
+        "sub_words": [
+        {
+            "word": "DOCTOR",
+            "clue_for_game": "Medical professional.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdɒktə(r)/",
+            "full_definition": "A person trained in medicine.",
+            "example": "See a doctor."
+            }
+        },
+        {
+            "word": "STAFF",
+            "clue_for_game": "Employees.",
+            "char_to_extract": "F",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stɑːf/",
+            "full_definition": "People working for a company.",
+            "example": "The office staff is helpful."
+            }
+        },
+        {
+            "word": "COFFEE",
+            "clue_for_game": "Workplace drink.",
+            "char_to_extract": "F",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkɒfi/",
+            "full_definition": "Hot bean drink.",
+            "example": "Coffee break time."
+            }
+        },
+        {
+            "word": "POLICE",
+            "clue_for_game": "Law enforcement.",
+            "char_to_extract": "I",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pəˈliːs/",
+            "full_definition": "Officers of the law.",
+            "example": "The police station."
+            }
+        },
+        {
+            "word": "PROJECT",
+            "clue_for_game": "Planned task.",
+            "char_to_extract": "C",
+            "extract_index": 5,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈprɒdʒekt/",
+            "full_definition": "A large piece of work.",
+            "example": "A new project."
+            }
+        },
+        {
+            "word": "RETIRE",
+            "clue_for_game": "Stop working due to age.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/rɪˈtaɪə(r)/",
+            "full_definition": "Leave the workforce.",
+            "example": "He will retire soon."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 12,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+            "word": "WRITER",
+            "phonetic": "/ˈraɪtə(r)/",
+            "definition": "Author of books/stories.",
+            "example": "She is a talented writer."
+        },
+        "sub_words": [
+            {
+                "word": "WORKER",
+                "clue_for_game": "Someone who does a job.",
+                "char_to_extract": "W",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈwɜːkə(r)/",
+                    "full_definition": "Employed person.",
+                    "example": "A social worker."
+                }
+            },
+            {
+                "word": "REPORT",
+                "clue_for_game": "Documented account.",
+                "char_to_extract": "R",
+                "extract_index": 4,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/rɪˈpɔːt/",
+                    "full_definition": "Written description.",
+                    "example": "A daily report."
+                }
+            },
+            {
+                "word": "ARTIST",
+                "clue_for_game": "Creative person.",
+                "char_to_extract": "I",
+                "extract_index": 3,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈɑːtɪst/",
+                    "full_definition": "Painter or sculptor.",
+                    "example": "An artist at work."
+                }
+            },
+            {
+                "word": "PILOT",
+                "clue_for_game": "Plane operator.",
+                "char_to_extract": "T",
+                "extract_index": 4,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈpaɪlət/",
+                    "full_definition": "Aircraft flier.",
+                    "example": "A brave pilot."
+                }
+            },
+            {
+                "word": "MEETING",
+                "clue_for_game": "A gathering of people.",
+                "char_to_extract": "E",
+                "extract_index": 1,
+                "map_to_main_index": 4,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈmiːtɪŋ/",
+                    "full_definition": "An occasion when people come together.",
+                    "example": "We have a staff meeting."
+                }
+            },
+            {
+                "word": "CAREER",
+                "clue_for_game": "Life-long work journey.",
+                "char_to_extract": "R",
+                "extract_index": 2,
+                "map_to_main_index": 5,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/kəˈrɪə(r)/",
+                    "full_definition": "Professional path.",
+                    "example": "A successful career."
+                }
+            }
+        ]
+    },
+    {
+        "level_id": 13,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+            "word": "FILES",
+            "phonetic": "/faɪlz/",
+            "definition": "Information storage.",
+            "example": "Organize your files."
+        },
+        "sub_words": [
+            {
+                "word": "CHEF",
+                "clue_for_game": "Head cook in a restaurant.",
+                "char_to_extract": "F",
+                "extract_index": 3,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ʃef/",
+                    "full_definition": "A professional cook.",
+                    "example": "The executive chef."
+                }
+            },
+            {
+                "word": "CLINIC",
+                "clue_for_game": "A place for medical treatment.",
+                "char_to_extract": "I",
+                "extract_index": 2,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈklɪnɪk/",
+                    "full_definition": "A medical center.",
+                    "example": "She works at a clinic."
+                }
+            },
+            {
+                "word": "SKILLS",
+                "clue_for_game": "Abilities to do something well.",
+                "char_to_extract": "L",
+                "extract_index": 3,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/skɪlz/",
+                    "full_definition": "The ability to do something well.",
+                    "example": "Computer skills."
+                }
+            },
+            {
+                "word": "OFFICE",
+                "clue_for_game": "A room where people work at desks.",
+                "char_to_extract": "E",
+                "extract_index": 5,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈɒfɪs/",
+                    "full_definition": "A room or building used as a place of business.",
+                    "example": "I'll be in my office."
+                }
+            },
+            {
+                "word": "TASKS",
+                "clue_for_game": "Duties or pieces of work.",
+                "char_to_extract": "S",
+                "extract_index": 4,
+                "map_to_main_index": 4,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/tɑːsks/",
+                    "full_definition": "Work units to be completed.",
+                    "example": "Daily tasks."
+                }
+            }
+        ]
+    },
+    {
+        "level_id": 14,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BOSS",
+        "phonetic": "/bɒs/",
+        "definition": "Employer or manager.",
+        "example": "My boss is fair."
+        },
+        "sub_words": [
+        {
+            "word": "JOB",
+            "clue_for_game": "Employment.",
+            "char_to_extract": "B",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒɒb/",
+            "full_definition": "Paid work.",
+            "example": "Part-time job."
+            }
+        },
+        {
+            "word": "OWNER",
+            "clue_for_game": "Proprietor.",
+            "char_to_extract": "O",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈəʊnə(r)/",
+            "full_definition": "Possessor.",
+            "example": "Shop owner."
+            }
+        },
+        {
+            "word": "SKILL",
+            "clue_for_game": "Expertise.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɪl/",
+            "full_definition": "Ability.",
+            "example": "Writing skill."
+            }
+        },
+        {
+            "word": "STRESS",
+            "clue_for_game": "Mental pressure.",
+            "char_to_extract": "S",
+            "extract_index": 5,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stres/",
+            "full_definition": "Work anxiety.",
+            "example": "Avoid stress."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 15,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "NURSE",
+        "phonetic": "/nɜːs/",
+        "definition": "Healthcare assistant.",
+        "example": "The nurse is kind."
+        },
+        "sub_words": [
+        {
+            "word": "CLEAN",
+            "clue_for_game": "Wash/tidy.",
+            "char_to_extract": "N",
+            "extract_index": 4,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/kliːn/",
+            "full_definition": "Sanitize.",
+            "example": "Clean the ward."
+            }
+        },
+        {
+            "word": "LUNCH",
+            "clue_for_game": "Mid-day food.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/lʌntʃ/",
+            "full_definition": "Noon meal.",
+            "example": "Quick lunch."
+            }
+        },
+        {
+            "word": "DREAM",
+            "clue_for_game": "Future hope.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/driːm/",
+            "full_definition": "Ambition.",
+            "example": "A child's dream."
+            }
+        },
+        {
+            "word": "DESK",
+            "clue_for_game": "Writing table.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/desk/",
+            "full_definition": "Office furniture.",
+            "example": "Wooden desk."
+            }
+        },
+        {
+            "word": "TIRED",
+            "clue_for_game": "Exhausted.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈtaɪəd/",
+            "full_definition": "Sleepy.",
+            "example": "I'm so tired."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 16,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "TEAM",
+        "phonetic": "/tiːm/",
+        "definition": "Work group.",
+        "example": "A strong team."
+        },
+        "sub_words": [
+        {
+            "word": "START",
+            "clue_for_game": "Commence.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/stɑːt/",
+            "full_definition": "Begin.",
+            "example": "Start the task."
+            }
+        },
+        {
+            "word": "AGREE",
+            "clue_for_game": "Consensus.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/əˈɡriː/",
+            "full_definition": "Concur.",
+            "example": "I agree."
+            }
+        },
+        {
+            "word": "HEAD",
+            "clue_for_game": "Chief.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/hed/",
+            "full_definition": "Leader.",
+            "example": "Head office."
+            }
+        },
+        {
+            "word": "FORM",
+            "clue_for_game": "Paperwork.",
+            "char_to_extract": "M",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fɔːm/",
+            "full_definition": "Document.",
+            "example": "Fill the form."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 17,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PAPER",
+        "phonetic": "/ˈpeɪpə(r)/",
+        "definition": "Writing material.",
+        "example": "Printer paper."
+        },
+        "sub_words": [
+        {
+            "word": "LAPTOP",
+            "clue_for_game": "Portable PC.",
+            "char_to_extract": "P",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈlæptɒp/",
+            "full_definition": "Small computer.",
+            "example": "My laptop."
+            }
+        },
+        {
+            "word": "BANK",
+            "clue_for_game": "Money firm.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bæŋk/",
+            "full_definition": "Financial place.",
+            "example": "Go to the bank."
+            }
+        },
+        {
+            "word": "HELP",
+            "clue_for_game": "Assist.",
+            "char_to_extract": "P",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/help/",
+            "full_definition": "Give aid.",
+            "example": "Can you help?"
+            }
+        },
+        {
+            "word": "SHARE",
+            "clue_for_game": "Divide/split.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ʃeə(r)/",
+            "full_definition": "Give portion.",
+            "example": "Share a file."
+            }
+        },
+        {
+            "word": "FAIR",
+            "clue_for_game": "Just/equal.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/feə(r)/",
+            "full_definition": "Right treatment.",
+            "example": "Not fair."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 18,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SALES",
+        "phonetic": "/seɪlz/",
+        "definition": "Selling sector.",
+        "example": "Sales figures."
+        },
+        "sub_words": [
+        {
+            "word": "BUSY",
+            "clue_for_game": "Occupied.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈbɪzi/",
+            "full_definition": "A lot to do.",
+            "example": "Busy day."
+            }
+        },
+        {
+            "word": "LEAVE",
+            "clue_for_game": "Vacation.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/liːv/",
+            "full_definition": "Absence.",
+            "example": "Sick leave."
+            }
+        },
+        {
+            "word": "EMAIL",
+            "clue_for_game": "Digital mail.",
+            "char_to_extract": "L",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈiːmeɪl/",
+            "full_definition": "Electronic mail.",
+            "example": "Send an email."
+            }
+        },
+        {
+            "word": "CHANCE",
+            "clue_for_game": "Opportunity.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃɑːns/",
+            "full_definition": "Possibility.",
+            "example": "Take a chance."
+            }
+        },
+        {
+            "word": "IDEAS",
+            "clue_for_game": "Thoughts.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/aɪˈdɪəz/",
+            "full_definition": "Mental concepts.",
+            "example": "New ideas."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 19,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "STUDY",
+        "phonetic": "/ˈstʌdi/",
+        "definition": "Learn/examine.",
+        "example": "Study hard."
+        },
+        "sub_words": [
+        {
+            "word": "STRESS",
+            "clue_for_game": "Mental pressure.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stres/",
+            "full_definition": "Work anxiety.",
+            "example": "Reduce stress."
+            }
+        },
+        {
+            "word": "POINT",
+            "clue_for_game": "Idea/fact.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɔɪnt/",
+            "full_definition": "Specific item.",
+            "example": "Valid point."
+            }
+        },
+        {
+            "word": "BUILD",
+            "clue_for_game": "Construct.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/bɪld/",
+            "full_definition": "Create structure.",
+            "example": "Build a team."
+            }
+        },
+        {
+            "word": "DRESS",
+            "clue_for_game": "Wear clothes.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/dres/",
+            "full_definition": "Clothe oneself.",
+            "example": "Dress well."
+            }
+        },
+        {
+            "word": "ENJOY",
+            "clue_for_game": "Like/relish.",
+            "char_to_extract": "Y",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ɪnˈdʒɔɪ/",
+            "full_definition": "Get pleasure.",
+            "example": "Enjoy life."
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 20,
+        "theme": "Jobs & Office",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BOARD",
+        "phonetic": "/bɔːd/",
+        "definition": "Leadership group.",
+        "example": "The board meeting."
+        },
+        "sub_words": [
+        {
+            "word": "TABLE",
+            "clue_for_game": "Meeting surface.",
+            "char_to_extract": "B",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈteɪbl/",
+            "full_definition": "Furniture.",
+            "example": "Sit at the table."
+            }
+        },
+        {
+            "word": "SALARY",
+            "clue_for_game": "Monthly pay.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsæləri/",
+            "full_definition": "Paycheck.",
+            "example": "Earn a salary."
+            }
+        },
+        {
+            "word": "OFFICE",
+            "clue_for_game": "Work building.",
+            "char_to_extract": "O",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "/ˈɒfɪs/",
+            "phonetic": "Noun",
+            "full_definition": "Workspace.",
+            "example": "New office."
+            }
+        },
+        {
+            "word": "CHART",
+            "clue_for_game": "Data visual.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃɑːt/",
+            "full_definition": "Diagram.",
+            "example": "Growth chart."
+            }
+        },
+        {
+            "word": "FIELD",
+            "clue_for_game": "Area of study.",
+            "char_to_extract": "D",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fiːld/",
+            "full_definition": "Industry.",
+            "example": "In this field."
+            }
+        }
+        ]
+    }
+]

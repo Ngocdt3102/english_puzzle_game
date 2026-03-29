@@ -1,0 +1,37 @@
+name: english_puzzle_gam
+description: "English Word Puzzle Learning Game - Project for ST23C"
+version: 1.0.0+1
+publish_to: "none"
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  # Thư viện quản lý trạng thái cho Game
+  provider: ^6.1.1
+  shared_preferences: ^2.5.5
+  flutter_tts: ^4.2.5
+  confetti: ^0.8.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Khai báo các thư mục tài nguyên tích hợp vào APK
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/sounds/
+
+  # Mở phần này ra nếu Ngọc muốn thêm Font chữ riêng sau này
+  # fonts:
+  #   - family: YourCustomFont
+  #     fonts:
+  #       - asset: assets/fonts/YourFont-Regular.ttf
