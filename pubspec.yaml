@@ -20,6 +20,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1 # <--- ĐÃ THÊM DÒNG NÀY VÀO ĐÂY
 
 flutter:
   uses-material-design: true
@@ -35,3 +36,10 @@ flutter:
   #   - family: YourCustomFont
   #     fonts:
   #       - asset: assets/fonts/YourFont-Regular.ttf
+
+# Cấu hình ở cuối file pubspec.yaml của Ngọc
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/logo_app.jpg"
+  min_sdk_size: 21
