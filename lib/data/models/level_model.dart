@@ -32,12 +32,14 @@ class MainWord {
   final String phonetic;
   final String definition;
   final String example;
+  final String translation; // --- MỚI THÊM ---
 
   MainWord({
     required this.word,
     required this.phonetic,
     required this.definition,
     required this.example,
+    required this.translation, // --- MỚI THÊM ---
   });
 
   factory MainWord.fromJson(Map<String, dynamic> json) {
@@ -48,6 +50,7 @@ class MainWord {
       phonetic: json['phonetic'],
       definition: json['definition'],
       example: json['example'],
+      translation: json['translation'] ?? '', // MỚI THÊM (Có bảo vệ Null)
     );
   }
 }
@@ -86,12 +89,14 @@ class WordDetails {
   final String phonetic;
   final String fullDefinition;
   final String example;
+  final String translation; // --- MỚI THÊM ---
 
   WordDetails({
     required this.type,
     required this.phonetic,
     required this.fullDefinition,
     required this.example,
+    required this.translation, // --- MỚI THÊM ---
   });
 
   factory WordDetails.fromJson(Map<String, dynamic> json) {
@@ -100,6 +105,7 @@ class WordDetails {
       phonetic: json['phonetic'],
       fullDefinition: json['full_definition'],
       example: json['example'],
+      translation: json['translation'] ?? '', // MỚI THÊM (Có bảo vệ Null)
     );
   }
 }

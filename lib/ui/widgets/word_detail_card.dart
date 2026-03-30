@@ -9,7 +9,7 @@ class WordDetailCard {
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
-      backgroundColor: Colors.transparent, // Nền trong suốt để bo góc Container
+      backgroundColor: Colors.transparent,
       builder: (context) {
         return _buildCardContent(context, word);
       },
@@ -24,7 +24,7 @@ class WordDetailCard {
         borderRadius: BorderRadius.vertical(top: Radius.circular(35)),
       ),
       child: Column(
-        mainAxisSize: MainAxisSize.min, // Tự động co giãn theo nội dung
+        mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           // 1. Thanh kéo nhỏ (Drag Handle)
@@ -60,14 +60,13 @@ class WordDetailCard {
           ),
           const SizedBox(height: 12),
 
-          // 3. Phiên âm + NÚT BẤM LOA (Đã được cập nhật)
+          // 3. Phiên âm + NÚT BẤM LOA
           Row(
             children: [
               Material(
                 color: Colors.transparent,
                 child: InkWell(
                   onTap: () {
-                    // Gọi hàm đọc từ vựng khi bấm vào loa
                     TTSService.speak(word.word);
                   },
                   borderRadius: BorderRadius.circular(50),
@@ -97,11 +96,49 @@ class WordDetailCard {
               ),
             ],
           ),
-          const SizedBox(height: 25),
+
+          const SizedBox(height: 20),
+
+          // --- PHẦN MỚI THÊM: NGHĨA TIẾNG VIỆT (TRANSLATION) ---
+          // Kiểm tra nếu có dữ liệu tiếng Việt thì mới hiển thị khối này
+          if (word.translation.isNotEmpty) ...[
+            Container(
+              width: double.infinity,
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+              decoration: BoxDecoration(
+                color: Colors.blue.shade50, // Màu nền xanh nhạt dịu mắt
+                borderRadius: BorderRadius.circular(12),
+                border: Border.all(color: Colors.blue.shade100),
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.translate_rounded,
+                    color: Colors.blue.shade700,
+                    size: 20,
+                  ),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: Text(
+                      word.translation,
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.blue.shade800, // Chữ màu xanh đậm dễ đọc
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+          ],
+
+          // --- KẾT THÚC PHẦN MỚI THÊM ---
           const Divider(color: AppColors.bgEnd, thickness: 2, height: 1),
           const SizedBox(height: 25),
 
-          // 4. Phần Định nghĩa (Definition)
+          // 4. Phần Định nghĩa (Definition - Tiếng Anh)
           _buildSectionTitle(
             Icons.menu_book_rounded,
             "DEFINITION",
@@ -119,7 +156,7 @@ class WordDetailCard {
           ),
           const SizedBox(height: 25),
 
-          // 5. Phần Ví dụ (Example) với thiết kế Highlight Box
+          // 5. Phần Ví dụ (Example)
           _buildSectionTitle(
             Icons.chat_bubble_outline_rounded,
             "EXAMPLE",
@@ -146,7 +183,7 @@ class WordDetailCard {
           ),
           const SizedBox(height: 35),
 
-          // 6. Nút Đóng (Phong cách Game)
+          // 6. Nút Đóng
           SizedBox(
             width: double.infinity,
             height: 55,
@@ -177,7 +214,6 @@ class WordDetailCard {
 
   // --- Widget phụ trợ tạo nhãn dán từ loại ---
   static Widget _buildTypeBadge(String type) {
-    // Tự động đổi màu dựa trên từ loại để UI trông sinh động hơn
     Color bgColor = AppColors.secondary.withOpacity(0.2);
     Color textColor = AppColors.secondary;
 

@@ -54,6 +54,8 @@ class CluePanel extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
+
+          // --- Gợi ý Tiếng Anh ---
           Text(
             subWord.clue,
             textAlign: TextAlign.center,
@@ -64,6 +66,30 @@ class CluePanel extends StatelessWidget {
               height: 1.3,
             ),
           ),
+
+          // --- PHẦN MỚI THÊM: Dịch nghĩa Tiếng Việt ---
+          if (subWord.details.translation.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            Container(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              decoration: BoxDecoration(
+                color: Colors.blue.withOpacity(
+                  0.08,
+                ), // Nền xanh rất nhạt, thanh lịch
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Text(
+                "Dịch: ${subWord.details.translation}",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 15,
+                  fontStyle: FontStyle.italic,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.blue.shade700, // Chữ xanh nổi bật
+                ),
+              ),
+            ),
+          ],
         ],
       ),
     );

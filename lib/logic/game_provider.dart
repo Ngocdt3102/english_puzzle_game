@@ -272,6 +272,7 @@ class GameProvider extends ChangeNotifier {
             definition: subWordData.details.fullDefinition,
             example: subWordData.details.example,
             type: subWordData.details.type,
+            translation: subWordData.details.translation,
           ),
         );
         _saveProgress();
@@ -310,6 +311,7 @@ class GameProvider extends ChangeNotifier {
             definition: mainWord.definition,
             example: mainWord.example,
             type: "Target Word",
+            translation: mainWord.translation,
           ),
         );
       }

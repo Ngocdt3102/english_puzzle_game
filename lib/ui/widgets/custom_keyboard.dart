@@ -14,15 +14,16 @@ class CustomKeyboard extends StatelessWidget {
     final List<String> row2 = "ASDFGHJKL".split("");
     final List<String> row3 = "ZXCVBNM".split("");
 
-    // --- TÍNH TOÁN KÍCH THƯỚC ĐỘNG ---
+    // --- TÍNH TOÁN KÍCH THƯỚC ĐỘNG (ĐÃ CẬP NHẬT) ---
     double screenWidth = MediaQuery.of(context).size.width;
-    // Padding 2 bên của container là 10 (5 trái, 5 phải)
-    // Mỗi phím có margin ngang là 6 (3 trái, 3 phải). Hàng 1 có 10 phím -> tổng margin = 60
-    // Lấy màn hình trừ đi phần không gian trống (70), rồi chia đều cho 10 phím
-    double keyWidth = (screenWidth - 70) / 10;
+    // Padding 2 bên ngoài cùng là 30 (15 trái, 15 phải)
+    // Margin giữa 10 phím là 60 (Mỗi phím 3 trái, 3 phải)
+    // Tổng không gian bị chiếm: 30 + 60 = 90
+    double keyWidth = (screenWidth - 90) / 10;
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(5, 10, 5, 20),
+      // CẬP NHẬT PADDING TẠI ĐÂY: Thụt lề trái phải 15px, lề dưới 25px để cách xa mép dưới màn hình
+      padding: const EdgeInsets.fromLTRB(15, 10, 15, 25),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.9),
         borderRadius: const BorderRadius.vertical(top: Radius.circular(30)),
@@ -40,7 +41,10 @@ class CustomKeyboard extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: Padding(
-              padding: const EdgeInsets.only(right: 15, bottom: 5),
+              padding: const EdgeInsets.only(
+                right: 5,
+                bottom: 5,
+              ), // Chỉnh lại một chút cho cân với nút ẩn
               child: GestureDetector(
                 onTap: () => gameProvider.hideKeyboard(),
                 child: const Icon(
@@ -51,7 +55,6 @@ class CustomKeyboard extends StatelessWidget {
               ),
             ),
           ),
-          // Truyền kích thước động xuống các hàm vẽ phím
           _buildKeyboardRow(row1, gameProvider, keyWidth),
           const SizedBox(height: 10),
           _buildKeyboardRow(row2, gameProvider, keyWidth),
@@ -59,12 +62,10 @@ class CustomKeyboard extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              // Cân bằng khoảng trống tự động để chữ Z lùi vào thụt lề như bàn phím thật
               SizedBox(width: keyWidth / 2),
               ...row3.map(
                 (letter) => _buildKey(letter, gameProvider, keyWidth),
               ),
-              // Nút xóa được cấp cho chiều rộng gấp 1.5 lần phím thường
               _buildBackspaceKey(gameProvider, keyWidth * 1.5),
             ],
           ),
@@ -73,7 +74,6 @@ class CustomKeyboard extends StatelessWidget {
     );
   }
 
-  // Cập nhật hàm nhận thêm biến keyWidth
   Widget _buildKeyboardRow(
     List<String> letters,
     GameProvider provider,
@@ -96,7 +96,7 @@ class CustomKeyboard extends StatelessWidget {
           onTap: () => provider.inputLetter(letter),
           borderRadius: BorderRadius.circular(8),
           child: Container(
-            width: keyWidth, // ÁP DỤNG CHIỀU RỘNG TỰ ĐỘNG
+            width: keyWidth,
             height: 50,
             margin: const EdgeInsets.only(bottom: 3),
             decoration: BoxDecoration(
@@ -135,7 +135,7 @@ class CustomKeyboard extends StatelessWidget {
           onTap: () => provider.deleteLetter(),
           borderRadius: BorderRadius.circular(8),
           child: Container(
-            width: keyWidth, // ÁP DỤNG CHIỀU RỘNG TỰ ĐỘNG
+            width: keyWidth,
             height: 50,
             margin: const EdgeInsets.only(bottom: 3),
             decoration: BoxDecoration(

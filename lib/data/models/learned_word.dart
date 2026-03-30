@@ -4,6 +4,7 @@ class LearnedWord {
   final String definition;
   final String example;
   final String type;
+  final String translation; // --- MỚI THÊM ---
 
   LearnedWord({
     required this.word,
@@ -11,6 +12,7 @@ class LearnedWord {
     required this.definition,
     required this.example,
     required this.type,
+    required this.translation, // --- MỚI THÊM ---
   });
 
   // Chuyển Object thành Map để lưu vào bộ nhớ máy (SharedPreferences)
@@ -21,6 +23,7 @@ class LearnedWord {
       'definition': definition,
       'example': example,
       'type': type,
+      'translation': translation, // --- MỚI THÊM ---
     };
   }
 
@@ -32,6 +35,8 @@ class LearnedWord {
       definition: json['definition'],
       example: json['example'],
       type: json['type'],
+      // Dùng ?? '' để bảo vệ App không bị văng khi đọc dữ liệu cũ đã lưu từ trước
+      translation: json['translation'] ?? '', // --- MỚI THÊM ---
     );
   }
 }

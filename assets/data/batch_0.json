@@ -7,7 +7,8 @@
         "word": "HOUSE",
         "phonetic": "/haʊs/",
         "definition": "A building that people, usually one family, live in.",
-        "example": "They are living in a big house with a garden."
+        "example": "They are living in a big house with a garden.",
+        "translation": "Ngôi nhà"
         },
         "sub_words": [
         {
@@ -20,7 +21,8 @@
             "type": "Noun",
             "phonetic": "/ˈneɪbə(r)/",
             "full_definition": "A person who lives next to or near you.",
-            "example": "Our neighbors are very friendly."
+            "example": "Our neighbors are very friendly.",
+            "translation": "Người hàng xóm"
             }
         },
         {
@@ -33,7 +35,8 @@
             "type": "Noun",
             "phonetic": "/ˈkʌzn/",
             "full_definition": "A child of your uncle or aunt.",
-            "example": "My cousin and I often play together."
+            "example": "My cousin and I often play together.",
+            "translation": "Anh chị em họ"
             }
         },
         {
@@ -46,7 +49,8 @@
             "type": "Noun",
             "phonetic": "/ˈædʌlt/",
             "full_definition": "A person who is fully grown and developed.",
-            "example": "Children must be with an adult."
+            "example": "Children must be with an adult.",
+            "translation": "Người lớn"
             }
         },
         {
@@ -59,7 +63,8 @@
             "type": "Noun",
             "phonetic": "/ˈkɪtʃɪn/",
             "full_definition": "A room in which food is cooked.",
-            "example": "She is cleaning the kitchen."
+            "example": "She is cleaning the kitchen.",
+            "translation": "Nhà bếp"
             }
         },
         {
@@ -72,7 +77,8 @@
             "type": "Noun",
             "phonetic": "/ˈɡlɑːsɪz/",
             "full_definition": "Two lenses in a frame that rests on the nose and ears.",
-            "example": "He wears glasses for reading."
+            "example": "He wears glasses for reading.",
+            "translation": "Cặp kính"
             }
         }
         ]
@@ -85,7 +91,8 @@
         "word": "TABLE",
         "phonetic": "/ˈteɪbl/",
         "definition": "A piece of furniture with a flat top and legs.",
-        "example": "We sit around the table for dinner."
+        "example": "We sit around the table for dinner.",
+        "translation": "Cái bàn"
         },
         "sub_words": [
         {
@@ -98,7 +105,8 @@
             "type": "Noun",
             "phonetic": "/striːt/",
             "full_definition": "A public road with houses on one or both sides.",
-            "example": "I live on a quiet street."
+            "example": "I live on a quiet street.",
+            "translation": "Đường phố"
             }
         },
         {
@@ -111,7 +119,8 @@
             "type": "Noun",
             "phonetic": "/steəz/",
             "full_definition": "A set of steps leading from one floor to another.",
-            "example": "She ran up the stairs."
+            "example": "She ran up the stairs.",
+            "translation": "Cầu thang"
             }
         },
         {
@@ -124,7 +133,8 @@
             "type": "Noun",
             "phonetic": "/ˈnʌmbə(r)/",
             "full_definition": "A symbol used for counting.",
-            "example": "What is your house number?"
+            "example": "What is your house number?",
+            "translation": "Con số"
             }
         },
         {
@@ -137,7 +147,8 @@
             "type": "Noun",
             "phonetic": "/ˈfæməli/",
             "full_definition": "A group consisting of parents and their children.",
-            "example": "He has a very large family."
+            "example": "He has a very large family.",
+            "translation": "Gia đình"
             }
         },
         {
@@ -150,7 +161,8 @@
             "type": "Noun",
             "phonetic": "/ˈʃaʊə(r)/",
             "full_definition": "A device that sprays water to wash the body.",
-            "example": "I take a shower every morning."
+            "example": "I take a shower every morning.",
+            "translation": "Vòi hoa sen"
             }
         }
         ]
@@ -163,7 +175,8 @@
         "word": "CHILD",
         "phonetic": "/tʃaɪld/",
         "definition": "A young human being.",
-        "example": "The child is playing in the garden."
+        "example": "The child is playing in the garden.",
+        "translation": "Đứa trẻ"
         },
         "sub_words": [
         {
@@ -176,7 +189,8 @@
             "type": "Noun",
             "phonetic": "/tʃeəz/",
             "full_definition": "Plural of chair; seats for one person.",
-            "example": "We need more chairs."
+            "example": "We need more chairs.",
+            "translation": "Những chiếc ghế"
             }
         },
         {
@@ -189,7 +203,8 @@
             "type": "Noun",
             "phonetic": "/ˈfɑːðə(r)/",
             "full_definition": "A person's male parent.",
-            "example": "My father works in a bank."
+            "example": "My father works in a bank.",
+            "translation": "Bố / Cha"
             }
         },
         {
@@ -202,7 +217,8 @@
             "type": "Noun",
             "phonetic": "/ˈwedɪŋ/",
             "full_definition": "A marriage ceremony and any celebrations such as a meal or a party that follow it.",
-            "example": "I'm going to my sister's wedding."
+            "example": "I'm going to my sister's wedding.",
+            "translation": "Lễ cưới"
             }
         },
         {
@@ -215,7 +231,8 @@
             "type": "Noun",
             "phonetic": "/skuːl/",
             "full_definition": "A place where children go to be educated.",
-            "example": "It's time to go to school."
+            "example": "It's time to go to school.",
+            "translation": "Trường học"
             }
         },
         {
@@ -228,7 +245,8 @@
             "type": "Noun",
             "phonetic": "/frend/",
             "full_definition": "A person you know well and like.",
-            "example": "She is my best friend."
+            "example": "She is my best friend.",
+            "translation": "Bạn bè"
             }
         }
         ]
@@ -241,7 +259,8 @@
         "word": "SPOON",
         "phonetic": "/spuːn/",
         "definition": "An object used for eating or serving food.",
-        "example": "Use a spoon to stir your tea."
+        "example": "Use a spoon to stir your tea.",
+        "translation": "Cái thìa / Muỗng"
         },
         "sub_words": [
         {
@@ -254,7 +273,8 @@
             "type": "Noun",
             "phonetic": "/ˈwɪndəʊ/",
             "full_definition": "An opening in the wall of a building to let in light.",
-            "example": "Please open the window."
+            "example": "Please open the window.",
+            "translation": "Cửa sổ"
             }
         },
         {
@@ -267,7 +287,8 @@
             "type": "Noun",
             "phonetic": "/ˈsʌpə(r)/",
             "full_definition": "A main meal eaten in the evening.",
-            "example": "What are we having for supper?"
+            "example": "What are we having for supper?",
+            "translation": "Bữa tối nhẹ"
             }
         },
         {
@@ -280,7 +301,8 @@
             "type": "Noun",
             "phonetic": "/ˈɡɑːdn/",
             "full_definition": "A piece of land next to a house for growing flowers.",
-            "example": "The kids are playing in the garden."
+            "example": "The kids are playing in the garden.",
+            "translation": "Khu vườn"
             }
         },
         {
@@ -293,7 +315,8 @@
             "type": "Adjective",
             "phonetic": "/ˈsɪŋɡl/",
             "full_definition": "Not married or having a romantic relationship with somebody.",
-            "example": "He's still single."
+            "example": "He's still single.",
+            "translation": "Độc thân"
             }
         },
         {
@@ -306,7 +329,8 @@
             "type": "Noun",
             "phonetic": "/ˈkʊkə(r)/",
             "full_definition": "A large piece of equipment for cooking food, containing an oven and a hob.",
-            "example": "I've bought a new gas cooker."
+            "example": "I've bought a new gas cooker.",
+            "translation": "Bếp lò"
             }
         }
         ]
@@ -319,7 +343,8 @@
         "word": "PLANT",
         "phonetic": "/plɑːnt/",
         "definition": "A living thing that grows in the earth.",
-        "example": "This plant needs more sunlight."
+        "example": "This plant needs more sunlight.",
+        "translation": "Cây cối / Thực vật"
         },
         "sub_words": [
         {
@@ -332,7 +357,8 @@
             "type": "Noun",
             "phonetic": "/ˈpeərənts/",
             "full_definition": "A person's father and mother.",
-            "example": "My parents live in the countryside."
+            "example": "My parents live in the countryside.",
+            "translation": "Cha mẹ"
             }
         },
         {
@@ -345,7 +371,8 @@
             "type": "Noun",
             "phonetic": "/ˈhɔːlweɪ/",
             "full_definition": "A passage in a building that leads to other rooms.",
-            "example": "The hallway is dark."
+            "example": "The hallway is dark.",
+            "translation": "Hành lang"
             }
         },
         {
@@ -358,7 +385,8 @@
             "type": "Noun",
             "phonetic": "/ˈvɪlɪdʒ/",
             "full_definition": "A group of houses smaller than a town.",
-            "example": "He grew up in a small village."
+            "example": "He grew up in a small village.",
+            "translation": "Ngôi làng"
             }
         },
         {
@@ -371,7 +399,8 @@
             "type": "Noun",
             "phonetic": "/ˈdɪnə(r)/",
             "full_definition": "The main meal of the day.",
-            "example": "What's for dinner?"
+            "example": "What's for dinner?",
+            "translation": "Bữa tối"
             }
         },
         {
@@ -384,7 +413,8 @@
             "type": "Noun",
             "phonetic": "/træʃ/",
             "full_definition": "Things that you throw away.",
-            "example": "Put the trash in the bin."
+            "example": "Put the trash in the bin.",
+            "translation": "Rác"
             }
         }
         ]
@@ -394,77 +424,83 @@
         "theme": "Family & Home",
         "difficulty": "A1-A2",
         "main_word": {
-            "word": "PHONE",
-            "phonetic": "/fəʊn/",
-            "definition": "A device used for speaking to people.",
-            "example": "My phone is ringing."
+        "word": "PHONE",
+        "phonetic": "/fəʊn/",
+        "definition": "A device used for speaking to people.",
+        "example": "My phone is ringing.",
+        "translation": "Điện thoại"
         },
         "sub_words": [
-            {
-                "word": "PARENT",
-                "clue_for_game": "A mother or a father.",
-                "char_to_extract": "P",
-                "extract_index": 0,
-                "map_to_main_index": 0,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈpeərənt/",
-                    "full_definition": "A mother or father of a person.",
-                    "example": "Children need their parents' love."
-                }
-            },
-            {
-                "word": "NEPHEW",
-                "clue_for_game": "The son of your brother or sister.",
-                "char_to_extract": "H",
-                "extract_index": 3,
-                "map_to_main_index": 1,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈnefjuː/",
-                    "full_definition": "The son of your brother or sister.",
-                    "example": "I bought a toy for my nephew."
-                }
-            },
-            {
-                "word": "PERSON",
-                "clue_for_game": "A human being.",
-                "char_to_extract": "O",
-                "extract_index": 4,
-                "map_to_main_index": 2,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈpɜːsn/",
-                    "full_definition": "A human being considered as an individual.",
-                    "example": "She is a very kind person."
-                }
-            },
-            {
-                "word": "GRAND",
-                "clue_for_game": "Very large or important.",
-                "char_to_extract": "N",
-                "extract_index": 3,
-                "map_to_main_index": 3,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/ɡrænd/",
-                    "full_definition": "Impressive and large or important.",
-                    "example": "They live in a grand old house."
-                }
-            },
-            {
-                "word": "UNCLES",
-                "clue_for_game": "The brothers of your parents.",
-                "char_to_extract": "E",
-                "extract_index": 4,
-                "map_to_main_index": 4,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈʌŋklz/",
-                    "full_definition": "Plural of uncle.",
-                    "example": "I have two uncles."
-                }
+        {
+            "word": "PARENT",
+            "clue_for_game": "A mother or a father.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpeərənt/",
+            "full_definition": "A mother or father of a person.",
+            "example": "Children need their parents' love.",
+            "translation": "Phụ huynh"
             }
+        },
+        {
+            "word": "NEPHEW",
+            "clue_for_game": "The son of your brother or sister.",
+            "char_to_extract": "H",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈnefjuː/",
+            "full_definition": "The son of your brother or sister.",
+            "example": "I bought a toy for my nephew.",
+            "translation": "Cháu trai"
+            }
+        },
+        {
+            "word": "PERSON",
+            "clue_for_game": "A human being.",
+            "char_to_extract": "O",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpɜːsn/",
+            "full_definition": "A human being considered as an individual.",
+            "example": "She is a very kind person.",
+            "translation": "Con người"
+            }
+        },
+        {
+            "word": "GRAND",
+            "clue_for_game": "Very large or important.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ɡrænd/",
+            "full_definition": "Impressive and large or important.",
+            "example": "They live in a grand old house.",
+            "translation": "Hoành tráng / To lớn"
+            }
+        },
+        {
+            "word": "UNCLES",
+            "clue_for_game": "The brothers of your parents.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʌŋklz/",
+            "full_definition": "Plural of uncle.",
+            "example": "I have two uncles.",
+            "translation": "Các chú / Các bác"
+            }
+        }
         ]
     },
     {
@@ -475,7 +511,8 @@
         "word": "CLOCK",
         "phonetic": "/klɒk/",
         "definition": "An instrument for showing time.",
-        "example": "The clock is five minutes fast."
+        "example": "The clock is five minutes fast.",
+        "translation": "Đồng hồ"
         },
         "sub_words": [
         {
@@ -488,7 +525,8 @@
             "type": "Noun",
             "phonetic": "/ˈpɪktʃə(r)/",
             "full_definition": "A painting or drawing.",
-            "example": "He hung a picture on the wall."
+            "example": "He hung a picture on the wall.",
+            "translation": "Bức tranh / Bức ảnh"
             }
         },
         {
@@ -501,7 +539,8 @@
             "type": "Noun",
             "phonetic": "/ˈbɒtl/",
             "full_definition": "A glass or plastic container with a narrow neck.",
-            "example": "A bottle of water, please."
+            "example": "A bottle of water, please.",
+            "translation": "Cái chai"
             }
         },
         {
@@ -514,7 +553,8 @@
             "type": "Noun",
             "phonetic": "/ˈsekənd/",
             "full_definition": "A unit of time; 60 seconds make one minute.",
-            "example": "Wait a second, please."
+            "example": "Wait a second, please.",
+            "translation": "Giây"
             }
         },
         {
@@ -527,7 +567,8 @@
             "type": "Noun",
             "phonetic": "/ˌbækˈjɑːd/",
             "full_definition": "An area of land behind a house.",
-            "example": "The dog is in the backyard."
+            "example": "The dog is in the backyard.",
+            "translation": "Sân sau"
             }
         },
         {
@@ -540,7 +581,8 @@
             "type": "Noun",
             "phonetic": "/snæks/",
             "full_definition": "Small amounts of food eaten between meals.",
-            "example": "Do you have any snacks?"
+            "example": "Do you have any snacks?",
+            "translation": "Đồ ăn vặt"
             }
         }
         ]
@@ -550,77 +592,83 @@
         "theme": "Family & Home",
         "difficulty": "A1-A2",
         "main_word": {
-            "word": "BREAD",
-            "phonetic": "/bred/",
-            "definition": "Food made from flour and water.",
-            "example": "Fresh bread smells amazing."
+        "word": "BREAD",
+        "phonetic": "/bred/",
+        "definition": "Food made from flour and water.",
+        "example": "Fresh bread smells amazing.",
+        "translation": "Bánh mì"
         },
         "sub_words": [
-            {
-                "word": "BOWL",
-                "clue_for_game": "A deep round dish used for soup or cereal.",
-                "char_to_extract": "B",
-                "extract_index": 0,
-                "map_to_main_index": 0,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/bəʊl/",
-                    "full_definition": "A deep round dish with an open top.",
-                    "example": "A bowl of soup."
-                }
-            },
-            {
-                "word": "SQUARE",
-                "clue_for_game": "A shape with four equal sides.",
-                "char_to_extract": "R",
-                "extract_index": 4,
-                "map_to_main_index": 1,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/skweə(r)/",
-                    "full_definition": "A geometric shape with four equal sides.",
-                    "example": "The rug is a large square."
-                }
-            },
-            {
-                "word": "ROASTED",
-                "clue_for_game": "Cooked in an oven.",
-                "char_to_extract": "E",
-                "extract_index": 5,
-                "map_to_main_index": 2,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/ˈrəʊstɪd/",
-                    "full_definition": "Cooked by roasting.",
-                    "example": "Roasted peanuts."
-                }
-            },
-            {
-                "word": "MARRIED",
-                "clue_for_game": "Legally joined as partners.",
-                "char_to_extract": "A",
-                "extract_index": 1,
-                "map_to_main_index": 3,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/ˈmærid/",
-                    "full_definition": "Joined in marriage.",
-                    "example": "A happily married couple."
-                }
-            },
-            {
-                "word": "KIND",
-                "clue_for_game": "Caring about others; gentle, friendly and generous.",
-                "char_to_extract": "D",
-                "extract_index": 3,
-                "map_to_main_index": 4,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/kaɪnd/",
-                    "full_definition": "Caring about others.",
-                    "example": "Be kind to animals."
-                }
+        {
+            "word": "BOWL",
+            "clue_for_game": "A deep round dish used for soup or cereal.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bəʊl/",
+            "full_definition": "A deep round dish with an open top.",
+            "example": "A bowl of soup.",
+            "translation": "Cái bát / Tô"
             }
+        },
+        {
+            "word": "SQUARE",
+            "clue_for_game": "A shape with four equal sides.",
+            "char_to_extract": "R",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skweə(r)/",
+            "full_definition": "A geometric shape with four equal sides.",
+            "example": "The rug is a large square.",
+            "translation": "Hình vuông"
+            }
+        },
+        {
+            "word": "ROASTED",
+            "clue_for_game": "Cooked in an oven.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈrəʊstɪd/",
+            "full_definition": "Cooked by roasting.",
+            "example": "Roasted peanuts.",
+            "translation": "Được quay / nướng"
+            }
+        },
+        {
+            "word": "MARRIED",
+            "clue_for_game": "Legally joined as partners.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈmærid/",
+            "full_definition": "Joined in marriage.",
+            "example": "A happily married couple.",
+            "translation": "Đã kết hôn"
+            }
+        },
+        {
+            "word": "KIND",
+            "clue_for_game": "Caring about others; gentle, friendly and generous.",
+            "char_to_extract": "D",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/kaɪnd/",
+            "full_definition": "Caring about others.",
+            "example": "Be kind to animals.",
+            "translation": "Tử tế / Tốt bụng"
+            }
+        }
         ]
     },
     {
@@ -628,77 +676,83 @@
         "theme": "Family & Home",
         "difficulty": "A1-A2",
         "main_word": {
-            "word": "SMILE",
-            "phonetic": "/smaɪl/",
-            "definition": "A happy facial expression.",
-            "example": "She has a wide smile."
+        "word": "SMILE",
+        "phonetic": "/smaɪl/",
+        "definition": "A happy facial expression.",
+        "example": "She has a wide smile.",
+        "translation": "Nụ cười"
         },
         "sub_words": [
-            {
-                "word": "STAIRS",
-                "clue_for_game": "Steps to go up.",
-                "char_to_extract": "S",
-                "extract_index": 0,
-                "map_to_main_index": 0,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/steəz/",
-                    "full_definition": "Internal stairs.",
-                    "example": "Walk down the stairs."
-                }
-            },
-            {
-                "word": "MOTHER",
-                "clue_for_game": "A female parent.",
-                "char_to_extract": "M",
-                "extract_index": 0,
-                "map_to_main_index": 1,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈmʌðə(r)/",
-                    "full_definition": "A person's female parent.",
-                    "example": "My mother is a teacher."
-                }
-            },
-            {
-                "word": "LIVING",
-                "clue_for_game": "Alive now; room where people relax.",
-                "char_to_extract": "I",
-                "extract_index": 1,
-                "map_to_main_index": 2,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/ˈlɪvɪŋ/",
-                    "full_definition": "Alive.",
-                    "example": "Living things."
-                }
-            },
-            {
-                "word": "LOVELY",
-                "clue_for_game": "Beautiful; attractive.",
-                "char_to_extract": "L",
-                "extract_index": 0,
-                "map_to_main_index": 3,
-                "details": {
-                    "type": "Adjective",
-                    "phonetic": "/ˈlʌvli/",
-                    "full_definition": "Beautiful.",
-                    "example": "A lovely house."
-                }
-            },
-            {
-                "word": "UNCLES",
-                "clue_for_game": "Parent's brothers.",
-                "char_to_extract": "E",
-                "extract_index": 4,
-                "map_to_main_index": 4,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈʌŋklz/",
-                    "full_definition": "Male relatives.",
-                    "example": "My uncles are engineers."
-                }
+        {
+            "word": "STAIRS",
+            "clue_for_game": "Steps to go up.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/steəz/",
+            "full_definition": "Internal stairs.",
+            "example": "Walk down the stairs.",
+            "translation": "Cầu thang"
             }
+        },
+        {
+            "word": "MOTHER",
+            "clue_for_game": "A female parent.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmʌðə(r)/",
+            "full_definition": "A person's female parent.",
+            "example": "My mother is a teacher.",
+            "translation": "Mẹ"
+            }
+        },
+        {
+            "word": "LIVING",
+            "clue_for_game": "Alive now; room where people relax.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈlɪvɪŋ/",
+            "full_definition": "Alive.",
+            "example": "Living things.",
+            "translation": "Đang sống"
+            }
+        },
+        {
+            "word": "LOVELY",
+            "clue_for_game": "Beautiful; attractive.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈlʌvli/",
+            "full_definition": "Beautiful.",
+            "example": "A lovely house.",
+            "translation": "Đáng yêu"
+            }
+        },
+        {
+            "word": "UNCLES",
+            "clue_for_game": "Parent's brothers.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʌŋklz/",
+            "full_definition": "Male relatives.",
+            "example": "My uncles are engineers.",
+            "translation": "Các chú / Các bác"
+            }
+        }
         ]
     },
     {
@@ -709,7 +763,8 @@
         "word": "RADIO",
         "phonetic": "/ˈreɪdiəʊ/",
         "definition": "A device for receiving broadcasts.",
-        "example": "Turn on the radio."
+        "example": "Turn on the radio.",
+        "translation": "Đài phát thanh"
         },
         "sub_words": [
         {
@@ -722,7 +777,8 @@
             "type": "Noun",
             "phonetic": "/rʌɡ/",
             "full_definition": "Small carpet.",
-            "example": "A colorful rug."
+            "example": "A colorful rug.",
+            "translation": "Tấm thảm"
             }
         },
         {
@@ -735,7 +791,8 @@
             "type": "Adjective",
             "phonetic": "/ˈredi/",
             "full_definition": "Prepared.",
-            "example": "Are you ready?"
+            "example": "Are you ready?",
+            "translation": "Sẵn sàng"
             }
         },
         {
@@ -748,7 +805,8 @@
             "type": "Noun",
             "phonetic": "/brɪdʒ/",
             "full_definition": "Way over a river.",
-            "example": "The bridge is made of stone."
+            "example": "The bridge is made of stone.",
+            "translation": "Cây cầu"
             }
         },
         {
@@ -761,7 +819,8 @@
             "type": "Adjective",
             "phonetic": "/ˈmærid/",
             "full_definition": "Legally wedded.",
-            "example": "A married man."
+            "example": "A married man.",
+            "translation": "Đã kết hôn"
             }
         },
         {
@@ -774,7 +833,8 @@
             "type": "Noun",
             "phonetic": "/ˈʃaʊə(r)/",
             "full_definition": "Apparatus for washing.",
-            "example": "The shower is broken."
+            "example": "The shower is broken.",
+            "translation": "Vòi hoa sen"
             }
         }
         ]
@@ -787,7 +847,8 @@
         "word": "OFFICE",
         "phonetic": "/ˈɒfɪs/",
         "definition": "A room or building where people work at desks.",
-        "example": "The company moved to a new office."
+        "example": "The company moved to a new office.",
+        "translation": "Văn phòng"
         },
         "sub_words": [
         {
@@ -800,7 +861,8 @@
             "type": "Noun",
             "phonetic": "/ˈdɒktə(r)/",
             "full_definition": "A person trained in medicine.",
-            "example": "See a doctor."
+            "example": "See a doctor.",
+            "translation": "Bác sĩ"
             }
         },
         {
@@ -813,7 +875,8 @@
             "type": "Noun",
             "phonetic": "/stɑːf/",
             "full_definition": "People working for a company.",
-            "example": "The office staff is helpful."
+            "example": "The office staff is helpful.",
+            "translation": "Nhân viên"
             }
         },
         {
@@ -826,7 +889,8 @@
             "type": "Noun",
             "phonetic": "/ˈkɒfi/",
             "full_definition": "Hot bean drink.",
-            "example": "Coffee break time."
+            "example": "Coffee break time.",
+            "translation": "Cà phê"
             }
         },
         {
@@ -839,7 +903,8 @@
             "type": "Noun",
             "phonetic": "/pəˈliːs/",
             "full_definition": "Officers of the law.",
-            "example": "The police station."
+            "example": "The police station.",
+            "translation": "Cảnh sát"
             }
         },
         {
@@ -852,7 +917,8 @@
             "type": "Noun",
             "phonetic": "/ˈprɒdʒekt/",
             "full_definition": "A large piece of work.",
-            "example": "A new project."
+            "example": "A new project.",
+            "translation": "Dự án"
             }
         },
         {
@@ -865,7 +931,8 @@
             "type": "Verb",
             "phonetic": "/rɪˈtaɪə(r)/",
             "full_definition": "Leave the workforce.",
-            "example": "He will retire soon."
+            "example": "He will retire soon.",
+            "translation": "Nghỉ hưu"
             }
         }
         ]
@@ -875,90 +942,97 @@
         "theme": "Jobs & Office",
         "difficulty": "A1-A2",
         "main_word": {
-            "word": "WRITER",
-            "phonetic": "/ˈraɪtə(r)/",
-            "definition": "Author of books/stories.",
-            "example": "She is a talented writer."
+        "word": "WRITER",
+        "phonetic": "/ˈraɪtə(r)/",
+        "definition": "Author of books/stories.",
+        "example": "She is a talented writer.",
+        "translation": "Nhà văn"
         },
         "sub_words": [
-            {
-                "word": "WORKER",
-                "clue_for_game": "Someone who does a job.",
-                "char_to_extract": "W",
-                "extract_index": 0,
-                "map_to_main_index": 0,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈwɜːkə(r)/",
-                    "full_definition": "Employed person.",
-                    "example": "A social worker."
-                }
-            },
-            {
-                "word": "REPORT",
-                "clue_for_game": "Documented account.",
-                "char_to_extract": "R",
-                "extract_index": 4,
-                "map_to_main_index": 1,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/rɪˈpɔːt/",
-                    "full_definition": "Written description.",
-                    "example": "A daily report."
-                }
-            },
-            {
-                "word": "ARTIST",
-                "clue_for_game": "Creative person.",
-                "char_to_extract": "I",
-                "extract_index": 3,
-                "map_to_main_index": 2,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈɑːtɪst/",
-                    "full_definition": "Painter or sculptor.",
-                    "example": "An artist at work."
-                }
-            },
-            {
-                "word": "PILOT",
-                "clue_for_game": "Plane operator.",
-                "char_to_extract": "T",
-                "extract_index": 4,
-                "map_to_main_index": 3,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈpaɪlət/",
-                    "full_definition": "Aircraft flier.",
-                    "example": "A brave pilot."
-                }
-            },
-            {
-                "word": "MEETING",
-                "clue_for_game": "A gathering of people.",
-                "char_to_extract": "E",
-                "extract_index": 1,
-                "map_to_main_index": 4,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈmiːtɪŋ/",
-                    "full_definition": "An occasion when people come together.",
-                    "example": "We have a staff meeting."
-                }
-            },
-            {
-                "word": "CAREER",
-                "clue_for_game": "Life-long work journey.",
-                "char_to_extract": "R",
-                "extract_index": 2,
-                "map_to_main_index": 5,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/kəˈrɪə(r)/",
-                    "full_definition": "Professional path.",
-                    "example": "A successful career."
-                }
+        {
+            "word": "WORKER",
+            "clue_for_game": "Someone who does a job.",
+            "char_to_extract": "W",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈwɜːkə(r)/",
+            "full_definition": "Employed person.",
+            "example": "A social worker.",
+            "translation": "Công nhân / Người lao động"
             }
+        },
+        {
+            "word": "REPORT",
+            "clue_for_game": "Documented account.",
+            "char_to_extract": "R",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rɪˈpɔːt/",
+            "full_definition": "Written description.",
+            "example": "A daily report.",
+            "translation": "Bản báo cáo"
+            }
+        },
+        {
+            "word": "ARTIST",
+            "clue_for_game": "Creative person.",
+            "char_to_extract": "I",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɑːtɪst/",
+            "full_definition": "Painter or sculptor.",
+            "example": "An artist at work.",
+            "translation": "Nghệ sĩ"
+            }
+        },
+        {
+            "word": "PILOT",
+            "clue_for_game": "Plane operator.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpaɪlət/",
+            "full_definition": "Aircraft flier.",
+            "example": "A brave pilot.",
+            "translation": "Phi công"
+            }
+        },
+        {
+            "word": "MEETING",
+            "clue_for_game": "A gathering of people.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmiːtɪŋ/",
+            "full_definition": "An occasion when people come together.",
+            "example": "We have a staff meeting.",
+            "translation": "Cuộc họp"
+            }
+        },
+        {
+            "word": "CAREER",
+            "clue_for_game": "Life-long work journey.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kəˈrɪə(r)/",
+            "full_definition": "Professional path.",
+            "example": "A successful career.",
+            "translation": "Sự nghiệp"
+            }
+        }
         ]
     },
     {
@@ -966,77 +1040,83 @@
         "theme": "Jobs & Office",
         "difficulty": "A1-A2",
         "main_word": {
-            "word": "FILES",
-            "phonetic": "/faɪlz/",
-            "definition": "Information storage.",
-            "example": "Organize your files."
+        "word": "FILES",
+        "phonetic": "/faɪlz/",
+        "definition": "Information storage.",
+        "example": "Organize your files.",
+        "translation": "Tài liệu / Tập tin"
         },
         "sub_words": [
-            {
-                "word": "CHEF",
-                "clue_for_game": "Head cook in a restaurant.",
-                "char_to_extract": "F",
-                "extract_index": 3,
-                "map_to_main_index": 0,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ʃef/",
-                    "full_definition": "A professional cook.",
-                    "example": "The executive chef."
-                }
-            },
-            {
-                "word": "CLINIC",
-                "clue_for_game": "A place for medical treatment.",
-                "char_to_extract": "I",
-                "extract_index": 2,
-                "map_to_main_index": 1,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈklɪnɪk/",
-                    "full_definition": "A medical center.",
-                    "example": "She works at a clinic."
-                }
-            },
-            {
-                "word": "SKILLS",
-                "clue_for_game": "Abilities to do something well.",
-                "char_to_extract": "L",
-                "extract_index": 3,
-                "map_to_main_index": 2,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/skɪlz/",
-                    "full_definition": "The ability to do something well.",
-                    "example": "Computer skills."
-                }
-            },
-            {
-                "word": "OFFICE",
-                "clue_for_game": "A room where people work at desks.",
-                "char_to_extract": "E",
-                "extract_index": 5,
-                "map_to_main_index": 3,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/ˈɒfɪs/",
-                    "full_definition": "A room or building used as a place of business.",
-                    "example": "I'll be in my office."
-                }
-            },
-            {
-                "word": "TASKS",
-                "clue_for_game": "Duties or pieces of work.",
-                "char_to_extract": "S",
-                "extract_index": 4,
-                "map_to_main_index": 4,
-                "details": {
-                    "type": "Noun",
-                    "phonetic": "/tɑːsks/",
-                    "full_definition": "Work units to be completed.",
-                    "example": "Daily tasks."
-                }
+        {
+            "word": "CHEF",
+            "clue_for_game": "Head cook in a restaurant.",
+            "char_to_extract": "F",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃef/",
+            "full_definition": "A professional cook.",
+            "example": "The executive chef.",
+            "translation": "Đầu bếp"
             }
+        },
+        {
+            "word": "CLINIC",
+            "clue_for_game": "A place for medical treatment.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈklɪnɪk/",
+            "full_definition": "A medical center.",
+            "example": "She works at a clinic.",
+            "translation": "Phòng khám"
+            }
+        },
+        {
+            "word": "SKILLS",
+            "clue_for_game": "Abilities to do something well.",
+            "char_to_extract": "L",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɪlz/",
+            "full_definition": "The ability to do something well.",
+            "example": "Computer skills.",
+            "translation": "Kỹ năng"
+            }
+        },
+        {
+            "word": "OFFICE",
+            "clue_for_game": "A room where people work at desks.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɒfɪs/",
+            "full_definition": "A room or building used as a place of business.",
+            "example": "I'll be in my office.",
+            "translation": "Văn phòng"
+            }
+        },
+        {
+            "word": "TASKS",
+            "clue_for_game": "Duties or pieces of work.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tɑːsks/",
+            "full_definition": "Work units to be completed.",
+            "example": "Daily tasks.",
+            "translation": "Nhiệm vụ"
+            }
+        }
         ]
     },
     {
@@ -1047,7 +1127,8 @@
         "word": "BOSS",
         "phonetic": "/bɒs/",
         "definition": "Employer or manager.",
-        "example": "My boss is fair."
+        "example": "My boss is fair.",
+        "translation": "Sếp / Ông chủ"
         },
         "sub_words": [
         {
@@ -1060,7 +1141,8 @@
             "type": "Noun",
             "phonetic": "/dʒɒb/",
             "full_definition": "Paid work.",
-            "example": "Part-time job."
+            "example": "Part-time job.",
+            "translation": "Công việc"
             }
         },
         {
@@ -1073,7 +1155,8 @@
             "type": "Noun",
             "phonetic": "/ˈəʊnə(r)/",
             "full_definition": "Possessor.",
-            "example": "Shop owner."
+            "example": "Shop owner.",
+            "translation": "Chủ sở hữu"
             }
         },
         {
@@ -1086,7 +1169,8 @@
             "type": "Noun",
             "phonetic": "/skɪl/",
             "full_definition": "Ability.",
-            "example": "Writing skill."
+            "example": "Writing skill.",
+            "translation": "Kỹ năng"
             }
         },
         {
@@ -1099,7 +1183,8 @@
             "type": "Noun",
             "phonetic": "/stres/",
             "full_definition": "Work anxiety.",
-            "example": "Avoid stress."
+            "example": "Avoid stress.",
+            "translation": "Sự căng thẳng"
             }
         }
         ]
@@ -1112,7 +1197,8 @@
         "word": "NURSE",
         "phonetic": "/nɜːs/",
         "definition": "Healthcare assistant.",
-        "example": "The nurse is kind."
+        "example": "The nurse is kind.",
+        "translation": "Y tá"
         },
         "sub_words": [
         {
@@ -1125,7 +1211,8 @@
             "type": "Verb",
             "phonetic": "/kliːn/",
             "full_definition": "Sanitize.",
-            "example": "Clean the ward."
+            "example": "Clean the ward.",
+            "translation": "Dọn dẹp / Làm sạch"
             }
         },
         {
@@ -1138,7 +1225,8 @@
             "type": "Noun",
             "phonetic": "/lʌntʃ/",
             "full_definition": "Noon meal.",
-            "example": "Quick lunch."
+            "example": "Quick lunch.",
+            "translation": "Bữa trưa"
             }
         },
         {
@@ -1151,7 +1239,8 @@
             "type": "Noun",
             "phonetic": "/driːm/",
             "full_definition": "Ambition.",
-            "example": "A child's dream."
+            "example": "A child's dream.",
+            "translation": "Giấc mơ"
             }
         },
         {
@@ -1164,7 +1253,8 @@
             "type": "Noun",
             "phonetic": "/desk/",
             "full_definition": "Office furniture.",
-            "example": "Wooden desk."
+            "example": "Wooden desk.",
+            "translation": "Bàn làm việc"
             }
         },
         {
@@ -1177,7 +1267,8 @@
             "type": "Adjective",
             "phonetic": "/ˈtaɪəd/",
             "full_definition": "Sleepy.",
-            "example": "I'm so tired."
+            "example": "I'm so tired.",
+            "translation": "Mệt mỏi"
             }
         }
         ]
@@ -1190,7 +1281,8 @@
         "word": "TEAM",
         "phonetic": "/tiːm/",
         "definition": "Work group.",
-        "example": "A strong team."
+        "example": "A strong team.",
+        "translation": "Đội / Nhóm"
         },
         "sub_words": [
         {
@@ -1203,7 +1295,8 @@
             "type": "Verb",
             "phonetic": "/stɑːt/",
             "full_definition": "Begin.",
-            "example": "Start the task."
+            "example": "Start the task.",
+            "translation": "Bắt đầu"
             }
         },
         {
@@ -1216,7 +1309,8 @@
             "type": "Verb",
             "phonetic": "/əˈɡriː/",
             "full_definition": "Concur.",
-            "example": "I agree."
+            "example": "I agree.",
+            "translation": "Đồng ý"
             }
         },
         {
@@ -1229,7 +1323,8 @@
             "type": "Noun",
             "phonetic": "/hed/",
             "full_definition": "Leader.",
-            "example": "Head office."
+            "example": "Head office.",
+            "translation": "Người đứng đầu"
             }
         },
         {
@@ -1242,7 +1337,8 @@
             "type": "Noun",
             "phonetic": "/fɔːm/",
             "full_definition": "Document.",
-            "example": "Fill the form."
+            "example": "Fill the form.",
+            "translation": "Biểu mẫu"
             }
         }
         ]
@@ -1255,7 +1351,8 @@
         "word": "PAPER",
         "phonetic": "/ˈpeɪpə(r)/",
         "definition": "Writing material.",
-        "example": "Printer paper."
+        "example": "Printer paper.",
+        "translation": "Giấy"
         },
         "sub_words": [
         {
@@ -1268,7 +1365,8 @@
             "type": "Noun",
             "phonetic": "/ˈlæptɒp/",
             "full_definition": "Small computer.",
-            "example": "My laptop."
+            "example": "My laptop.",
+            "translation": "Máy tính xách tay"
             }
         },
         {
@@ -1281,7 +1379,8 @@
             "type": "Noun",
             "phonetic": "/bæŋk/",
             "full_definition": "Financial place.",
-            "example": "Go to the bank."
+            "example": "Go to the bank.",
+            "translation": "Ngân hàng"
             }
         },
         {
@@ -1294,7 +1393,8 @@
             "type": "Verb",
             "phonetic": "/help/",
             "full_definition": "Give aid.",
-            "example": "Can you help?"
+            "example": "Can you help?",
+            "translation": "Giúp đỡ"
             }
         },
         {
@@ -1307,7 +1407,8 @@
             "type": "Verb",
             "phonetic": "/ʃeə(r)/",
             "full_definition": "Give portion.",
-            "example": "Share a file."
+            "example": "Share a file.",
+            "translation": "Chia sẻ"
             }
         },
         {
@@ -1320,7 +1421,8 @@
             "type": "Adjective",
             "phonetic": "/feə(r)/",
             "full_definition": "Right treatment.",
-            "example": "Not fair."
+            "example": "Not fair.",
+            "translation": "Công bằng"
             }
         }
         ]
@@ -1333,7 +1435,8 @@
         "word": "SALES",
         "phonetic": "/seɪlz/",
         "definition": "Selling sector.",
-        "example": "Sales figures."
+        "example": "Sales figures.",
+        "translation": "Doanh số / Bán hàng"
         },
         "sub_words": [
         {
@@ -1346,7 +1449,8 @@
             "type": "Adjective",
             "phonetic": "/ˈbɪzi/",
             "full_definition": "A lot to do.",
-            "example": "Busy day."
+            "example": "Busy day.",
+            "translation": "Bận rộn"
             }
         },
         {
@@ -1359,7 +1463,8 @@
             "type": "Noun",
             "phonetic": "/liːv/",
             "full_definition": "Absence.",
-            "example": "Sick leave."
+            "example": "Sick leave.",
+            "translation": "Nghỉ phép / Rời đi"
             }
         },
         {
@@ -1372,7 +1477,8 @@
             "type": "Noun",
             "phonetic": "/ˈiːmeɪl/",
             "full_definition": "Electronic mail.",
-            "example": "Send an email."
+            "example": "Send an email.",
+            "translation": "Thư điện tử"
             }
         },
         {
@@ -1385,7 +1491,8 @@
             "type": "Noun",
             "phonetic": "/tʃɑːns/",
             "full_definition": "Possibility.",
-            "example": "Take a chance."
+            "example": "Take a chance.",
+            "translation": "Cơ hội"
             }
         },
         {
@@ -1398,7 +1505,8 @@
             "type": "Noun",
             "phonetic": "/aɪˈdɪəz/",
             "full_definition": "Mental concepts.",
-            "example": "New ideas."
+            "example": "New ideas.",
+            "translation": "Ý tưởng"
             }
         }
         ]
@@ -1411,7 +1519,8 @@
         "word": "STUDY",
         "phonetic": "/ˈstʌdi/",
         "definition": "Learn/examine.",
-        "example": "Study hard."
+        "example": "Study hard.",
+        "translation": "Học tập / Nghiên cứu"
         },
         "sub_words": [
         {
@@ -1424,7 +1533,8 @@
             "type": "Noun",
             "phonetic": "/stres/",
             "full_definition": "Work anxiety.",
-            "example": "Reduce stress."
+            "example": "Reduce stress.",
+            "translation": "Sự căng thẳng"
             }
         },
         {
@@ -1437,7 +1547,8 @@
             "type": "Noun",
             "phonetic": "/pɔɪnt/",
             "full_definition": "Specific item.",
-            "example": "Valid point."
+            "example": "Valid point.",
+            "translation": "Điểm / Luận điểm"
             }
         },
         {
@@ -1450,7 +1561,8 @@
             "type": "Verb",
             "phonetic": "/bɪld/",
             "full_definition": "Create structure.",
-            "example": "Build a team."
+            "example": "Build a team.",
+            "translation": "Xây dựng"
             }
         },
         {
@@ -1463,7 +1575,8 @@
             "type": "Verb",
             "phonetic": "/dres/",
             "full_definition": "Clothe oneself.",
-            "example": "Dress well."
+            "example": "Dress well.",
+            "translation": "Mặc quần áo"
             }
         },
         {
@@ -1476,7 +1589,8 @@
             "type": "Verb",
             "phonetic": "/ɪnˈdʒɔɪ/",
             "full_definition": "Get pleasure.",
-            "example": "Enjoy life."
+            "example": "Enjoy life.",
+            "translation": "Thưởng thức / Tận hưởng"
             }
         }
         ]
@@ -1489,7 +1603,8 @@
         "word": "BOARD",
         "phonetic": "/bɔːd/",
         "definition": "Leadership group.",
-        "example": "The board meeting."
+        "example": "The board meeting.",
+        "translation": "Ban quản trị / Cái bảng"
         },
         "sub_words": [
         {
@@ -1502,7 +1617,8 @@
             "type": "Noun",
             "phonetic": "/ˈteɪbl/",
             "full_definition": "Furniture.",
-            "example": "Sit at the table."
+            "example": "Sit at the table.",
+            "translation": "Cái bàn"
             }
         },
         {
@@ -1515,7 +1631,8 @@
             "type": "Noun",
             "phonetic": "/ˈsæləri/",
             "full_definition": "Paycheck.",
-            "example": "Earn a salary."
+            "example": "Earn a salary.",
+            "translation": "Tiền lương"
             }
         },
         {
@@ -1525,10 +1642,11 @@
             "extract_index": 0,
             "map_to_main_index": 1,
             "details": {
-            "type": "/ˈɒfɪs/",
-            "phonetic": "Noun",
+            "type": "Noun",
+            "phonetic": "/ˈɒfɪs/",
             "full_definition": "Workspace.",
-            "example": "New office."
+            "example": "New office.",
+            "translation": "Văn phòng"
             }
         },
         {
@@ -1541,7 +1659,8 @@
             "type": "Noun",
             "phonetic": "/tʃɑːt/",
             "full_definition": "Diagram.",
-            "example": "Growth chart."
+            "example": "Growth chart.",
+            "translation": "Biểu đồ"
             }
         },
         {
@@ -1554,7 +1673,1702 @@
             "type": "Noun",
             "phonetic": "/fiːld/",
             "full_definition": "Industry.",
-            "example": "In this field."
+            "example": "In this field.",
+            "translation": "Lĩnh vực / Cánh đồng"
+            }
+        }
+        ]
+    },
+        {
+        "level_id": 21,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "TRAIN",
+        "phonetic": "/treɪn/",
+        "definition": "A series of railway carriages or wagons moved as a unit.",
+        "example": "We took the train to London.",
+        "translation": "Tàu hỏa"
+        },
+        "sub_words": [
+        {
+            "word": "METRO",
+            "clue_for_game": "An underground railway system.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmetrəʊ/",
+            "full_definition": "An underground railway system in a city.",
+            "example": "I take the metro to work.",
+            "translation": "Tàu điện ngầm"
+            }
+        },
+        {
+            "word": "BOARD",
+            "clue_for_game": "To get on a ship, train, or plane.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/bɔːd/",
+            "full_definition": "To get on or into a ship, train, or aircraft.",
+            "example": "It's time to board the plane.",
+            "translation": "Lên tàu/xe/máy bay"
+            }
+        },
+        {
+            "word": "COAST",
+            "clue_for_game": "The land near the sea.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kəʊst/",
+            "full_definition": "The part of the land near the sea.",
+            "example": "We drove along the coast.",
+            "translation": "Bờ biển"
+            }
+        },
+        {
+            "word": "GUIDE",
+            "clue_for_game": "A person who shows tourists around.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡaɪd/",
+            "full_definition": "A person who shows other people the way to a place.",
+            "example": "Our tour guide was very helpful.",
+            "translation": "Hướng dẫn viên"
+            }
+        },
+        {
+            "word": "CABIN",
+            "clue_for_game": "A small room on a ship or in the woods.",
+            "char_to_extract": "N",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæbɪn/",
+            "full_definition": "A small room on a ship or a small house.",
+            "example": "We booked a cabin on the cruise.",
+            "translation": "Khoang tàu / Buồng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 22,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "FLIGHT",
+        "phonetic": "/flaɪt/",
+        "definition": "A journey made by air.",
+        "example": "Have a safe flight!",
+        "translation": "Chuyến bay"
+        },
+        "sub_words": [
+        {
+            "word": "FERRY",
+            "clue_for_game": "A boat that carries people and vehicles.",
+            "char_to_extract": "F",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈferi/",
+            "full_definition": "A boat that carries people, vehicles, or goods across water.",
+            "example": "We took a ferry to the island.",
+            "translation": "Phà"
+            }
+        },
+        {
+            "word": "DELAY",
+            "clue_for_game": "When something happens later than planned.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dɪˈleɪ/",
+            "full_definition": "A period of time when somebody has to wait.",
+            "example": "There is a delay on this flight.",
+            "translation": "Sự chậm trễ"
+            }
+        },
+        {
+            "word": "PRICE",
+            "clue_for_game": "The amount of money you pay for something.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/praɪs/",
+            "full_definition": "The amount of money that you have to pay for something.",
+            "example": "Ticket prices are high in summer.",
+            "translation": "Giá cả"
+            }
+        },
+        {
+            "word": "WINGS",
+            "clue_for_game": "Parts of a bird or plane used for flying.",
+            "char_to_extract": "G",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wɪŋz/",
+            "full_definition": "The flat parts of an aircraft that stick out and support it.",
+            "example": "The plane has long wings.",
+            "translation": "Cánh (máy bay/chim)"
+            }
+        },
+        {
+            "word": "YACHT",
+            "clue_for_game": "A large boat used for pleasure or racing.",
+            "char_to_extract": "H",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/jɒt/",
+            "full_definition": "A large sailing boat.",
+            "example": "He owns a luxury yacht.",
+            "translation": "Du thuyền"
+            }
+        },
+        {
+            "word": "ROUTE",
+            "clue_for_game": "A way that you follow to get from one place to another.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ruːt/",
+            "full_definition": "A way that you follow to get from one place to another.",
+            "example": "We took the scenic route.",
+            "translation": "Tuyến đường"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 23,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "TICKET",
+        "phonetic": "/ˈtɪkɪt/",
+        "definition": "A piece of paper or card that gives you the right to enter a place or travel.",
+        "example": "I bought a train ticket.",
+        "translation": "Vé"
+        },
+        "sub_words": [
+        {
+            "word": "HOTEL",
+            "clue_for_game": "A building where people stay when traveling.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/həʊˈtel/",
+            "full_definition": "A building where you pay to have a room to sleep in.",
+            "example": "We stayed at a nice hotel.",
+            "translation": "Khách sạn"
+            }
+        },
+        {
+            "word": "TRIPS",
+            "clue_for_game": "Journeys to places and back again.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/trɪps/",
+            "full_definition": "Journeys to a place and back again.",
+            "example": "Business trips are tiring.",
+            "translation": "Những chuyến đi"
+            }
+        },
+        {
+            "word": "OCEAN",
+            "clue_for_game": "A very large area of sea.",
+            "char_to_extract": "C",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈəʊʃn/",
+            "full_definition": "The mass of salt water that covers most of the earth's surface.",
+            "example": "The ship crossed the ocean.",
+            "translation": "Đại dương"
+            }
+        },
+        {
+            "word": "TRACK",
+            "clue_for_game": "The metal rails that a train travels on.",
+            "char_to_extract": "K",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træk/",
+            "full_definition": "The pair of long metal bars that trains travel along.",
+            "example": "The train jumped the track.",
+            "translation": "Đường ray"
+            }
+        },
+        {
+            "word": "SPEED",
+            "clue_for_game": "How fast something moves.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spiːd/",
+            "full_definition": "The rate at which somebody or something moves or travels.",
+            "example": "He drove at high speed.",
+            "translation": "Tốc độ"
+            }
+        },
+        {
+            "word": "MOTOR",
+            "clue_for_game": "A machine that produces power to make a vehicle move.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈməʊtə(r)/",
+            "full_definition": "A device that uses electricity or fuel to produce movement.",
+            "example": "The boat's motor broke down.",
+            "translation": "Động cơ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 24,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "BEACH",
+        "phonetic": "/biːtʃ/",
+        "definition": "An area of sand or stones beside the sea.",
+        "example": "We spent the day at the beach.",
+        "translation": "Bãi biển"
+        },
+        "sub_words": [
+        {
+            "word": "GLOBE",
+            "clue_for_game": "An object shaped like a ball with a map of the world on it.",
+            "char_to_extract": "B",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡləʊb/",
+            "full_definition": "An object shaped like a ball with a map of the world on its surface.",
+            "example": "He traveled across the globe.",
+            "translation": "Địa cầu"
+            }
+        },
+        {
+            "word": "WHEEL",
+            "clue_for_game": "A circular object that turns around to make a vehicle move.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wiːl/",
+            "full_definition": "One of the round objects under a car or bicycle.",
+            "example": "The steering wheel is black.",
+            "translation": "Bánh xe"
+            }
+        },
+        {
+            "word": "PLANE",
+            "clue_for_game": "A vehicle that flies in the air.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pleɪn/",
+            "full_definition": "A flying vehicle with wings.",
+            "example": "We boarded the plane.",
+            "translation": "Máy bay"
+            }
+        },
+        {
+            "word": "CYCLE",
+            "clue_for_game": "To ride a bicycle.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˈsaɪkl/",
+            "full_definition": "To ride a bicycle.",
+            "example": "I cycle to work every day.",
+            "translation": "Đạp xe"
+            }
+        },
+        {
+            "word": "SHIPS",
+            "clue_for_game": "Large boats for traveling on water.",
+            "char_to_extract": "H",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɪps/",
+            "full_definition": "Large boats for transporting people or goods by sea.",
+            "example": "The port is full of ships.",
+            "translation": "Những con tàu"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 25,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "PILOT",
+        "phonetic": "/ˈpaɪlət/",
+        "definition": "A person who operates the controls of an aircraft.",
+        "example": "The pilot landed safely.",
+        "translation": "Phi công"
+        },
+        "sub_words": [
+        {
+            "word": "DEPART",
+            "clue_for_game": "To leave a place, especially to start a journey.",
+            "char_to_extract": "P",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/dɪˈpɑːt/",
+            "full_definition": "To leave a place.",
+            "example": "The train will depart soon.",
+            "translation": "Khởi hành"
+            }
+        },
+        {
+            "word": "RIDER",
+            "clue_for_game": "A person who rides a horse or bicycle.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈraɪdə(r)/",
+            "full_definition": "A person who rides a horse, bicycle, or motorcycle.",
+            "example": "He is a skilled rider.",
+            "translation": "Người cưỡi / lái"
+            }
+        },
+        {
+            "word": "RELAX",
+            "clue_for_game": "To rest and become calm.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/rɪˈlæks/",
+            "full_definition": "To rest while you are doing something enjoyable.",
+            "example": "Vacations help you relax.",
+            "translation": "Thư giãn"
+            }
+        },
+        {
+            "word": "CROSS",
+            "clue_for_game": "To go across something.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/krɒs/",
+            "full_definition": "To go from one side of something to the other.",
+            "example": "Cross the road carefully.",
+            "translation": "Băng qua"
+            }
+        },
+        {
+            "word": "TRAIL",
+            "clue_for_game": "A path through a countryside or forest.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/treɪl/",
+            "full_definition": "A path through a countryside, mountain, or forest.",
+            "example": "We walked along the mountain trail.",
+            "translation": "Đường mòn"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 26,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "DRIVE",
+        "phonetic": "/draɪv/",
+        "definition": "To operate a vehicle.",
+        "example": "I drive a car to work.",
+        "translation": "Lái xe"
+        },
+        "sub_words": [
+        {
+            "word": "BOARD",
+            "clue_for_game": "To get on a vehicle.",
+            "char_to_extract": "D",
+            "extract_index": 4,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/bɔːd/",
+            "full_definition": "To enter a vehicle like a train or plane.",
+            "example": "We will board at gate 5.",
+            "translation": "Lên xe/tàu"
+            }
+        },
+        {
+            "word": "PARKS",
+            "clue_for_game": "Areas of public land for recreation.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɑːks/",
+            "full_definition": "Large areas of public land.",
+            "example": "Many national parks are huge.",
+            "translation": "Công viên"
+            }
+        },
+        {
+            "word": "TRIPS",
+            "clue_for_game": "Journeys for pleasure or business.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/trɪps/",
+            "full_definition": "Journeys to places.",
+            "example": "I love road trips.",
+            "translation": "Chuyến đi"
+            }
+        },
+        {
+            "word": "RIVER",
+            "clue_for_game": "A large natural flow of water.",
+            "char_to_extract": "V",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈrɪvə(r)/",
+            "full_definition": "A large natural stream of water.",
+            "example": "We took a boat on the river.",
+            "translation": "Dòng sông"
+            }
+        },
+        {
+            "word": "WHEEL",
+            "clue_for_game": "Round object that helps a car move.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wiːl/",
+            "full_definition": "A circular frame.",
+            "example": "Hold the steering wheel.",
+            "translation": "Bánh xe/ Vô lăng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 27,
+        "theme": "Travel & Transport",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "CAMPS",
+        "phonetic": "/kæmps/",
+        "definition": "Places where people stay in tents.",
+        "example": "We set up our camps near the lake.",
+        "translation": "Khu cắm trại"
+        },
+        "sub_words": [
+        {
+            "word": "COACH",
+            "clue_for_game": "A comfortable bus for long journeys.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kəʊtʃ/",
+            "full_definition": "A comfortable bus used to take groups of people on long journeys.",
+            "example": "We traveled by coach.",
+            "translation": "Xe khách"
+            }
+        },
+        {
+            "word": "WALKS",
+            "clue_for_game": "Journeys made by walking.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wɔːks/",
+            "full_definition": "Journeys made on foot.",
+            "example": "We took long walks on the beach.",
+            "translation": "Chuyến đi bộ"
+            }
+        },
+        {
+            "word": "TRAMS",
+            "clue_for_game": "Electric vehicles that transport people in cities.",
+            "char_to_extract": "M",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træmz/",
+            "full_definition": "Electric vehicles connected to a wire along the street.",
+            "example": "City trams are very convenient.",
+            "translation": "Xe điện"
+            }
+        },
+        {
+            "word": "MAPS",
+            "clue_for_game": "Drawings of the earth's surface.",
+            "char_to_extract": "P",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/mæps/",
+            "full_definition": "Representations of an area of land or sea.",
+            "example": "We used maps to find the way.",
+            "translation": "Bản đồ"
+            }
+        },
+        {
+            "word": "BUSES",
+            "clue_for_game": "Large vehicles carrying passengers.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbʌsɪz/",
+            "full_definition": "Large motor vehicles carrying passengers by road.",
+            "example": "City buses are often crowded.",
+            "translation": "Xe buýt"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 28,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "WATER",
+        "phonetic": "/ˈwɔːtə(r)/",
+        "definition": "A clear liquid essential for life.",
+        "example": "Please drink enough water.",
+        "translation": "Nước"
+        },
+        "sub_words": [
+        {
+            "word": "SWEET",
+            "clue_for_game": "Containing a lot of sugar.",
+            "char_to_extract": "W",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/swiːt/",
+            "full_definition": "Having the pleasant taste characteristic of sugar or honey.",
+            "example": "This cake is too sweet.",
+            "translation": "Ngọt"
+            }
+        },
+        {
+            "word": "SNACK",
+            "clue_for_game": "A small amount of food eaten between meals.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/snæk/",
+            "full_definition": "A small amount of food eaten between meals.",
+            "example": "I had a healthy snack.",
+            "translation": "Đồ ăn vặt"
+            }
+        },
+        {
+            "word": "TASTE",
+            "clue_for_game": "The flavor of something.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/teɪst/",
+            "full_definition": "The flavor of something in the mouth.",
+            "example": "I love the taste of chocolate.",
+            "translation": "Hương vị"
+            }
+        },
+        {
+            "word": "BREAD",
+            "clue_for_game": "Food made from flour and water.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bred/",
+            "full_definition": "Food made of flour, water, and yeast baked together.",
+            "example": "Fresh bread smells amazing.",
+            "translation": "Bánh mì"
+            }
+        },
+        {
+            "word": "FRUIT",
+            "clue_for_game": "The sweet part of a plant or tree.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fruːt/",
+            "full_definition": "The sweet and fleshy product of a tree or other plant.",
+            "example": "Eat more fresh fruit.",
+            "translation": "Trái cây"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 29,
+        "theme": "Food & Drinks",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "SUGAR",
+        "phonetic": "/ˈʃʊɡə(r)/",
+        "definition": "A sweet substance used to flavor food.",
+        "example": "I take my coffee without sugar.",
+        "translation": "Đường"
+        },
+        "sub_words": [
+        {
+            "word": "FRESH",
+            "clue_for_game": "Recently produced or picked.",
+            "char_to_extract": "S",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/freʃ/",
+            "full_definition": "Recently made or obtained; not canned, frozen, or otherwise preserved.",
+            "example": "I love fresh vegetables.",
+            "translation": "Tươi sạch"
+            }
+        },
+        {
+            "word": "JUICE",
+            "clue_for_game": "Liquid from fruits or vegetables.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒuːs/",
+            "full_definition": "The liquid obtained from or present in fruit or vegetables.",
+            "example": "Orange juice is my favorite.",
+            "translation": "Nước ép"
+            }
+        },
+        {
+            "word": "VEGAN",
+            "clue_for_game": "Not eating or using animal products.",
+            "char_to_extract": "G",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈviːɡən/",
+            "full_definition": "Using or containing no animal products.",
+            "example": "He follows a vegan diet.",
+            "translation": "Thuần chay"
+            }
+        },
+        {
+            "word": "MEALS",
+            "clue_for_game": "The food eaten at a particular time of the day.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/miːlz/",
+            "full_definition": "Any of the regular occasions in a day when a reasonably large amount of food is eaten.",
+            "example": "We have three meals a day.",
+            "translation": "Bữa ăn"
+            }
+        },
+        {
+            "word": "DRINK",
+            "clue_for_game": "A liquid that you can swallow.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/drɪŋk/",
+            "full_definition": "A liquid that can be swallowed as refreshment or nourishment.",
+            "example": "Can I have a hot drink?",
+            "translation": "Đồ uống"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 30,
+        "theme": "Food & Drinks",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "SALAD",
+        "phonetic": "/ˈsæləd/",
+        "definition": "A mixture of raw vegetables.",
+        "example": "I ordered a green salad.",
+        "translation": "Rau trộn / Salad"
+        },
+        "sub_words": [
+        {
+            "word": "SLICE",
+            "clue_for_game": "A thin, flat piece cut from something.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/slaɪs/",
+            "full_definition": "A thin, broad piece of food.",
+            "example": "A slice of pizza.",
+            "translation": "Lát mỏng"
+            }
+        },
+        {
+            "word": "BAKED",
+            "clue_for_game": "Cooked in an oven.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/beɪkt/",
+            "full_definition": "Cooked by dry heat in an oven.",
+            "example": "Baked potatoes are delicious.",
+            "translation": "Được nướng"
+            }
+        },
+        {
+            "word": "MILKY",
+            "clue_for_game": "Containing or made from milk.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈmɪlki/",
+            "full_definition": "Containing a lot of milk.",
+            "example": "A milky coffee.",
+            "translation": "Nhiều sữa"
+            }
+        },
+        {
+            "word": "PLATE",
+            "clue_for_game": "A flat dish used for eating or serving food.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pleɪt/",
+            "full_definition": "A flat dish from which food is eaten or served.",
+            "example": "An empty plate.",
+            "translation": "Cái đĩa"
+            }
+        },
+        {
+            "word": "DAIRY",
+            "clue_for_game": "Food made from milk.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdeəri/",
+            "full_definition": "Food produced from the milk of mammals.",
+            "example": "Dairy products like cheese.",
+            "translation": "Sản phẩm từ sữa"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 31,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "MEAT",
+        "phonetic": "/miːt/",
+        "definition": "The flesh of an animal used as food.",
+        "example": "I don't eat meat.",
+        "translation": "Thịt"
+        },
+        "sub_words": [
+        {
+            "word": "LEMON",
+            "clue_for_game": "A yellow citrus fruit.",
+            "char_to_extract": "M",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈlemən/",
+            "full_definition": "A pale yellow oval citrus fruit with thick skin and fragrant, acidic juice.",
+            "example": "Add a slice of lemon to tea.",
+            "translation": "Quả chanh"
+            }
+        },
+        {
+            "word": "CREAM",
+            "clue_for_game": "The thick white liquid from milk.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kriːm/",
+            "full_definition": "The thick white or pale yellow fatty liquid that rises to the top when milk is left to stand.",
+            "example": "Strawberries and cream.",
+            "translation": "Kem"
+            }
+        },
+        {
+            "word": "ROAST",
+            "clue_for_game": "Cooked in an oven or over a fire.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/rəʊst/",
+            "full_definition": "To cook food, especially meat, without liquid in an oven or over a fire.",
+            "example": "Roast beef for dinner.",
+            "translation": "Quay / Nướng"
+            }
+        },
+        {
+            "word": "BITTER",
+            "clue_for_game": "Having a sharp, strong taste.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈbɪtə(r)/",
+            "full_definition": "Having a sharp, pungent taste or smell; not sweet.",
+            "example": "Black coffee is bitter.",
+            "translation": "Đắng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 32,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "APPLE",
+        "phonetic": "/ˈæpl/",
+        "definition": "A round fruit with red or green skin.",
+        "example": "An apple a day keeps the doctor away.",
+        "translation": "Quả táo"
+        },
+        "sub_words": [
+        {
+            "word": "PEACH",
+            "clue_for_game": "A round fruit with sweet yellow flesh.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/piːtʃ/",
+            "full_definition": "A round stone fruit with juicy yellow flesh.",
+            "example": "A ripe peach.",
+            "translation": "Quả đào"
+            }
+        },
+        {
+            "word": "SPICY",
+            "clue_for_game": "Flavored with strong spices.",
+            "char_to_extract": "P",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈspaɪsi/",
+            "full_definition": "Flavored with or fragrant with spice.",
+            "example": "I love spicy food.",
+            "translation": "Cay"
+            }
+        },
+        {
+            "word": "SPOON",
+            "clue_for_game": "A tool for eating liquid foods.",
+            "char_to_extract": "P",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spuːn/",
+            "full_definition": "An implement consisting of a small, shallow oval or round bowl on a long handle.",
+            "example": "Use a spoon for soup.",
+            "translation": "Cái thìa"
+            }
+        },
+        {
+            "word": "MELON",
+            "clue_for_game": "A large round fruit with sweet flesh.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmelən/",
+            "full_definition": "A large round fruit with sweet pulpy flesh.",
+            "example": "A slice of watermelon.",
+            "translation": "Quả dưa"
+            }
+        },
+        {
+            "word": "CHEFS",
+            "clue_for_game": "Professional cooks.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃefs/",
+            "full_definition": "Professional cooks, typically the chief cook in a restaurant or hotel.",
+            "example": "The chefs prepared a feast.",
+            "translation": "Những đầu bếp"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 33,
+        "theme": "Food & Drinks",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "ONION",
+        "phonetic": "/ˈʌnjən/",
+        "definition": "A round vegetable with many layers.",
+        "example": "Frying an onion.",
+        "translation": "Củ hành tây"
+        },
+        "sub_words": [
+        {
+            "word": "SPOIL",
+            "clue_for_game": "To become bad or unfit for use.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/spɔɪl/",
+            "full_definition": "Of food: become unfit for eating.",
+            "example": "The milk will spoil.",
+            "translation": "Hỏng / Ôi thiu"
+            }
+        },
+        {
+            "word": "LUNCH",
+            "clue_for_game": "A meal eaten in the middle of the day.",
+            "char_to_extract": "N",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/lʌntʃ/",
+            "full_definition": "A meal eaten in the middle of the day.",
+            "example": "Let's grab lunch.",
+            "translation": "Bữa trưa"
+            }
+        },
+        {
+            "word": "DRINK",
+            "clue_for_game": "Liquid to swallow.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/drɪŋk/",
+            "full_definition": "Liquid to swallow.",
+            "example": "A cold drink.",
+            "translation": "Đồ uống"
+            }
+        },
+        {
+            "word": "BROWN",
+            "clue_for_game": "A dark color like wood or chocolate.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/braʊn/",
+            "full_definition": "Of a colour produced by mixing red, yellow, and blue, as of dark wood or rich soil.",
+            "example": "Brown sugar.",
+            "translation": "Màu nâu"
+            }
+        },
+        {
+            "word": "KNIFE",
+            "clue_for_game": "A tool for cutting food.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/naɪf/",
+            "full_definition": "An instrument composed of a blade fixed into a handle, used for cutting.",
+            "example": "A sharp knife.",
+            "translation": "Con dao"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 34,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PIZZA",
+        "phonetic": "/ˈpiːtsə/",
+        "definition": "A flat, round dish baked with toppings.",
+        "example": "We ordered a cheese pizza.",
+        "translation": "Bánh pizza"
+        },
+        "sub_words": [
+        {
+            "word": "SPICE",
+            "clue_for_game": "A substance used to flavor food.",
+            "char_to_extract": "P",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spaɪs/",
+            "full_definition": "An aromatic or pungent vegetable substance used to flavour food.",
+            "example": "Add some spice to the soup.",
+            "translation": "Gia vị"
+            }
+        },
+        {
+            "word": "FRUIT",
+            "clue_for_game": "The sweet product of a plant.",
+            "char_to_extract": "I",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fruːt/",
+            "full_definition": "The sweet product of a plant.",
+            "example": "A bowl of fruit.",
+            "translation": "Trái cây"
+            }
+        },
+        {
+            "word": "FREEZE",
+            "clue_for_game": "To become solid because of extreme cold.",
+            "char_to_extract": "Z",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/friːz/",
+            "full_definition": "To turn into ice.",
+            "example": "Freeze the meat to keep it fresh.",
+            "translation": "Đóng băng"
+            }
+        },
+        {
+            "word": "FROZEN",
+            "clue_for_game": "Preserved by being extremely cold.",
+            "char_to_extract": "Z",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈfrəʊzn/",
+            "full_definition": "Preserved by being extremely cold.",
+            "example": "Frozen vegetables.",
+            "translation": "Đông lạnh"
+            }
+        },
+        {
+            "word": "PASTA",
+            "clue_for_game": "An Italian food made from flour.",
+            "char_to_extract": "A",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpæstə/",
+            "full_definition": "A dish consisting of dough made from durum wheat and water.",
+            "example": "I cooked pasta.",
+            "translation": "Mì Ý"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 35,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "CHIPS",
+        "phonetic": "/tʃɪps/",
+        "definition": "Thin slices of fried potato.",
+        "example": "Fish and chips.",
+        "translation": "Khoai tây chiên"
+        },
+        "sub_words": [
+        {
+            "word": "LUNCH",
+            "clue_for_game": "A midday meal.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/lʌntʃ/",
+            "full_definition": "A midday meal.",
+            "example": "A quick lunch.",
+            "translation": "Bữa trưa"
+            }
+        },
+        {
+            "word": "FRESH",
+            "clue_for_game": "Recently produced.",
+            "char_to_extract": "H",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/freʃ/",
+            "full_definition": "Recently produced.",
+            "example": "Fresh bread.",
+            "translation": "Tươi sạch"
+            }
+        },
+        {
+            "word": "SPICY",
+            "clue_for_game": "Flavored with strong spices.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈspaɪsi/",
+            "full_definition": "Flavored with spices.",
+            "example": "Spicy sauce.",
+            "translation": "Cay"
+            }
+        },
+        {
+            "word": "APPLE",
+            "clue_for_game": "A round fruit.",
+            "char_to_extract": "P",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈæpl/",
+            "full_definition": "A round fruit.",
+            "example": "Green apple.",
+            "translation": "Quả táo"
+            }
+        },
+        {
+            "word": "TASTE",
+            "clue_for_game": "The flavor of food.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/teɪst/",
+            "full_definition": "The flavor.",
+            "example": "Sweet taste.",
+            "translation": "Hương vị"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 36,
+        "theme": "Food & Drinks",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "GRAPE",
+        "phonetic": "/ɡreɪp/",
+        "definition": "A small, round, green or purple fruit.",
+        "example": "A bunch of grapes.",
+        "translation": "Quả nho"
+        },
+        "sub_words": [
+        {
+            "word": "SUGAR",
+            "clue_for_game": "A sweet substance.",
+            "char_to_extract": "G",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʃʊɡə(r)/",
+            "full_definition": "A sweet substance.",
+            "example": "Spoon of sugar.",
+            "translation": "Đường"
+            }
+        },
+        {
+            "word": "FORKS",
+            "clue_for_game": "Tools with points for eating.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fɔːks/",
+            "full_definition": "Tools for eating.",
+            "example": "Knives and forks.",
+            "translation": "Cái nĩa"
+            }
+        },
+        {
+            "word": "SNACK",
+            "clue_for_game": "A small meal.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/snæk/",
+            "full_definition": "A small meal.",
+            "example": "Midnight snack.",
+            "translation": "Đồ ăn vặt"
+            }
+        },
+        {
+            "word": "PEACH",
+            "clue_for_game": "A sweet round fruit.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/piːtʃ/",
+            "full_definition": "A sweet round fruit.",
+            "example": "Juicy peach.",
+            "translation": "Quả đào"
+            }
+        },
+        {
+            "word": "SWEET",
+            "clue_for_game": "Containing sugar.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/swiːt/",
+            "full_definition": "Containing sugar.",
+            "example": "Sweet tea.",
+            "translation": "Ngọt"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 37,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "LEMON",
+        "phonetic": "/ˈlemən/",
+        "definition": "A yellow citrus fruit.",
+        "example": "Lemon juice.",
+        "translation": "Quả chanh vàng"
+        },
+        "sub_words": [
+        {
+            "word": "MILKY",
+            "clue_for_game": "Containing milk.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈmɪlki/",
+            "full_definition": "Containing milk.",
+            "example": "Milky coffee.",
+            "translation": "Sữa"
+            }
+        },
+        {
+            "word": "MEALS",
+            "clue_for_game": "Food eaten at regular times.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/miːlz/",
+            "full_definition": "Food eaten.",
+            "example": "Three meals.",
+            "translation": "Bữa ăn"
+            }
+        },
+        {
+            "word": "SMOKE",
+            "clue_for_game": "To cure or preserve meat using smoke.",
+            "char_to_extract": "M",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/sməʊk/",
+            "full_definition": "To preserve meat.",
+            "example": "Smoked salmon.",
+            "translation": "Xông khói"
+            }
+        },
+        {
+            "word": "BROWN",
+            "clue_for_game": "A dark color.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/braʊn/",
+            "full_definition": "A dark color.",
+            "example": "Brown bread.",
+            "translation": "Màu nâu"
+            }
+        },
+        {
+            "word": "ONION",
+            "clue_for_game": "A round vegetable.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʌnjən/",
+            "full_definition": "A round vegetable.",
+            "example": "Chopped onion.",
+            "translation": "Hành tây"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 38,
+        "theme": "Food & Drinks",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "SAUCE",
+        "phonetic": "/sɔːs/",
+        "definition": "A thick liquid served with food.",
+        "example": "Tomato sauce.",
+        "translation": "Nước sốt"
+        },
+        "sub_words": [
+        {
+            "word": "TASTE",
+            "clue_for_game": "Flavor of food.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/teɪst/",
+            "full_definition": "Flavor.",
+            "example": "Good taste.",
+            "translation": "Hương vị"
+            }
+        },
+        {
+            "word": "VEGAN",
+            "clue_for_game": "No animal products.",
+            "char_to_extract": "A",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈviːɡən/",
+            "full_definition": "No animal products.",
+            "example": "Vegan food.",
+            "translation": "Thuần chay"
+            }
+        },
+        {
+            "word": "JUICE",
+            "clue_for_game": "Liquid from fruits.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒuːs/",
+            "full_definition": "Liquid from fruits.",
+            "example": "Apple juice.",
+            "translation": "Nước ép"
+            }
+        },
+        {
+            "word": "SLICE",
+            "clue_for_game": "A thin piece of food.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/slaɪs/",
+            "full_definition": "A thin piece of food.",
+            "example": "Slice of cheese.",
+            "translation": "Lát mỏng"
+            }
+        },
+        {
+            "word": "PLATE",
+            "clue_for_game": "A flat dish.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pleɪt/",
+            "full_definition": "A flat dish.",
+            "example": "Clean plate.",
+            "translation": "Cái đĩa"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 39,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "MANGO",
+        "phonetic": "/ˈmæŋɡəʊ/",
+        "definition": "A tropical fruit with sweet yellow flesh.",
+        "example": "A ripe mango.",
+        "translation": "Quả xoài"
+        },
+        "sub_words": [
+        {
+            "word": "MELON",
+            "clue_for_game": "A large fruit.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmelən/",
+            "full_definition": "A large fruit.",
+            "example": "Water melon.",
+            "translation": "Quả dưa"
+            }
+        },
+        {
+            "word": "BAKED",
+            "clue_for_game": "Cooked in oven.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/beɪkt/",
+            "full_definition": "Cooked in oven.",
+            "example": "Baked beans.",
+            "translation": "Được nướng"
+            }
+        },
+        {
+            "word": "KNIFE",
+            "clue_for_game": "Cutting tool.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/naɪf/",
+            "full_definition": "Cutting tool.",
+            "example": "Sharp knife.",
+            "translation": "Con dao"
+            }
+        },
+        {
+            "word": "SUGAR",
+            "clue_for_game": "Sweet substance.",
+            "char_to_extract": "G",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʃʊɡə(r)/",
+            "full_definition": "Sweet substance.",
+            "example": "No sugar.",
+            "translation": "Đường"
+            }
+        },
+        {
+            "word": "SPOIL",
+            "clue_for_game": "Become unfit to eat.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/spɔɪl/",
+            "full_definition": "Become unfit to eat.",
+            "example": "Food will spoil.",
+            "translation": "Hỏng/Thiu"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 40,
+        "theme": "Food & Drinks",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BEANS",
+        "phonetic": "/biːnz/",
+        "definition": "Edible seeds of various plants.",
+        "example": "Green beans.",
+        "translation": "Hạt đậu"
+        },
+        "sub_words": [
+        {
+            "word": "BREAD",
+            "clue_for_game": "Food from flour.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bred/",
+            "full_definition": "Food from flour.",
+            "example": "White bread.",
+            "translation": "Bánh mì"
+            }
+        },
+        {
+            "word": "CHEFS",
+            "clue_for_game": "Professional cooks.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃefs/",
+            "full_definition": "Professional cooks.",
+            "example": "Many chefs.",
+            "translation": "Đầu bếp"
+            }
+        },
+        {
+            "word": "SALAD",
+            "clue_for_game": "Mixed raw vegetables.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsæləd/",
+            "full_definition": "Mixed raw vegetables.",
+            "example": "Fruit salad.",
+            "translation": "Rau trộn"
+            }
+        },
+        {
+            "word": "ONION",
+            "clue_for_game": "A layered vegetable.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈʌnjən/",
+            "full_definition": "A layered vegetable.",
+            "example": "Red onion.",
+            "translation": "Hành tây"
+            }
+        },
+        {
+            "word": "CRISP",
+            "clue_for_game": "Firm and easily broken.",
+            "char_to_extract": "S",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/krɪsp/",
+            "full_definition": "Firm and easily broken.",
+            "example": "Crisp chips.",
+            "translation": "Giòn"
             }
         }
         ]
