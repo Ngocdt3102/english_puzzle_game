@@ -14,6 +14,13 @@ class CustomKeyboard extends StatelessWidget {
     final List<String> row2 = "ASDFGHJKL".split("");
     final List<String> row3 = "ZXCVBNM".split("");
 
+    // --- TÍNH TOÁN KÍCH THƯỚC ĐỘNG ---
+    double screenWidth = MediaQuery.of(context).size.width;
+    // Padding 2 bên của container là 10 (5 trái, 5 phải)
+    // Mỗi phím có margin ngang là 6 (3 trái, 3 phải). Hàng 1 có 10 phím -> tổng margin = 60
+    // Lấy màn hình trừ đi phần không gian trống (70), rồi chia đều cho 10 phím
+    double keyWidth = (screenWidth - 70) / 10;
+
     return Container(
       padding: const EdgeInsets.fromLTRB(5, 10, 5, 20),
       decoration: BoxDecoration(
@@ -44,16 +51,21 @@ class CustomKeyboard extends StatelessWidget {
               ),
             ),
           ),
-          _buildKeyboardRow(row1, gameProvider),
+          // Truyền kích thước động xuống các hàm vẽ phím
+          _buildKeyboardRow(row1, gameProvider, keyWidth),
           const SizedBox(height: 10),
-          _buildKeyboardRow(row2, gameProvider),
+          _buildKeyboardRow(row2, gameProvider, keyWidth),
           const SizedBox(height: 10),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const SizedBox(width: 45), // Cân bằng không gian
-              ...row3.map((letter) => _buildKey(letter, gameProvider)),
-              _buildBackspaceKey(gameProvider),
+              // Cân bằng khoảng trống tự động để chữ Z lùi vào thụt lề như bàn phím thật
+              SizedBox(width: keyWidth / 2),
+              ...row3.map(
+                (letter) => _buildKey(letter, gameProvider, keyWidth),
+              ),
+              // Nút xóa được cấp cho chiều rộng gấp 1.5 lần phím thường
+              _buildBackspaceKey(gameProvider, keyWidth * 1.5),
             ],
           ),
         ],
@@ -61,14 +73,21 @@ class CustomKeyboard extends StatelessWidget {
     );
   }
 
-  Widget _buildKeyboardRow(List<String> letters, GameProvider provider) {
+  // Cập nhật hàm nhận thêm biến keyWidth
+  Widget _buildKeyboardRow(
+    List<String> letters,
+    GameProvider provider,
+    double keyWidth,
+  ) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      children: letters.map((letter) => _buildKey(letter, provider)).toList(),
+      children: letters
+          .map((letter) => _buildKey(letter, provider, keyWidth))
+          .toList(),
     );
   }
 
-  Widget _buildKey(String letter, GameProvider provider) {
+  Widget _buildKey(String letter, GameProvider provider, double keyWidth) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 3),
       child: Material(
@@ -77,17 +96,13 @@ class CustomKeyboard extends StatelessWidget {
           onTap: () => provider.inputLetter(letter),
           borderRadius: BorderRadius.circular(8),
           child: Container(
-            width: 34,
+            width: keyWidth, // ÁP DỤNG CHIỀU RỘNG TỰ ĐỘNG
             height: 50,
-            margin: const EdgeInsets.only(
-              bottom: 3,
-            ), // Cấp khoảng trống cho bóng 3D
+            margin: const EdgeInsets.only(bottom: 3),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(8),
-              // FIX: Dùng Border.all thay vì Border(bottom)
               border: Border.all(color: Colors.grey.shade300, width: 1),
-              // Tạo viền đáy 3D bằng BoxShadow
               boxShadow: const [
                 BoxShadow(
                   color: Colors.black26,
@@ -111,7 +126,7 @@ class CustomKeyboard extends StatelessWidget {
     );
   }
 
-  Widget _buildBackspaceKey(GameProvider provider) {
+  Widget _buildBackspaceKey(GameProvider provider, double keyWidth) {
     return Padding(
       padding: const EdgeInsets.only(left: 10),
       child: Material(
@@ -120,7 +135,7 @@ class CustomKeyboard extends StatelessWidget {
           onTap: () => provider.deleteLetter(),
           borderRadius: BorderRadius.circular(8),
           child: Container(
-            width: 50,
+            width: keyWidth, // ÁP DỤNG CHIỀU RỘNG TỰ ĐỘNG
             height: 50,
             margin: const EdgeInsets.only(bottom: 3),
             decoration: BoxDecoration(
