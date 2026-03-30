@@ -3,7 +3,9 @@ import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
+import '../../logic/settings_provider.dart'; // THÊM SETTINGS PROVIDER
 import '../widgets/home_animations.dart';
+import '../widgets/settings_overlay.dart'; // THÊM SETTINGS OVERLAY
 import 'dictionary_screen.dart';
 import 'level_selection_screen.dart';
 import 'tutorial_screen.dart';
@@ -13,72 +15,66 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Lấy thông tin tiến độ từ Provider
+    // 1. LẤY THÔNG TIN TIẾN ĐỘ VÀ BỘ MÀU THEME
     final gameProvider = context.watch<GameProvider>();
     final currentLevel = gameProvider.currentLevelId;
     final totalWords = gameProvider.unlockedWords.length;
 
+    final settings = context.watch<SettingsProvider>();
+    final appColors = AppColors.getTheme(settings.themeIndex);
+
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
-            colors: [AppColors.bgStart, AppColors.bgEnd],
+            colors: [appColors.bgStart, appColors.bgEnd],
           ),
         ),
         child: SafeArea(
           child: Column(
             children: [
               const SizedBox(height: 20),
-              // Nút Settings (Trang trí cho giống game thật)
+
+              // --- HEADER: HƯỚNG DẪN & CÀI ĐẶT & RESET ---
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20,
                   vertical: 10,
                 ),
                 child: Row(
-                  mainAxisAlignment:
-                      MainAxisAlignment.spaceBetween, // Đẩy 2 nút về 2 đầu
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    // 1. NÚT HƯỚNG DẪN (Dấu chấm than - Bên trái)
-                    GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => const TutorialScreen(),
-                          ),
-                        );
-                      },
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.5),
-                          shape: BoxShape.circle,
-                        ),
-                        child: const Icon(
-                          Icons.priority_high_rounded, // Dấu chấm than
-                          color: AppColors.primary,
+                    // NÚT HƯỚNG DẪN
+                    _buildHeaderCircleButton(
+                      icon: Icons.priority_high_rounded,
+                      onTap: () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const TutorialScreen(),
                         ),
                       ),
+                      appColors: appColors,
                     ),
 
-                    // 2. NÚT RESET (Bên phải)
-                    GestureDetector(
-                      onTap: () => _showResetDialog(context),
-                      child: Container(
-                        padding: const EdgeInsets.all(10),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.5),
-                          shape: BoxShape.circle,
+                    Row(
+                      children: [
+                        // NÚT CÀI ĐẶT (MỚI THÊM)
+                        _buildHeaderCircleButton(
+                          icon: Icons.settings_rounded,
+                          onTap: () => SettingsOverlay.show(context),
+                          appColors: appColors,
                         ),
-                        child: const Icon(
-                          Icons.refresh_rounded,
-                          color: AppColors.primary,
+                        const SizedBox(width: 15),
+                        // NÚT RESET
+                        _buildHeaderCircleButton(
+                          icon: Icons.refresh_rounded,
+                          onTap: () => _showResetDialog(context, appColors),
+                          appColors: appColors,
                         ),
-                      ),
+                      ],
                     ),
                   ],
                 ),
@@ -87,22 +83,22 @@ class HomeScreen extends StatelessWidget {
               const Spacer(flex: 1),
 
               // --- LOGO / TÊN GAME ---
-              _buildAppLogo(),
+              _buildAppLogo(appColors),
 
               const Spacer(flex: 1),
 
               // --- KHU VỰC THỐNG KÊ NHANH ---
-              _buildStatsCard(totalWords),
+              _buildStatsCard(totalWords, appColors),
 
               const SizedBox(height: 40),
 
-              // --- NÚT PLAY KHỔNG LỒ ---
-              _buildPlayButton(context, currentLevel),
+              // --- NÚT PLAY / SELECT LEVEL ---
+              _buildPlayButton(context, currentLevel, appColors),
 
               const SizedBox(height: 20),
 
               // --- NÚT MỞ TỪ ĐIỂN ---
-              _buildDictionaryButton(context),
+              _buildDictionaryButton(context, appColors),
 
               const Spacer(flex: 1),
             ],
@@ -112,49 +108,66 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Widget hiển thị Tên Game với hiệu ứng Text Shadow
-  Widget _buildAppLogo() {
-    // BỌC FLOATING WIDGET Ở NGOÀI CÙNG
+  // Hàm phụ vẽ các nút tròn nhỏ trên Header
+  Widget _buildHeaderCircleButton({
+    required IconData icon,
+    required VoidCallback onTap,
+    required AppColors appColors,
+  }) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          color: appColors.defaultTile.withOpacity(0.5),
+          shape: BoxShape.circle,
+        ),
+        child: Icon(icon, color: appColors.primary),
+      ),
+    );
+  }
+
+  Widget _buildAppLogo(AppColors appColors) {
     return FloatingWidget(
       child: Column(
         children: [
           Container(
             padding: const EdgeInsets.all(25),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: appColors.defaultTile,
               shape: BoxShape.circle,
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.primary.withOpacity(0.3),
+                  color: appColors.primary.withOpacity(0.3),
                   blurRadius: 30,
                   spreadRadius: 10,
                   offset: const Offset(0, 10),
                 ),
               ],
             ),
-            child: const Icon(
+            child: Icon(
               Icons.extension_rounded,
               size: 80,
-              color: AppColors.secondary,
+              color: appColors.secondary,
             ),
           ),
           const SizedBox(height: 20),
-          const Text(
+          Text(
             "VOCAB",
             style: TextStyle(
               fontSize: 45,
               fontWeight: FontWeight.w900,
-              color: AppColors.primary,
+              color: appColors.primary,
               letterSpacing: 4,
               height: 1,
             ),
           ),
-          const Text(
+          Text(
             "PUZZLE",
             style: TextStyle(
               fontSize: 45,
               fontWeight: FontWeight.w900,
-              color: AppColors.secondary,
+              color: appColors.secondary,
               letterSpacing: 4,
               height: 1,
             ),
@@ -164,12 +177,11 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Widget hiển thị số từ đã học được
-  Widget _buildStatsCard(int totalWords) {
+  Widget _buildStatsCard(int totalWords, AppColors appColors) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 12),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.6),
+        color: appColors.defaultTile.withOpacity(0.6),
         borderRadius: BorderRadius.circular(20),
       ),
       child: Row(
@@ -183,10 +195,10 @@ class HomeScreen extends StatelessWidget {
           const SizedBox(width: 8),
           Text(
             "Words Unlocked: $totalWords",
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.bold,
-              color: AppColors.textMain,
+              color: appColors.textMain,
             ),
           ),
         ],
@@ -194,15 +206,17 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Nút Play 3D chuyển sang GameScreen
-  Widget _buildPlayButton(BuildContext context, int currentLevel) {
+  Widget _buildPlayButton(
+    BuildContext context,
+    int currentLevel,
+    AppColors appColors,
+  ) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            // SỬA DÒNG NÀY: Chuyển sang màn hình chọn Level
             Navigator.push(
               context,
               MaterialPageRoute(builder: (_) => const LevelSelectionScreen()),
@@ -213,12 +227,11 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 20),
             decoration: BoxDecoration(
-              color: AppColors.primary,
+              color: appColors.primary,
               borderRadius: BorderRadius.circular(25),
-              border: Border.all(color: Colors.blue.shade700, width: 2),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.primary.withOpacity(0.4),
+                  color: appColors.primary.withOpacity(0.4),
                   blurRadius: 15,
                   offset: const Offset(0, 8),
                 ),
@@ -226,24 +239,22 @@ class HomeScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const Text(
-                  // Đổi tên nút thành SELECT LEVEL
+                Text(
                   "SELECT LEVEL",
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.w900,
-                    color: Colors.white,
+                    color: appColors.textLight,
                     letterSpacing: 2,
                   ),
                 ),
                 const SizedBox(height: 5),
                 Text(
-                  // Hiển thị Level đang chơi dở
                   "Current: Level $currentLevel",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
-                    color: Colors.blue.shade100,
+                    color: appColors.textLight.withOpacity(0.8),
                     letterSpacing: 1,
                   ),
                 ),
@@ -255,8 +266,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Nút phụ mở DictionaryScreen
-  Widget _buildDictionaryButton(BuildContext context) {
+  Widget _buildDictionaryButton(BuildContext context, AppColors appColors) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Material(
@@ -273,9 +283,12 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
             padding: const EdgeInsets.symmetric(vertical: 15),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: appColors.defaultTile,
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Colors.grey.shade300, width: 2),
+              border: Border.all(
+                color: appColors.textMain.withOpacity(0.1),
+                width: 2,
+              ),
               boxShadow: [
                 BoxShadow(
                   color: Colors.black.withOpacity(0.05),
@@ -284,21 +297,21 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-            child: const Row(
+            child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.menu_book_rounded,
-                  color: AppColors.secondary,
+                  color: appColors.secondary,
                   size: 24,
                 ),
-                SizedBox(width: 10),
+                const SizedBox(width: 10),
                 Text(
                   "MY DICTIONARY",
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.w900,
-                    color: AppColors.textMain,
+                    color: appColors.textMain,
                     letterSpacing: 1.5,
                   ),
                 ),
@@ -310,24 +323,26 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  void _showResetDialog(BuildContext context) {
+  void _showResetDialog(BuildContext context, AppColors appColors) {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
+        backgroundColor: appColors.defaultTile,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        title: const Text(
+        title: Text(
           "Reset Game?",
           style: TextStyle(
-            color: AppColors.primary,
+            color: appColors.primary,
             fontWeight: FontWeight.bold,
           ),
         ),
-        content: const Text(
+        content: Text(
           "Tất cả tiến độ và từ vựng của bạn sẽ bị xóa. Bạn có chắc chắn không?",
+          style: TextStyle(color: appColors.textMain),
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(ctx), // Đóng dialog
+            onPressed: () => Navigator.pop(ctx),
             child: const Text(
               "Hủy",
               style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
@@ -341,11 +356,8 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             onPressed: () {
-              // Gọi hàm reset trong Provider
               context.read<GameProvider>().resetData();
-              Navigator.pop(ctx); // Đóng dialog
-
-              // Hiện thông báo nhỏ (SnackBar) dưới đáy màn hình
+              Navigator.pop(ctx);
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(
                   content: Text("Đã xóa dữ liệu thành công!"),

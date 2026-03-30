@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Đã thêm thư viện này để tạo hiệu ứng Rung
 import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
+import '../../logic/settings_provider.dart';
 
 class CustomKeyboard extends StatelessWidget {
   const CustomKeyboard({super.key});
@@ -14,15 +16,10 @@ class CustomKeyboard extends StatelessWidget {
     final List<String> row2 = "ASDFGHJKL".split("");
     final List<String> row3 = "ZXCVBNM".split("");
 
-    // --- TÍNH TOÁN KÍCH THƯỚC ĐỘNG (ĐÃ CẬP NHẬT) ---
     double screenWidth = MediaQuery.of(context).size.width;
-    // Padding 2 bên ngoài cùng là 30 (15 trái, 15 phải)
-    // Margin giữa 10 phím là 60 (Mỗi phím 3 trái, 3 phải)
-    // Tổng không gian bị chiếm: 30 + 60 = 90
     double keyWidth = (screenWidth - 90) / 10;
 
     return Container(
-      // CẬP NHẬT PADDING TẠI ĐÂY: Thụt lề trái phải 15px, lề dưới 25px để cách xa mép dưới màn hình
       padding: const EdgeInsets.fromLTRB(15, 10, 15, 25),
       decoration: BoxDecoration(
         color: Colors.white.withOpacity(0.9),
@@ -41,12 +38,12 @@ class CustomKeyboard extends StatelessWidget {
           Align(
             alignment: Alignment.centerRight,
             child: Padding(
-              padding: const EdgeInsets.only(
-                right: 5,
-                bottom: 5,
-              ), // Chỉnh lại một chút cho cân với nút ẩn
+              padding: const EdgeInsets.only(right: 5, bottom: 5),
               child: GestureDetector(
-                onTap: () => gameProvider.hideKeyboard(),
+                onTap: () {
+                  HapticFeedback.lightImpact(); // Rung khi đóng bàn phím
+                  gameProvider.hideKeyboard();
+                },
                 child: const Icon(
                   Icons.keyboard_hide_rounded,
                   color: Colors.grey,
@@ -64,9 +61,17 @@ class CustomKeyboard extends StatelessWidget {
             children: [
               SizedBox(width: keyWidth / 2),
               ...row3.map(
-                (letter) => _buildKey(letter, gameProvider, keyWidth),
+                (letter) => _KeyboardKey(
+                  letter: letter,
+                  keyWidth: keyWidth,
+                  onTap: () => gameProvider.inputLetter(letter),
+                ),
               ),
-              _buildBackspaceKey(gameProvider, keyWidth * 1.5),
+              _KeyboardKey(
+                isBackspace: true,
+                keyWidth: keyWidth * 1.5,
+                onTap: () => gameProvider.deleteLetter(),
+              ),
             ],
           ),
         ],
@@ -82,80 +87,112 @@ class CustomKeyboard extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: letters
-          .map((letter) => _buildKey(letter, provider, keyWidth))
+          .map(
+            (letter) => _KeyboardKey(
+              letter: letter,
+              keyWidth: keyWidth,
+              onTap: () => provider.inputLetter(letter),
+            ),
+          )
           .toList(),
     );
   }
+}
 
-  Widget _buildKey(String letter, GameProvider provider, double keyWidth) {
+// --- WIDGET MỚI: XỬ LÝ HIỆU ỨNG NHẤN XUỐNG 3D ---
+class _KeyboardKey extends StatefulWidget {
+  final String? letter;
+  final bool isBackspace;
+  final double keyWidth;
+  final VoidCallback onTap;
+
+  const _KeyboardKey({
+    this.letter,
+    this.isBackspace = false,
+    required this.keyWidth,
+    required this.onTap,
+  });
+
+  @override
+  State<_KeyboardKey> createState() => _KeyboardKeyState();
+}
+
+class _KeyboardKeyState extends State<_KeyboardKey> {
+  bool _isPressed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    // 1. Lắng nghe Settings để lấy màu và cấu hình Rung
+    final settings = context.watch<SettingsProvider>();
+    final appColors = AppColors.getTheme(settings.themeIndex);
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 3),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: () => provider.inputLetter(letter),
-          borderRadius: BorderRadius.circular(8),
-          child: Container(
-            width: keyWidth,
-            height: 50,
-            margin: const EdgeInsets.only(bottom: 3),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: Colors.grey.shade300, width: 1),
-              boxShadow: const [
-                BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 0,
-                  offset: Offset(0, 3),
-                ),
-              ],
-            ),
-            alignment: Alignment.center,
-            child: Text(
-              letter,
-              style: const TextStyle(
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-                color: AppColors.textMain,
-              ),
-            ),
+      child: GestureDetector(
+        onTapDown: (_) {
+          // CHỈ RUNG KHI CÀI ĐẶT BẬT
+          if (settings.isHapticEnabled) {
+            HapticFeedback.lightImpact();
+          }
+          setState(() => _isPressed = true);
+        },
+        onTapUp: (_) {
+          setState(() => _isPressed = false);
+          widget.onTap();
+        },
+        onTapCancel: () {
+          setState(() => _isPressed = false);
+        },
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 50),
+          width: widget.keyWidth,
+          height: 50,
+          margin: EdgeInsets.only(
+            top: _isPressed ? 3.0 : 0.0,
+            bottom: _isPressed ? 0.0 : 3.0,
           ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildBackspaceKey(GameProvider provider, double keyWidth) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 10),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: () => provider.deleteLetter(),
-          borderRadius: BorderRadius.circular(8),
-          child: Container(
-            width: keyWidth,
-            height: 50,
-            margin: const EdgeInsets.only(bottom: 3),
-            decoration: BoxDecoration(
-              color: Colors.grey.shade300,
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(color: Colors.grey.shade400, width: 1),
-              boxShadow: const [
-                BoxShadow(
-                  color: Colors.black26,
-                  blurRadius: 0,
-                  offset: Offset(0, 3),
-                ),
-              ],
+          decoration: BoxDecoration(
+            // DÙNG MÀU ĐỘNG TỪ appColors
+            color: _isPressed
+                ? appColors.primary.withOpacity(
+                    0.7,
+                  ) // Nhấn xuống thì đậm màu hơn
+                : (widget.isBackspace
+                      ? appColors.defaultTile.withOpacity(0.8)
+                      : appColors.defaultTile),
+            borderRadius: BorderRadius.circular(8),
+            // Viền cũng dùng màu động để không bị chói ở nền tối
+            border: Border.all(
+              color: appColors.textMain.withOpacity(0.1),
+              width: 1,
             ),
-            child: const Icon(
-              Icons.backspace_rounded,
-              size: 22,
-              color: AppColors.textMain,
-            ),
+            boxShadow: _isPressed
+                ? []
+                : [
+                    BoxShadow(
+                      color: appColors.textMain.withOpacity(
+                        0.2,
+                      ), // Bóng đổ theo màu text để tự tương phản
+                      blurRadius: 0,
+                      offset: const Offset(0, 3),
+                    ),
+                  ],
           ),
+          alignment: Alignment.center,
+          child: widget.isBackspace
+              ? Icon(
+                  Icons.backspace_rounded,
+                  size: 22,
+                  color: appColors.textMain, // ĐÃ SỬA LỖI: appColors.textMain
+                )
+              : Text(
+                  widget.letter!,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: appColors.textMain, // ĐÃ SỬA LỖI
+                  ),
+                ),
         ),
       ),
     );

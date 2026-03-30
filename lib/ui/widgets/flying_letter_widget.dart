@@ -2,16 +2,22 @@ import 'dart:math';
 import 'dart:ui'; // BẮT BUỘC IMPORT dart:ui ĐỂ DÙNG LERP
 
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
+import '../../logic/settings_provider.dart';
 
 class FlyingLetterWidget extends StatelessWidget {
   final FlyingData data;
+
   const FlyingLetterWidget({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
+    final themeIndex = context.watch<SettingsProvider>().themeIndex;
+    final appColors = AppColors.getTheme(themeIndex);
+
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: 0.0, end: 1.0),
       duration: const Duration(milliseconds: 600),
@@ -48,11 +54,11 @@ class FlyingLetterWidget extends StatelessWidget {
               width: currentWidth, // Dùng width đã tính toán
               height: currentHeight, // Dùng height đã tính toán
               decoration: BoxDecoration(
-                color: AppColors.primary,
+                color: appColors.primary,
                 borderRadius: BorderRadius.circular(currentRadius),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.primary.withOpacity(0.8),
+                    color: appColors.primary.withOpacity(0.8),
                     blurRadius:
                         15 *
                         sin(

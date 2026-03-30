@@ -1,27 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Để dùng HapticFeedback
+import 'package:provider/provider.dart'; // --- THÊM PROVIDER ---
 
 import '../../core/constants/colors.dart';
 import '../../core/services/tts_service.dart';
 import '../../data/models/learned_word.dart';
+import '../../logic/settings_provider.dart'; // --- THÊM SETTINGS PROVIDER ---
 
 class WordDetailCard {
   static void show(BuildContext context, LearnedWord word) {
+    // --- THÊM ĐOẠN NÀY ĐỂ ĐỌC CÀI ĐẶT TRƯỚC KHI MỞ THẺ ---
+    final settings = context.read<SettingsProvider>();
+
+    // Nếu bật Tự động phát âm -> Đọc ngay từ đó
+    if (settings.isSoundEnabled) {
+      TTSService.speak(word.word);
+    }
+
+    // Rung phản hồi nhẹ khi mở thẻ
+    if (settings.isHapticEnabled) {
+      HapticFeedback.mediumImpact();
+    }
+    // ----------------------------------------------------
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
       backgroundColor: Colors.transparent,
-      builder: (context) {
-        return _buildCardContent(context, word);
+      builder: (bottomSheetContext) {
+        // --- 1. KÉO BỘ MÀU TỪ SETTINGS ---
+        final themeIndex = context.read<SettingsProvider>().themeIndex;
+        final appColors = AppColors.getTheme(themeIndex);
+
+        // Truyền appColors xuống hàm build nội dung
+        return _buildCardContent(bottomSheetContext, word, appColors);
       },
     );
   }
 
-  static Widget _buildCardContent(BuildContext context, LearnedWord word) {
+  // --- 2. NHẬN BIẾN appColors VÀ ÁP DỤNG ---
+  static Widget _buildCardContent(
+    BuildContext context,
+    LearnedWord word,
+    AppColors appColors,
+  ) {
     return Container(
       padding: const EdgeInsets.only(top: 15, left: 25, right: 25, bottom: 35),
-      decoration: const BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.vertical(top: Radius.circular(35)),
+      decoration: BoxDecoration(
+        color: appColors.defaultTile, // Tự động đổi trắng/xám tối theo Theme
+        borderRadius: const BorderRadius.vertical(top: Radius.circular(35)),
       ),
       child: Column(
         mainAxisSize: MainAxisSize.min,
@@ -33,7 +59,9 @@ class WordDetailCard {
               width: 60,
               height: 6,
               decoration: BoxDecoration(
-                color: Colors.grey.shade300,
+                color: appColors.textMain.withOpacity(
+                  0.2,
+                ), // Tự động tương phản
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
@@ -47,15 +75,15 @@ class WordDetailCard {
               Expanded(
                 child: Text(
                   word.word,
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 34,
                     fontWeight: FontWeight.w900,
-                    color: AppColors.primary,
+                    color: appColors.primary, // Cập nhật màu động
                     letterSpacing: 1.2,
                   ),
                 ),
               ),
-              _buildTypeBadge(word.type),
+              _buildTypeBadge(word.type, appColors), // Truyền màu xuống
             ],
           ),
           const SizedBox(height: 12),
@@ -73,12 +101,14 @@ class WordDetailCard {
                   child: Container(
                     padding: const EdgeInsets.all(10),
                     decoration: BoxDecoration(
-                      color: AppColors.primary.withOpacity(0.1),
+                      color: appColors.primary.withOpacity(
+                        0.1,
+                      ), // Cập nhật màu động
                       shape: BoxShape.circle,
                     ),
-                    child: const Icon(
+                    child: Icon(
                       Icons.volume_up_rounded,
-                      color: AppColors.primary,
+                      color: appColors.primary, // Cập nhật màu động
                       size: 24,
                     ),
                   ),
@@ -89,7 +119,9 @@ class WordDetailCard {
                 word.phonetic,
                 style: TextStyle(
                   fontSize: 20,
-                  color: Colors.grey.shade600,
+                  color: appColors.textMain.withOpacity(
+                    0.6,
+                  ), // Tự động tương phản
                   fontWeight: FontWeight.w500,
                   fontStyle: FontStyle.italic,
                 ),
@@ -99,22 +131,21 @@ class WordDetailCard {
 
           const SizedBox(height: 20),
 
-          // --- PHẦN MỚI THÊM: NGHĨA TIẾNG VIỆT (TRANSLATION) ---
-          // Kiểm tra nếu có dữ liệu tiếng Việt thì mới hiển thị khối này
+          // --- PHẦN DỊCH NGHĨA (TRANSLATION) ---
           if (word.translation.isNotEmpty) ...[
             Container(
               width: double.infinity,
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
-                color: Colors.blue.shade50, // Màu nền xanh nhạt dịu mắt
+                color: appColors.selectedTile, // Màu nền dịu mắt theo Theme
                 borderRadius: BorderRadius.circular(12),
-                border: Border.all(color: Colors.blue.shade100),
+                border: Border.all(color: appColors.primary.withOpacity(0.3)),
               ),
               child: Row(
                 children: [
                   Icon(
                     Icons.translate_rounded,
-                    color: Colors.blue.shade700,
+                    color: appColors.primary,
                     size: 20,
                   ),
                   const SizedBox(width: 10),
@@ -124,7 +155,7 @@ class WordDetailCard {
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue.shade800, // Chữ màu xanh đậm dễ đọc
+                        color: appColors.primary,
                       ),
                     ),
                   ),
@@ -134,22 +165,21 @@ class WordDetailCard {
             const SizedBox(height: 20),
           ],
 
-          // --- KẾT THÚC PHẦN MỚI THÊM ---
-          const Divider(color: AppColors.bgEnd, thickness: 2, height: 1),
+          Divider(color: appColors.bgEnd, thickness: 2, height: 1),
           const SizedBox(height: 25),
 
-          // 4. Phần Định nghĩa (Definition - Tiếng Anh)
+          // 4. Phần Định nghĩa (Definition)
           _buildSectionTitle(
             Icons.menu_book_rounded,
             "DEFINITION",
-            AppColors.secondary,
+            appColors.secondary,
           ),
           const SizedBox(height: 10),
           Text(
             word.definition,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 18,
-              color: AppColors.textMain,
+              color: appColors.textMain, // Tự động tương phản
               height: 1.5,
               fontWeight: FontWeight.w500,
             ),
@@ -160,22 +190,25 @@ class WordDetailCard {
           _buildSectionTitle(
             Icons.chat_bubble_outline_rounded,
             "EXAMPLE",
-            Colors.green.shade600,
+            appColors.correctTile,
           ),
           const SizedBox(height: 10),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(18),
             decoration: BoxDecoration(
-              color: Colors.green.shade50,
+              color: appColors.correctTile.withOpacity(0.1), // Nền trong suốt
               borderRadius: BorderRadius.circular(16),
-              border: Border.all(color: Colors.green.shade200, width: 2),
+              border: Border.all(
+                color: appColors.correctTile.withOpacity(0.5),
+                width: 2,
+              ),
             ),
             child: Text(
               '“${word.example}”',
               style: TextStyle(
                 fontSize: 18,
-                color: Colors.green.shade800,
+                color: appColors.textMain, // Tự động tương phản
                 fontStyle: FontStyle.italic,
                 height: 1.4,
               ),
@@ -189,19 +222,19 @@ class WordDetailCard {
             height: 55,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
+                backgroundColor: appColors.primary, // Màu động
                 elevation: 4,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(16),
                 ),
               ),
               onPressed: () => Navigator.pop(context),
-              child: const Text(
+              child: Text(
                 "GOT IT!",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.w900,
-                  color: Colors.white,
+                  color: appColors.textLight, // Chữ sáng
                   letterSpacing: 2,
                 ),
               ),
@@ -213,20 +246,21 @@ class WordDetailCard {
   }
 
   // --- Widget phụ trợ tạo nhãn dán từ loại ---
-  static Widget _buildTypeBadge(String type) {
-    Color bgColor = AppColors.secondary.withOpacity(0.2);
-    Color textColor = AppColors.secondary;
+  static Widget _buildTypeBadge(String type, AppColors appColors) {
+    // Dùng màu chủ đạo và phụ của Theme thay vì fix cứng màu
+    Color bgColor = appColors.secondary.withOpacity(0.2);
+    Color textColor = appColors.secondary;
 
     String typeLower = type.toLowerCase();
     if (typeLower.contains("verb")) {
-      bgColor = Colors.red.shade100;
-      textColor = Colors.red.shade700;
+      bgColor = Colors.redAccent.withOpacity(0.2);
+      textColor = Colors.redAccent;
     } else if (typeLower.contains("adj")) {
-      bgColor = Colors.purple.shade100;
-      textColor = Colors.purple.shade700;
+      bgColor = Colors.purpleAccent.withOpacity(0.2);
+      textColor = Colors.purpleAccent;
     } else if (type == "Target Word") {
-      bgColor = Colors.orange.shade100;
-      textColor = Colors.orange.shade900;
+      bgColor = appColors.correctTile.withOpacity(0.2);
+      textColor = appColors.correctTile;
     }
 
     return Container(

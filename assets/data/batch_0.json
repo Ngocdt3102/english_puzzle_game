@@ -3372,5 +3372,5479 @@
             }
         }
         ]
+    },
+        {
+        "level_id": 41,
+        "theme": "Health & Body",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BRAIN",
+        "phonetic": "/breɪn/",
+        "definition": "The organ inside the head that controls thought.",
+        "example": "The human brain is very complex.",
+        "translation": "Bộ não"
+        },
+        "sub_words": [
+        {
+            "word": "BLOOD",
+            "clue_for_game": "The red liquid that flows through the bodies.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/blʌd/",
+            "full_definition": "The red liquid.",
+            "example": "He lost blood.",
+            "translation": "Máu"
+            }
+        },
+        {
+            "word": "HEART",
+            "clue_for_game": "The organ in your chest that pumps blood.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/hɑːt/",
+            "full_definition": "The organ that pumps blood.",
+            "example": "Fast heart.",
+            "translation": "Trái tim"
+            }
+        },
+        {
+            "word": "GLAND",
+            "clue_for_game": "An organ that secretes liquid.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡlænd/",
+            "full_definition": "An organ that secretes liquid.",
+            "example": "Sweat gland.",
+            "translation": "Tuyến"
+            }
+        },
+        {
+            "word": "SPINE",
+            "clue_for_game": "The line of bones down the back.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spaɪn/",
+            "full_definition": "The line of bones down the back.",
+            "example": "Injured spine.",
+            "translation": "Xương sống"
+            }
+        },
+        {
+            "word": "NERVE",
+            "clue_for_game": "Fibres that carry information to the brain.",
+            "char_to_extract": "N",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/nɜːv/",
+            "full_definition": "Fibres carrying information.",
+            "example": "Optic nerve.",
+            "translation": "Dây thần kinh"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 42,
+        "theme": "Health & Body",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "HEART",
+        "phonetic": "/hɑːt/",
+        "definition": "The organ that pumps blood.",
+        "example": "A kind heart.",
+        "translation": "Trái tim"
+        },
+        "sub_words": [
+        {
+            "word": "THUMB",
+            "clue_for_game": "The short, thick first digit of the human hand.",
+            "char_to_extract": "H",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/θʌm/",
+            "full_definition": "The short, thick finger.",
+            "example": "He sucked his thumb.",
+            "translation": "Ngón tay cái"
+            }
+        },
+        {
+            "word": "CHEST",
+            "clue_for_game": "The upper front part of the body.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃest/",
+            "full_definition": "The upper front part of the body.",
+            "example": "Broad chest.",
+            "translation": "Ngực"
+            }
+        },
+        {
+            "word": "ANKLE",
+            "clue_for_game": "The joint connecting the foot with the leg.",
+            "char_to_extract": "A",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈæŋkl/",
+            "full_definition": "The joint connecting foot and leg.",
+            "example": "Sprained ankle.",
+            "translation": "Mắt cá chân"
+            }
+        },
+        {
+            "word": "LIVER",
+            "clue_for_game": "A large organ that cleans blood.",
+            "char_to_extract": "R",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈlɪvə(r)/",
+            "full_definition": "A large organ that cleans blood.",
+            "example": "Liver disease.",
+            "translation": "Lá gan"
+            }
+        },
+        {
+            "word": "TOOTH",
+            "clue_for_game": "One of the hard white objects in the mouth.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tuːθ/",
+            "full_definition": "Hard object in mouth.",
+            "example": "Brushed his tooth.",
+            "translation": "Cái răng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 43,
+        "theme": "Health & Body",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BLOOD",
+        "phonetic": "/blʌd/",
+        "definition": "The red liquid that flows through the bodies.",
+        "example": "Donate blood.",
+        "translation": "Máu"
+        },
+        "sub_words": [
+        {
+            "word": "BONES",
+            "clue_for_game": "The hard parts that form the skeleton.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bəʊnz/",
+            "full_definition": "Hard parts forming skeleton.",
+            "example": "Broken bones.",
+            "translation": "Xương"
+            }
+        },
+        {
+            "word": "SKULL",
+            "clue_for_game": "The bone structure of the head.",
+            "char_to_extract": "L",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skʌl/",
+            "full_definition": "Bone structure of the head.",
+            "example": "Human skull.",
+            "translation": "Hộp sọ"
+            }
+        },
+        {
+            "word": "MOUTH",
+            "clue_for_game": "The opening in the face used for speaking and eating.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/maʊθ/",
+            "full_definition": "Opening in the face.",
+            "example": "Open your mouth.",
+            "translation": "Cái miệng"
+            }
+        },
+        {
+            "word": "ORGAN",
+            "clue_for_game": "A part of an organism that is typically self-contained.",
+            "char_to_extract": "O",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɔːɡən/",
+            "full_definition": "Part of organism.",
+            "example": "Internal organ.",
+            "translation": "Cơ quan (cơ thể)"
+            }
+        },
+        {
+            "word": "DRUGS",
+            "clue_for_game": "Medicines or other substances.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/drʌɡz/",
+            "full_definition": "Medicines.",
+            "example": "Prescription drugs.",
+            "translation": "Thuốc / Dược phẩm"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 44,
+        "theme": "Health & Body",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "TOOTH",
+        "phonetic": "/tuːθ/",
+        "definition": "Hard, white structure in the mouth.",
+        "example": "Brush your tooth.",
+        "translation": "Răng"
+        },
+        "sub_words": [
+        {
+            "word": "THROAT",
+            "clue_for_game": "The passage to the stomach and lungs.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/θrəʊt/",
+            "full_definition": "Passage to stomach.",
+            "example": "Sore throat.",
+            "translation": "Cổ họng"
+            }
+        },
+        {
+            "word": "COUGH",
+            "clue_for_game": "Expel air from the lungs with a sudden sharp sound.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kɒf/",
+            "full_definition": "Expel air from lungs.",
+            "example": "A bad cough.",
+            "translation": "Cơn ho"
+            }
+        },
+        {
+            "word": "PORES",
+            "clue_for_game": "Tiny openings in the skin.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɔːz/",
+            "full_definition": "Tiny openings in the skin.",
+            "example": "Blocked pores.",
+            "translation": "Lỗ chân lông"
+            }
+        },
+        {
+            "word": "SWEAT",
+            "clue_for_game": "Moisture exuded through the pores of the skin.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/swet/",
+            "full_definition": "Moisture from skin pores.",
+            "example": "Covered in sweat.",
+            "translation": "Mồ hôi"
+            }
+        },
+        {
+            "word": "ACHES",
+            "clue_for_game": "Continuous or prolonged dull pains.",
+            "char_to_extract": "H",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/eɪks/",
+            "full_definition": "Dull pains.",
+            "example": "Muscle aches.",
+            "translation": "Sự đau nhức"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 45,
+        "theme": "Health & Body",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SLEEP",
+        "phonetic": "/sliːp/",
+        "definition": "A condition of body and mind to rest.",
+        "example": "I need more sleep.",
+        "translation": "Giấc ngủ"
+        },
+        "sub_words": [
+        {
+            "word": "SIGHT",
+            "clue_for_game": "The faculty or power of seeing.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/saɪt/",
+            "full_definition": "Power of seeing.",
+            "example": "Lost his sight.",
+            "translation": "Thị lực"
+            }
+        },
+        {
+            "word": "BLIND",
+            "clue_for_game": "Unable to see.",
+            "char_to_extract": "L",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/blaɪnd/",
+            "full_definition": "Unable to see.",
+            "example": "A blind man.",
+            "translation": "Mù / Không nhìn thấy"
+            }
+        },
+        {
+            "word": "FEVER",
+            "clue_for_game": "An abnormally high body temperature.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfiːvə(r)/",
+            "full_definition": "High body temperature.",
+            "example": "A high fever.",
+            "translation": "Cơn sốt"
+            }
+        },
+        {
+            "word": "BLEED",
+            "clue_for_game": "Lose blood from the body.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/bliːd/",
+            "full_definition": "Lose blood.",
+            "example": "Cut started to bleed.",
+            "translation": "Chảy máu"
+            }
+        },
+        {
+            "word": "PULSE",
+            "clue_for_game": "The rhythmic throbbing of arteries.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pʌls/",
+            "full_definition": "Throbbing of arteries.",
+            "example": "Check the pulse.",
+            "translation": "Nhịp đập / Mạch"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 46,
+        "theme": "Health & Body",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "MUSCLE",
+        "phonetic": "/ˈmʌsl/",
+        "definition": "A band or bundle of fibrous tissue in a human or animal body.",
+        "example": "A pulled muscle.",
+        "translation": "Cơ bắp"
+        },
+        "sub_words": [
+        {
+            "word": "MOUTH",
+            "clue_for_game": "The opening for eating and speaking.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/maʊθ/",
+            "full_definition": "Opening for eating.",
+            "example": "Dry mouth.",
+            "translation": "Cái miệng"
+            }
+        },
+        {
+            "word": "VIRUS",
+            "clue_for_game": "An infective agent.",
+            "char_to_extract": "U",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈvaɪrəs/",
+            "full_definition": "Infective agent.",
+            "example": "A stomach virus.",
+            "translation": "Virus / Mầm bệnh"
+            }
+        },
+        {
+            "word": "SORES",
+            "clue_for_game": "Blisters or ulcers on the body.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sɔːz/",
+            "full_definition": "Blisters on body.",
+            "example": "Cold sores.",
+            "translation": "Vết loét"
+            }
+        },
+        {
+            "word": "CHILL",
+            "clue_for_game": "An unpleasant feeling of coldness.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃɪl/",
+            "full_definition": "Feeling of coldness.",
+            "example": "Caught a chill.",
+            "translation": "Sự ớn lạnh"
+            }
+        },
+        {
+            "word": "FLESH",
+            "clue_for_game": "The soft substance of the body.",
+            "char_to_extract": "L",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fleʃ/",
+            "full_definition": "Soft substance of body.",
+            "example": "Flesh and blood.",
+            "translation": "Thịt / Da thịt"
+            }
+        },
+        {
+            "word": "CELLS",
+            "clue_for_game": "The smallest structural and functional unit of an organism.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/selz/",
+            "full_definition": "Smallest unit of organism.",
+            "example": "Brain cells.",
+            "translation": "Tế bào"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 47,
+        "theme": "Health & Body",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "DOCTOR",
+        "phonetic": "/ˈdɒktə(r)/",
+        "definition": "A person qualified to treat people who are ill.",
+        "example": "Go to the doctor.",
+        "translation": "Bác sĩ"
+        },
+        "sub_words": [
+        {
+            "word": "DOSES",
+            "clue_for_game": "Quantities of a medicine or drug.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dəʊsz/",
+            "full_definition": "Quantities of medicine.",
+            "example": "Take two doses.",
+            "translation": "Liều thuốc"
+            }
+        },
+        {
+            "word": "VOICE",
+            "clue_for_game": "The sound produced in a person's larynx.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/vɔɪs/",
+            "full_definition": "Sound produced in larynx.",
+            "example": "A low voice.",
+            "translation": "Giọng nói"
+            }
+        },
+        {
+            "word": "CURES",
+            "clue_for_game": "Relieves a person of the symptoms of a disease.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/kjʊəz/",
+            "full_definition": "Relieves symptoms.",
+            "example": "Cures the infection.",
+            "translation": "Chữa khỏi"
+            }
+        },
+        {
+            "word": "TEETH",
+            "clue_for_game": "Plural of tooth.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tiːθ/",
+            "full_definition": "Hard white structures.",
+            "example": "Brush your teeth.",
+            "translation": "Hàm răng"
+            }
+        },
+        {
+            "word": "JOINT",
+            "clue_for_game": "A structure in the human body at which two parts of the skeleton are fitted together.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒɔɪnt/",
+            "full_definition": "Structure connecting bones.",
+            "example": "Knee joint.",
+            "translation": "Khớp xương"
+            }
+        },
+        {
+            "word": "BRAIN",
+            "clue_for_game": "The organ inside the head.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/breɪn/",
+            "full_definition": "Organ inside head.",
+            "example": "Brain damage.",
+            "translation": "Bộ não"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 48,
+        "theme": "Nature & Environment",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "FOREST",
+        "phonetic": "/ˈfɒrɪst/",
+        "definition": "A large area covered chiefly with trees and undergrowth.",
+        "example": "A pine forest.",
+        "translation": "Khu rừng"
+        },
+        "sub_words": [
+        {
+            "word": "FLORA",
+            "clue_for_game": "The plants of a particular region or period.",
+            "char_to_extract": "F",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈflɔːrə/",
+            "full_definition": "Plants of a region.",
+            "example": "Local flora.",
+            "translation": "Hệ thực vật"
+            }
+        },
+        {
+            "word": "ROCKS",
+            "clue_for_game": "Solid mineral material.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rɒks/",
+            "full_definition": "Solid mineral material.",
+            "example": "Climbing rocks.",
+            "translation": "Những hòn đá"
+            }
+        },
+        {
+            "word": "TREES",
+            "clue_for_game": "Woody plants with a trunk and branches.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/triːz/",
+            "full_definition": "Woody plants.",
+            "example": "Tall trees.",
+            "translation": "Cây cối"
+            }
+        },
+        {
+            "word": "EARTH",
+            "clue_for_game": "The planet on which we live; soil.",
+            "char_to_extract": "E",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɜːθ/",
+            "full_definition": "The planet or soil.",
+            "example": "Planet Earth.",
+            "translation": "Trái đất / Đất"
+            }
+        },
+        {
+            "word": "STONE",
+            "clue_for_game": "Hard solid non-metallic mineral matter.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stəʊn/",
+            "full_definition": "Hard mineral matter.",
+            "example": "A stone wall.",
+            "translation": "Đá"
+            }
+        },
+        {
+            "word": "WATER",
+            "clue_for_game": "A transparent, tasteless, odorless liquid.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈwɔːtə(r)/",
+            "full_definition": "Transparent liquid.",
+            "example": "Fresh water.",
+            "translation": "Nước"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 49,
+        "theme": "Nature & Environment",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "DESERT",
+        "phonetic": "/ˈdezət/",
+        "definition": "A dry, barren area of land.",
+        "example": "The Sahara desert.",
+        "translation": "Sa mạc"
+        },
+        "sub_words": [
+        {
+            "word": "DUSTY",
+            "clue_for_game": "Covered with, full of, or resembling dust.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈdʌsti/",
+            "full_definition": "Covered with dust.",
+            "example": "A dusty road.",
+            "translation": "Bụi bặm"
+            }
+        },
+        {
+            "word": "BEACH",
+            "clue_for_game": "A pebbly or sandy shore by the ocean.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/biːtʃ/",
+            "full_definition": "Sandy shore.",
+            "example": "A sandy beach.",
+            "translation": "Bãi biển"
+            }
+        },
+        {
+            "word": "SANDS",
+            "clue_for_game": "Loose granular substance.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sændz/",
+            "full_definition": "Granular substance.",
+            "example": "Golden sands.",
+            "translation": "Cát"
+            }
+        },
+        {
+            "word": "OCEAN",
+            "clue_for_game": "A very large expanse of sea.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈəʊʃn/",
+            "full_definition": "Large expanse of sea.",
+            "example": "Pacific Ocean.",
+            "translation": "Đại dương"
+            }
+        },
+        {
+            "word": "RIVER",
+            "clue_for_game": "A large natural stream of water.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈrɪvə(r)/",
+            "full_definition": "Natural stream of water.",
+            "example": "Long river.",
+            "translation": "Dòng sông"
+            }
+        },
+        {
+            "word": "TRAIL",
+            "clue_for_game": "A mark or a series of signs or objects left behind.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/treɪl/",
+            "full_definition": "A path or track.",
+            "example": "A mountain trail.",
+            "translation": "Đường mòn"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 50,
+        "theme": "Nature & Environment",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "ANIMAL",
+        "phonetic": "/ˈænɪml/",
+        "definition": "A living organism that feeds on organic matter.",
+        "example": "A wild animal.",
+        "translation": "Động vật"
+        },
+        "sub_words": [
+        {
+            "word": "PLANT",
+            "clue_for_game": "A living organism of the kind exemplified by trees, shrubs, herbs.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/plɑːnt/",
+            "full_definition": "Living organism.",
+            "example": "A green plant.",
+            "translation": "Thực vật / Cây"
+            }
+        },
+        {
+            "word": "FAUNA",
+            "clue_for_game": "The animals of a particular region.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfɔːnə/",
+            "full_definition": "Animals of a region.",
+            "example": "Local fauna.",
+            "translation": "Hệ động vật"
+            }
+        },
+        {
+            "word": "BIRDS",
+            "clue_for_game": "Egg-laying vertebrate animals with feathers and wings.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bɜːdz/",
+            "full_definition": "Feathered animals.",
+            "example": "Flying birds.",
+            "translation": "Những loài chim"
+            }
+        },
+        {
+            "word": "MOUNT",
+            "clue_for_game": "A mountain or hill.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/maʊnt/",
+            "full_definition": "A mountain.",
+            "example": "Mount Everest.",
+            "translation": "Ngọn núi"
+            }
+        },
+        {
+            "word": "BEARS",
+            "clue_for_game": "Large, heavy mammals.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/beəz/",
+            "full_definition": "Large mammals.",
+            "example": "Polar bears.",
+            "translation": "Những con gấu"
+            }
+        },
+        {
+            "word": "LAKES",
+            "clue_for_game": "Large bodies of water surrounded by land.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/leɪks/",
+            "full_definition": "Bodies of water.",
+            "example": "Deep lakes.",
+            "translation": "Những hồ nước"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 51,
+        "theme": "Nature & Environment",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "PLANET",
+        "phonetic": "/ˈplænɪt/",
+        "definition": "A celestial body moving in an elliptical orbit around a star.",
+        "example": "The planet Earth.",
+        "translation": "Hành tinh"
+        },
+        "sub_words": [
+        {
+            "word": "PONDS",
+            "clue_for_game": "Small bodies of still water.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɒndz/",
+            "full_definition": "Small bodies of water.",
+            "example": "Fish ponds.",
+            "translation": "Những cái ao"
+            }
+        },
+        {
+            "word": "CLOUD",
+            "clue_for_game": "A visible mass of condensed watery vapour floating in the atmosphere.",
+            "char_to_extract": "L",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/klaʊd/",
+            "full_definition": "Mass of condensed vapour.",
+            "example": "A dark cloud.",
+            "translation": "Đám mây"
+            }
+        },
+        {
+            "word": "STARS",
+            "clue_for_game": "Fixed luminous points in the night sky.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stɑːz/",
+            "full_definition": "Luminous points in sky.",
+            "example": "Bright stars.",
+            "translation": "Những ngôi sao"
+            }
+        },
+        {
+            "word": "MOONS",
+            "clue_for_game": "Natural satellites of planets.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/muːnz/",
+            "full_definition": "Natural satellites.",
+            "example": "Jupiter's moons.",
+            "translation": "Mặt trăng / Vệ tinh"
+            }
+        },
+        {
+            "word": "SPACE",
+            "clue_for_game": "The physical universe beyond the earth's atmosphere.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/speɪs/",
+            "full_definition": "Universe beyond earth.",
+            "example": "Outer space.",
+            "translation": "Không gian / Vũ trụ"
+            }
+        },
+        {
+            "word": "TREES",
+            "clue_for_game": "Woody plants.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/triːz/",
+            "full_definition": "Woody plants.",
+            "example": "Green trees.",
+            "translation": "Cây cối"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 52,
+        "theme": "Nature & Environment",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SPRING",
+        "phonetic": "/sprɪŋ/",
+        "definition": "The season after winter and before summer.",
+        "example": "Spring flowers.",
+        "translation": "Mùa xuân"
+        },
+        "sub_words": [
+        {
+            "word": "STORM",
+            "clue_for_game": "A violent disturbance of the atmosphere.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stɔːm/",
+            "full_definition": "Violent weather.",
+            "example": "A thunderstorm.",
+            "translation": "Cơn bão"
+            }
+        },
+        {
+            "word": "PETAL",
+            "clue_for_game": "Each of the segments of the corolla of a flower.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpetl/",
+            "full_definition": "Segment of flower.",
+            "example": "Rose petal.",
+            "translation": "Cánh hoa"
+            }
+        },
+        {
+            "word": "FROST",
+            "clue_for_game": "A deposit of small white ice crystals formed on the ground.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/frɒst/",
+            "full_definition": "Ice crystals on ground.",
+            "example": "Morning frost.",
+            "translation": "Sương giá"
+            }
+        },
+        {
+            "word": "RAINS",
+            "clue_for_game": "The condensed moisture of the atmosphere falling visibly in separate drops.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/reɪnz/",
+            "full_definition": "Falling drops of water.",
+            "example": "Heavy rains.",
+            "translation": "Những cơn mưa"
+            }
+        },
+        {
+            "word": "WINDS",
+            "clue_for_game": "The perceptible natural movement of the air.",
+            "char_to_extract": "N",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wɪndz/",
+            "full_definition": "Movement of air.",
+            "example": "Strong winds.",
+            "translation": "Những cơn gió"
+            }
+        },
+        {
+            "word": "GRASS",
+            "clue_for_game": "Vegetation consisting of typically short plants with long, narrow leaves.",
+            "char_to_extract": "G",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡrɑːs/",
+            "full_definition": "Short plants.",
+            "example": "Green grass.",
+            "translation": "Bãi cỏ / Cỏ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 53,
+        "theme": "Nature & Environment",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "WINTER",
+        "phonetic": "/ˈwɪntə(r)/",
+        "definition": "The coldest season of the year.",
+        "example": "A cold winter.",
+        "translation": "Mùa đông"
+        },
+        "sub_words": [
+        {
+            "word": "WOODS",
+            "clue_for_game": "An area of land covered with a thick growth of trees.",
+            "char_to_extract": "W",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wʊdz/",
+            "full_definition": "Area covered with trees.",
+            "example": "A walk in the woods.",
+            "translation": "Khu rừng nhỏ"
+            }
+        },
+        {
+            "word": "HILLS",
+            "clue_for_game": "Naturally raised areas of land.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/hɪlz/",
+            "full_definition": "Raised areas of land.",
+            "example": "Rolling hills.",
+            "translation": "Những ngọn đồi"
+            }
+        },
+        {
+            "word": "SNOWS",
+            "clue_for_game": "Falls of snow.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/snəʊz/",
+            "full_definition": "Falls of snow.",
+            "example": "Heavy snows.",
+            "translation": "Những trận tuyết"
+            }
+        },
+        {
+            "word": "THICK",
+            "clue_for_game": "With opposite sides or surfaces that are far apart.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/θɪk/",
+            "full_definition": "Not thin.",
+            "example": "A thick forest.",
+            "translation": "Dày đặc"
+            }
+        },
+        {
+            "word": "CLEAR",
+            "clue_for_game": "Easy to perceive, understand, or interpret.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/klɪə(r)/",
+            "full_definition": "Easy to see through.",
+            "example": "A clear sky.",
+            "translation": "Quang đãng / Rõ ràng"
+            }
+        },
+        {
+            "word": "ROCKS",
+            "clue_for_game": "Solid mineral materials.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rɒks/",
+            "full_definition": "Solid materials.",
+            "example": "Hard rocks.",
+            "translation": "Những hòn đá"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 54,
+        "theme": "Nature & Environment",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SUMMER",
+        "phonetic": "/ˈsʌmə(r)/",
+        "definition": "The warmest season of the year.",
+        "example": "Summer holidays.",
+        "translation": "Mùa hè"
+        },
+        "sub_words": [
+        {
+            "word": "SUNNY",
+            "clue_for_game": "Bright with sunlight.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈsʌni/",
+            "full_definition": "Bright with sunlight.",
+            "example": "A sunny day.",
+            "translation": "Có nắng"
+            }
+        },
+        {
+            "word": "MUDDY",
+            "clue_for_game": "Covered in or full of mud.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈmʌdi/",
+            "full_definition": "Full of mud.",
+            "example": "Muddy boots.",
+            "translation": "Lầy lội"
+            }
+        },
+        {
+            "word": "MARSH",
+            "clue_for_game": "An area of low-lying land which is flooded in wet seasons or at high tide.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/mɑːʃ/",
+            "full_definition": "Low-lying wet land.",
+            "example": "A salt marsh.",
+            "translation": "Đầm lầy"
+            }
+        },
+        {
+            "word": "HUMID",
+            "clue_for_game": "Marked by a relatively high level of water vapour in the atmosphere.",
+            "char_to_extract": "M",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈhjuːmɪd/",
+            "full_definition": "High water vapour.",
+            "example": "Hot and humid.",
+            "translation": "Ẩm ướt"
+            }
+        },
+        {
+            "word": "FIELD",
+            "clue_for_game": "An area of open land.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fiːld/",
+            "full_definition": "Area of open land.",
+            "example": "A green field.",
+            "translation": "Cánh đồng"
+            }
+        },
+        {
+            "word": "SHORE",
+            "clue_for_game": "The land along the edge of a sea, lake, or other large body of water.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɔː(r)/",
+            "full_definition": "Land along water.",
+            "example": "A sandy shore.",
+            "translation": "Bờ biển / Bờ hồ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 55,
+        "theme": "City & Places",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "MARKET",
+        "phonetic": "/ˈmɑːkɪt/",
+        "definition": "A regular gathering of people for the purchase and sale of provisions, livestock, and other commodities.",
+        "example": "A farmers' market.",
+        "translation": "Khu chợ"
+        },
+        "sub_words": [
+        {
+            "word": "MOTEL",
+            "clue_for_game": "A roadside hotel designed primarily for motorists.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/məʊˈtel/",
+            "full_definition": "Roadside hotel.",
+            "example": "Stayed at a motel.",
+            "translation": "Nhà nghỉ"
+            }
+        },
+        {
+            "word": "BANKS",
+            "clue_for_game": "Financial establishments.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bæŋks/",
+            "full_definition": "Financial establishments.",
+            "example": "City banks.",
+            "translation": "Ngân hàng"
+            }
+        },
+        {
+            "word": "STORE",
+            "clue_for_game": "A retail establishment selling items to the public.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/stɔː(r)/",
+            "full_definition": "Retail establishment.",
+            "example": "A grocery store.",
+            "translation": "Cửa hàng"
+            }
+        },
+        {
+            "word": "KIOSK",
+            "clue_for_game": "A small open-fronted hut or cubicle.",
+            "char_to_extract": "K",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkiːɒsk/",
+            "full_definition": "Small open-fronted hut.",
+            "example": "A ticket kiosk.",
+            "translation": "Quầy hàng nhỏ"
+            }
+        },
+        {
+            "word": "DINER",
+            "clue_for_game": "A small, relatively cheap restaurant.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdaɪnə(r)/",
+            "full_definition": "Small cheap restaurant.",
+            "example": "A local diner.",
+            "translation": "Quán ăn nhỏ"
+            }
+        },
+        {
+            "word": "TOWNS",
+            "clue_for_game": "Built-up areas with a name, defined boundaries, and local government.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/taʊnz/",
+            "full_definition": "Built-up areas.",
+            "example": "Small towns.",
+            "translation": "Những thị trấn"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 56,
+        "theme": "City & Places",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "STREET",
+        "phonetic": "/striːt/",
+        "definition": "A public road in a city or town.",
+        "example": "A busy street.",
+        "translation": "Đường phố"
+        },
+        "sub_words": [
+        {
+            "word": "SHOPS",
+            "clue_for_game": "Buildings or parts of a building where goods or services are sold.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɒps/",
+            "full_definition": "Places where goods are sold.",
+            "example": "Local shops.",
+            "translation": "Những cửa hàng"
+            }
+        },
+        {
+            "word": "TOWER",
+            "clue_for_game": "A tall, narrow building.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtaʊə(r)/",
+            "full_definition": "Tall narrow building.",
+            "example": "A clock tower.",
+            "translation": "Tòa tháp"
+            }
+        },
+        {
+            "word": "ROADS",
+            "clue_for_game": "Wide ways leading from one place to another.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rəʊdz/",
+            "full_definition": "Ways leading somewhere.",
+            "example": "Country roads.",
+            "translation": "Những con đường"
+            }
+        },
+        {
+            "word": "ALLEY",
+            "clue_for_game": "A narrow passageway between or behind buildings.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈæli/",
+            "full_definition": "Narrow passageway.",
+            "example": "A dark alley.",
+            "translation": "Hẻm / Ngõ"
+            }
+        },
+        {
+            "word": "CAFES",
+            "clue_for_game": "Small restaurants selling light meals and drinks.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæfeɪz/",
+            "full_definition": "Small restaurants.",
+            "example": "Street cafes.",
+            "translation": "Quán cà phê"
+            }
+        },
+        {
+            "word": "TRACK",
+            "clue_for_game": "A rough path or minor road.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træk/",
+            "full_definition": "Rough path.",
+            "example": "A dirt track.",
+            "translation": "Đường đất / Đường mòn"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 57,
+        "theme": "City & Places",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "CASTLE",
+        "phonetic": "/ˈkɑːsl/",
+        "definition": "A large building, typically of the medieval period, fortified against attack with thick walls.",
+        "example": "A medieval castle.",
+        "translation": "Lâu đài"
+        },
+        "sub_words": [
+        {
+            "word": "CIVIC",
+            "clue_for_game": "Relating to a city or town.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈsɪvɪk/",
+            "full_definition": "Relating to a city.",
+            "example": "Civic centre.",
+            "translation": "Thuộc về đô thị"
+            }
+        },
+        {
+            "word": "URBAN",
+            "clue_for_game": "In, relating to, or characteristic of a town or city.",
+            "char_to_extract": "A",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈɜːbən/",
+            "full_definition": "Relating to a town or city.",
+            "example": "Urban areas.",
+            "translation": "Thuộc thành thị"
+            }
+        },
+        {
+            "word": "SLUMS",
+            "clue_for_game": "Squalid and overcrowded urban streets or districts inhabited by very poor people.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/slʌmz/",
+            "full_definition": "Overcrowded urban streets.",
+            "example": "City slums.",
+            "translation": "Khu ổ chuột"
+            }
+        },
+        {
+            "word": "TENTS",
+            "clue_for_game": "Portable shelters made of cloth.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tents/",
+            "full_definition": "Portable shelters.",
+            "example": "Camping tents.",
+            "translation": "Những cái lều"
+            }
+        },
+        {
+            "word": "PLAZA",
+            "clue_for_game": "A public square, marketplace, or similar open space in a built-up area.",
+            "char_to_extract": "L",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈplɑːzə/",
+            "full_definition": "Public square.",
+            "example": "Shopping plaza.",
+            "translation": "Quảng trường / Khu mua sắm"
+            }
+        },
+        {
+            "word": "HOUSE",
+            "clue_for_game": "A building for human habitation.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/haʊs/",
+            "full_definition": "Building for habitation.",
+            "example": "A big house.",
+            "translation": "Ngôi nhà"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 58,
+        "theme": "City & Places",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "BRIDGE",
+        "phonetic": "/brɪdʒ/",
+        "definition": "A structure carrying a road, path, railway, etc. across a river, road, or other obstacle.",
+        "example": "A stone bridge.",
+        "translation": "Cây cầu"
+        },
+        "sub_words": [
+        {
+            "word": "BRICK",
+            "clue_for_game": "A small rectangular block typically made of fired or sun-dried clay.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/brɪk/",
+            "full_definition": "Block made of clay.",
+            "example": "A red brick.",
+            "translation": "Viên gạch"
+            }
+        },
+        {
+            "word": "CROWD",
+            "clue_for_game": "A large number of people gathered together.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kraʊd/",
+            "full_definition": "Large number of people.",
+            "example": "A busy crowd.",
+            "translation": "Đám đông"
+            }
+        },
+        {
+            "word": "BUILT",
+            "clue_for_game": "Constructed (past participle of build).",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/bɪlt/",
+            "full_definition": "Constructed.",
+            "example": "A newly built house.",
+            "translation": "Được xây dựng"
+            }
+        },
+        {
+            "word": "DOORS",
+            "clue_for_game": "Hinged, sliding, or revolving barriers at the entrance to a building.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dɔːz/",
+            "full_definition": "Barriers at entrance.",
+            "example": "Open the doors.",
+            "translation": "Những cánh cửa"
+            }
+        },
+        {
+            "word": "GATES",
+            "clue_for_game": "Hinged barriers used to close an opening in a wall, fence, or hedge.",
+            "char_to_extract": "G",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡeɪts/",
+            "full_definition": "Hinged barriers.",
+            "example": "Iron gates.",
+            "translation": "Những cái cổng"
+            }
+        },
+        {
+            "word": "HOMES",
+            "clue_for_game": "The places where one lives permanently.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/həʊmz/",
+            "full_definition": "Places where one lives.",
+            "example": "New homes.",
+            "translation": "Những ngôi nhà"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 59,
+        "theme": "City & Places",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "CHURCH",
+        "phonetic": "/tʃɜːtʃ/",
+        "definition": "A building used for public Christian worship.",
+        "example": "A local church.",
+        "translation": "Nhà thờ"
+        },
+        "sub_words": [
+        {
+            "word": "COURT",
+            "clue_for_game": "A place where legal trials take place.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kɔːt/",
+            "full_definition": "Place for legal trials.",
+            "example": "The supreme court.",
+            "translation": "Tòa án"
+            }
+        },
+        {
+            "word": "HOTEL",
+            "clue_for_game": "An establishment providing accommodation.",
+            "char_to_extract": "H",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/həʊˈtel/",
+            "full_definition": "Establishment providing accommodation.",
+            "example": "A luxury hotel.",
+            "translation": "Khách sạn"
+            }
+        },
+        {
+            "word": "ROUTE",
+            "clue_for_game": "A way or course taken in getting from a starting point to a destination.",
+            "char_to_extract": "U",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ruːt/",
+            "full_definition": "Way taken to destination.",
+            "example": "The shortest route.",
+            "translation": "Tuyến đường"
+            }
+        },
+        {
+            "word": "ARENA",
+            "clue_for_game": "A level area surrounded by seating, in which sports, entertainments, and other public events are held.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/əˈriːnə/",
+            "full_definition": "Level area for sports.",
+            "example": "A sports arena.",
+            "translation": "Đấu trường / Nhà thi đấu"
+            }
+        },
+        {
+            "word": "CABIN",
+            "clue_for_game": "A small shelter or house.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæbɪn/",
+            "full_definition": "A small shelter.",
+            "example": "A log cabin.",
+            "translation": "Túp lều / Nhà gỗ"
+            }
+        },
+        {
+            "word": "HALLS",
+            "clue_for_game": "The rooms or spaces just inside the front entrance of a house or flat.",
+            "char_to_extract": "H",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/hɔːlz/",
+            "full_definition": "Spaces inside entrance.",
+            "example": "University halls.",
+            "translation": "Đại sảnh / Hội trường"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 60,
+        "theme": "City & Places",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "TEMPLE",
+        "phonetic": "/ˈtempl/",
+        "definition": "A building devoted to the worship of a god or gods.",
+        "example": "An ancient temple.",
+        "translation": "Ngôi đền"
+        },
+        "sub_words": [
+        {
+            "word": "TRASH",
+            "clue_for_game": "Waste material or things that are no longer wanted or needed.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træʃ/",
+            "full_definition": "Waste material.",
+            "example": "Street trash.",
+            "translation": "Rác thải"
+            }
+        },
+        {
+            "word": "ENTRY",
+            "clue_for_game": "The act of entering a place.",
+            "char_to_extract": "E",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈentri/",
+            "full_definition": "Act of entering.",
+            "example": "No entry.",
+            "translation": "Lối vào / Sự đi vào"
+            }
+        },
+        {
+            "word": "MAYOR",
+            "clue_for_game": "The elected head of a city, town, or other municipality.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/meə(r)/",
+            "full_definition": "Elected head of city.",
+            "example": "The city mayor.",
+            "translation": "Thị trưởng"
+            }
+        },
+        {
+            "word": "PATHS",
+            "clue_for_game": "Ways or tracks laid down for walking or made by continual treading.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɑːðz/",
+            "full_definition": "Ways for walking.",
+            "example": "Walking paths.",
+            "translation": "Đường mòn / Lối đi"
+            }
+        },
+        {
+            "word": "LIGHT",
+            "clue_for_game": "The natural agent that stimulates sight and makes things visible.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/laɪt/",
+            "full_definition": "Agent that makes things visible.",
+            "example": "Street light.",
+            "translation": "Ánh sáng / Đèn"
+            }
+        },
+        {
+            "word": "ZONES",
+            "clue_for_game": "Areas or stretches of land having a particular characteristic, purpose, or use.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/zəʊnz/",
+            "full_definition": "Areas of land with specific use.",
+            "example": "Parking zones.",
+            "translation": "Khu vực / Phân vùng"
+            }
+        }
+        ]
+    },
+        {
+        "level_id": 61,
+        "theme": "Animals",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "HORSE",
+        "phonetic": "/hɔːs/",
+        "definition": "A large animal with four legs, used for riding.",
+        "example": "She rides her horse.",
+        "translation": "Con ngựa"
+        },
+        "sub_words": [
+        {
+            "word": "SHEEP",
+            "clue_for_game": "An animal with a thick woolly coat.",
+            "char_to_extract": "H",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃiːp/",
+            "full_definition": "Animal with wool.",
+            "example": "A flock of sheep.",
+            "translation": "Con cừu"
+            }
+        },
+        {
+            "word": "GOOSE",
+            "clue_for_game": "A large water bird similar to a duck.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡuːs/",
+            "full_definition": "Large water bird.",
+            "example": "The goose honked.",
+            "translation": "Con ngỗng"
+            }
+        },
+        {
+            "word": "ZEBRA",
+            "clue_for_game": "An African wild animal with black and white stripes.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈzebrə/",
+            "full_definition": "Animal with stripes.",
+            "example": "A running zebra.",
+            "translation": "Ngựa vằn"
+            }
+        },
+        {
+            "word": "MOUSE",
+            "clue_for_game": "A small rodent with a pointed snout.",
+            "char_to_extract": "S",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/maʊs/",
+            "full_definition": "Small rodent.",
+            "example": "A little mouse.",
+            "translation": "Con chuột"
+            }
+        },
+        {
+            "word": "CAMEL",
+            "clue_for_game": "A large animal with a long neck and humps.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæml/",
+            "full_definition": "Animal with humps.",
+            "example": "Riding a camel.",
+            "translation": "Lạc đà"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 62,
+        "theme": "Animals",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "TIGER",
+        "phonetic": "/ˈtaɪɡə(r)/",
+        "definition": "A large wild cat with a yellow-orange coat and dark stripes.",
+        "example": "A fierce tiger.",
+        "translation": "Con hổ"
+        },
+        "sub_words": [
+        {
+            "word": "TROUT",
+            "clue_for_game": "A freshwater fish of the salmon family.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/traʊt/",
+            "full_definition": "Freshwater fish.",
+            "example": "Caught a trout.",
+            "translation": "Cá hồi"
+            }
+        },
+        {
+            "word": "BIRDS",
+            "clue_for_game": "Animals with feathers and wings.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bɜːdz/",
+            "full_definition": "Feathered animals.",
+            "example": "Singing birds.",
+            "translation": "Những loài chim"
+            }
+        },
+        {
+            "word": "FROGS",
+            "clue_for_game": "Tailless amphibians with long hind legs.",
+            "char_to_extract": "G",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/frɒɡz/",
+            "full_definition": "Amphibians.",
+            "example": "Green frogs.",
+            "translation": "Những con ếch"
+            }
+        },
+        {
+            "word": "BEARS",
+            "clue_for_game": "Large, heavy mammals.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/beəz/",
+            "full_definition": "Large mammals.",
+            "example": "Wild bears.",
+            "translation": "Những con gấu"
+            }
+        },
+        {
+            "word": "SHARK",
+            "clue_for_game": "A large fish that has sharp teeth.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɑːk/",
+            "full_definition": "Large sea fish.",
+            "example": "A dangerous shark.",
+            "translation": "Cá mập"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 63,
+        "theme": "Animals",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "WHALE",
+        "phonetic": "/weɪl/",
+        "definition": "A very large marine mammal.",
+        "example": "A blue whale.",
+        "translation": "Cá voi"
+        },
+        "sub_words": [
+        {
+            "word": "SWANS",
+            "clue_for_game": "Large water birds with long flexible necks.",
+            "char_to_extract": "W",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/swɒnz/",
+            "full_definition": "Water birds.",
+            "example": "White swans.",
+            "translation": "Những con thiên nga"
+            }
+        },
+        {
+            "word": "SHELL",
+            "clue_for_game": "The hard protective outer case of an animal.",
+            "char_to_extract": "H",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃel/",
+            "full_definition": "Hard outer case.",
+            "example": "A turtle shell.",
+            "translation": "Cái vỏ / Mai"
+            }
+        },
+        {
+            "word": "CRABS",
+            "clue_for_game": "Marine crustaceans with a broad carapace.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kræbz/",
+            "full_definition": "Crustaceans.",
+            "example": "Catching crabs.",
+            "translation": "Những con cua"
+            }
+        },
+        {
+            "word": "SEALS",
+            "clue_for_game": "Fish-eating marine mammals.",
+            "char_to_extract": "L",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/siːlz/",
+            "full_definition": "Marine mammals.",
+            "example": "Playing seals.",
+            "translation": "Những con hải cẩu"
+            }
+        },
+        {
+            "word": "DOVES",
+            "clue_for_game": "Birds with a plump body and small head.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʌvz/",
+            "full_definition": "Small birds.",
+            "example": "Peace doves.",
+            "translation": "Những con chim bồ câu"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 64,
+        "theme": "Animals",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PUPPY",
+        "phonetic": "/ˈpʌpi/",
+        "definition": "A young dog.",
+        "example": "A cute puppy.",
+        "translation": "Chó con"
+        },
+        "sub_words": [
+        {
+            "word": "PANDA",
+            "clue_for_game": "A large bear-like mammal with black and white markings.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpændə/",
+            "full_definition": "Black and white bear.",
+            "example": "A giant panda.",
+            "translation": "Gấu trúc"
+            }
+        },
+        {
+            "word": "DUCKS",
+            "clue_for_game": "Waterbirds with a broad blunt bill.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʌks/",
+            "full_definition": "Waterbirds.",
+            "example": "Quacking ducks.",
+            "translation": "Những con vịt"
+            }
+        },
+        {
+            "word": "SHEEP",
+            "clue_for_game": "An animal with a thick woolly coat.",
+            "char_to_extract": "P",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃiːp/",
+            "full_definition": "Woolly animal.",
+            "example": "A lost sheep.",
+            "translation": "Con cừu"
+            }
+        },
+        {
+            "word": "PIGGY",
+            "clue_for_game": "A child's word for a pig.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpɪɡi/",
+            "full_definition": "Child's word for pig.",
+            "example": "A little piggy.",
+            "translation": "Chú lợn con"
+            }
+        },
+        {
+            "word": "BUNNY",
+            "clue_for_game": "A child's word for a rabbit.",
+            "char_to_extract": "Y",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbʌni/",
+            "full_definition": "Child's word for rabbit.",
+            "example": "A fluffy bunny.",
+            "translation": "Chú thỏ con"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 65,
+        "theme": "Animals",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "MOUSE",
+        "phonetic": "/maʊs/",
+        "definition": "A small rodent.",
+        "example": "A house mouse.",
+        "translation": "Con chuột"
+        },
+        "sub_words": [
+        {
+            "word": "CAMEL",
+            "clue_for_game": "A large animal with a long neck and humps.",
+            "char_to_extract": "M",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæml/",
+            "full_definition": "Animal with humps.",
+            "example": "Desert camel.",
+            "translation": "Lạc đà"
+            }
+        },
+        {
+            "word": "HOUND",
+            "clue_for_game": "A dog of a breed used for hunting.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/haʊnd/",
+            "full_definition": "Hunting dog.",
+            "example": "A hunting hound.",
+            "translation": "Chó săn"
+            }
+        },
+        {
+            "word": "FAUNA",
+            "clue_for_game": "The animals of a particular region.",
+            "char_to_extract": "U",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfɔːnə/",
+            "full_definition": "Animals of a region.",
+            "example": "Local fauna.",
+            "translation": "Hệ động vật"
+            }
+        },
+        {
+            "word": "SNAIL",
+            "clue_for_game": "A mollusc with a single spiral shell.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sneɪl/",
+            "full_definition": "Mollusc with shell.",
+            "example": "A slow snail.",
+            "translation": "Ốc sên"
+            }
+        },
+        {
+            "word": "TIGER",
+            "clue_for_game": "A large wild cat.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtaɪɡə(r)/",
+            "full_definition": "Wild cat with stripes.",
+            "example": "A wild tiger.",
+            "translation": "Con hổ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 66,
+        "theme": "Clothing",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SHIRT",
+        "phonetic": "/ʃɜːt/",
+        "definition": "A garment for the upper body.",
+        "example": "A white shirt.",
+        "translation": "Áo sơ mi"
+        },
+        "sub_words": [
+        {
+            "word": "SUITS",
+            "clue_for_game": "Sets of outer clothes made of the same fabric.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/suːts/",
+            "full_definition": "Sets of clothes.",
+            "example": "Men in suits.",
+            "translation": "Những bộ vest"
+            }
+        },
+        {
+            "word": "SHOES",
+            "clue_for_game": "Coverings for the feet.",
+            "char_to_extract": "H",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃuːz/",
+            "full_definition": "Foot coverings.",
+            "example": "A pair of shoes.",
+            "translation": "Đôi giày"
+            }
+        },
+        {
+            "word": "SKIRT",
+            "clue_for_game": "A garment hanging from the waist.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɜːt/",
+            "full_definition": "Waist garment.",
+            "example": "A short skirt.",
+            "translation": "Cái váy"
+            }
+        },
+        {
+            "word": "DRESS",
+            "clue_for_game": "A one-piece garment for a woman or girl.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dres/",
+            "full_definition": "Woman's garment.",
+            "example": "A pretty dress.",
+            "translation": "Váy liền thân"
+            }
+        },
+        {
+            "word": "PANTS",
+            "clue_for_game": "Outer garment covering each leg separately.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pænts/",
+            "full_definition": "Leg garment.",
+            "example": "Blue pants.",
+            "translation": "Quần dài"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 67,
+        "theme": "Clothing",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PANTS",
+        "phonetic": "/pænts/",
+        "definition": "An outer garment covering each leg separately.",
+        "example": "A pair of pants.",
+        "translation": "Quần dài"
+        },
+        "sub_words": [
+        {
+            "word": "POLOS",
+            "clue_for_game": "Shirts with a collar and a few buttons at the neck.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpəʊləʊz/",
+            "full_definition": "Shirts with collars.",
+            "example": "Wearing polos.",
+            "translation": "Áo thun có cổ"
+            }
+        },
+        {
+            "word": "SCARF",
+            "clue_for_game": "A length or square of fabric worn around the neck.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɑːf/",
+            "full_definition": "Neck fabric.",
+            "example": "A warm scarf.",
+            "translation": "Khăn quàng cổ"
+            }
+        },
+        {
+            "word": "JEANS",
+            "clue_for_game": "Hard-wearing casual trousers made of denim.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒiːnz/",
+            "full_definition": "Denim trousers.",
+            "example": "Blue jeans.",
+            "translation": "Quần bò"
+            }
+        },
+        {
+            "word": "BOOTS",
+            "clue_for_game": "Sturdy footwear covering the foot and ankle.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/buːts/",
+            "full_definition": "Sturdy footwear.",
+            "example": "Winter boots.",
+            "translation": "Ủng / Đôi bốt"
+            }
+        },
+        {
+            "word": "SOCKS",
+            "clue_for_game": "Garments for the foot and lower part of the leg.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sɒks/",
+            "full_definition": "Foot garments.",
+            "example": "Cotton socks.",
+            "translation": "Những chiếc tất"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 68,
+        "theme": "Clothing",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "DRESS",
+        "phonetic": "/dres/",
+        "definition": "A one-piece garment for a woman or girl.",
+        "example": "A red dress.",
+        "translation": "Váy liền thân"
+        },
+        "sub_words": [
+        {
+            "word": "DENIM",
+            "clue_for_game": "A hard-wearing cotton twill fabric.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdenɪm/",
+            "full_definition": "Cotton fabric.",
+            "example": "Denim jacket.",
+            "translation": "Vải bò"
+            }
+        },
+        {
+            "word": "SHIRT",
+            "clue_for_game": "A garment for the upper body.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɜːt/",
+            "full_definition": "Upper body garment.",
+            "example": "A clean shirt.",
+            "translation": "Áo sơ mi"
+            }
+        },
+        {
+            "word": "BELTS",
+            "clue_for_game": "Strips of leather or material worn round the waist.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/belts/",
+            "full_definition": "Waist strips.",
+            "example": "Leather belts.",
+            "translation": "Những chiếc thắt lưng"
+            }
+        },
+        {
+            "word": "SUITS",
+            "clue_for_game": "Sets of outer clothes.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/suːts/",
+            "full_definition": "Sets of clothes.",
+            "example": "Business suits.",
+            "translation": "Những bộ vest"
+            }
+        },
+        {
+            "word": "SHOES",
+            "clue_for_game": "Coverings for the feet.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃuːz/",
+            "full_definition": "Foot coverings.",
+            "example": "Running shoes.",
+            "translation": "Đôi giày"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 69,
+        "theme": "Clothing",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SKIRT",
+        "phonetic": "/skɜːt/",
+        "definition": "A garment hanging from the waist.",
+        "example": "A pleated skirt.",
+        "translation": "Cái váy"
+        },
+        "sub_words": [
+        {
+            "word": "SCARF",
+            "clue_for_game": "A fabric worn around the neck.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɑːf/",
+            "full_definition": "Neck fabric.",
+            "example": "Silk scarf.",
+            "translation": "Khăn quàng cổ"
+            }
+        },
+        {
+            "word": "SOCKS",
+            "clue_for_game": "Garments for the foot.",
+            "char_to_extract": "K",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sɒks/",
+            "full_definition": "Foot garments.",
+            "example": "Wool socks.",
+            "translation": "Những chiếc tất"
+            }
+        },
+        {
+            "word": "SHIRT",
+            "clue_for_game": "A garment for the upper body.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ʃɜːt/",
+            "full_definition": "Upper body garment.",
+            "example": "Striped shirt.",
+            "translation": "Áo sơ mi"
+            }
+        },
+        {
+            "word": "DRESS",
+            "clue_for_game": "A one-piece garment.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dres/",
+            "full_definition": "Woman's garment.",
+            "example": "Evening dress.",
+            "translation": "Váy liền thân"
+            }
+        },
+        {
+            "word": "COATS",
+            "clue_for_game": "Outer garments worn outdoors.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kəʊts/",
+            "full_definition": "Outer garments.",
+            "example": "Winter coats.",
+            "translation": "Những chiếc áo khoác"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 70,
+        "theme": "Clothing",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "COATS",
+        "phonetic": "/kəʊts/",
+        "definition": "Outer garments with sleeves, worn outdoors.",
+        "example": "Warm coats.",
+        "translation": "Những chiếc áo khoác"
+        },
+        "sub_words": [
+        {
+            "word": "LACES",
+            "clue_for_game": "Cords used to fasten a shoe or boot.",
+            "char_to_extract": "C",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/leɪsz/",
+            "full_definition": "Shoe fastening cords.",
+            "example": "Shoe laces.",
+            "translation": "Dây giày"
+            }
+        },
+        {
+            "word": "GLOVE",
+            "clue_for_game": "A covering for the hand.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡlʌv/",
+            "full_definition": "Hand covering.",
+            "example": "A leather glove.",
+            "translation": "Găng tay"
+            }
+        },
+        {
+            "word": "JEANS",
+            "clue_for_game": "Casual trousers made of denim.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dʒiːnz/",
+            "full_definition": "Denim trousers.",
+            "example": "Faded jeans.",
+            "translation": "Quần bò"
+            }
+        },
+        {
+            "word": "SUITS",
+            "clue_for_game": "Sets of outer clothes.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/suːts/",
+            "full_definition": "Sets of clothes.",
+            "example": "Dark suits.",
+            "translation": "Những bộ vest"
+            }
+        },
+        {
+            "word": "BELTS",
+            "clue_for_game": "Strips worn round the waist.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/belts/",
+            "full_definition": "Waist strips.",
+            "example": "Brown belts.",
+            "translation": "Những chiếc thắt lưng"
+            }
+        }
+        ]
+    },
+        {
+        "level_id": 71,
+        "theme": "Education & Learning",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "CLASS",
+        "phonetic": "/klɑːs/",
+        "definition": "A group of students who are taught together.",
+        "example": "She is the best student in the class.",
+        "translation": "Lớp học"
+        },
+        "sub_words": [
+        {
+            "word": "TEACH",
+            "clue_for_game": "To help someone learn something.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/tiːtʃ/",
+            "full_definition": "To impart knowledge or skill.",
+            "example": "I teach English.",
+            "translation": "Dạy học"
+            }
+        },
+        {
+            "word": "LEARN",
+            "clue_for_game": "To gain knowledge or skill.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/lɜːn/",
+            "full_definition": "To acquire knowledge.",
+            "example": "I want to learn French.",
+            "translation": "Học hỏi"
+            }
+        },
+        {
+            "word": "BOARD",
+            "clue_for_game": "A flat surface in a classroom used for writing.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bɔːd/",
+            "full_definition": "A piece of wood or plastic used for writing on.",
+            "example": "Look at the board.",
+            "translation": "Cái bảng"
+            }
+        },
+        {
+            "word": "STUDY",
+            "clue_for_game": "To spend time learning about a subject.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˈstʌdi/",
+            "full_definition": "The devotion of time to gaining knowledge.",
+            "example": "I need to study for the test.",
+            "translation": "Học tập"
+            }
+        },
+        {
+            "word": "EXAMS",
+            "clue_for_game": "Important tests.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɪɡˈzæmz/",
+            "full_definition": "Formal tests of knowledge.",
+            "example": "Final exams are next week.",
+            "translation": "Kỳ thi"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 72,
+        "theme": "Education & Learning",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "TEACH",
+        "phonetic": "/tiːtʃ/",
+        "definition": "To impart knowledge to or instruct someone.",
+        "example": "He loves to teach children.",
+        "translation": "Dạy học"
+        },
+        "sub_words": [
+        {
+            "word": "MATHS",
+            "clue_for_game": "The study of numbers, quantities, and shapes.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/mæθs/",
+            "full_definition": "Mathematics.",
+            "example": "Maths is hard.",
+            "translation": "Môn Toán"
+            }
+        },
+        {
+            "word": "PAPER",
+            "clue_for_game": "Material manufactured in thin sheets.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpeɪpə(r)/",
+            "full_definition": "Material for writing on.",
+            "example": "A blank piece of paper.",
+            "translation": "Giấy"
+            }
+        },
+        {
+            "word": "GRADES",
+            "clue_for_game": "Marks given to students.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡreɪdz/",
+            "full_definition": "Marks indicating the quality of a student's work.",
+            "example": "Good grades.",
+            "translation": "Điểm số"
+            }
+        },
+        {
+            "word": "SCORE",
+            "clue_for_game": "The number of points achieved in a test.",
+            "char_to_extract": "C",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɔː(r)/",
+            "full_definition": "The number of points or marks.",
+            "example": "A high score.",
+            "translation": "Điểm"
+            }
+        },
+        {
+            "word": "SCHOOL",
+            "clue_for_game": "An institution for educating children.",
+            "char_to_extract": "H",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skuːl/",
+            "full_definition": "An educational institution.",
+            "example": "Go to school.",
+            "translation": "Trường học"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 73,
+        "theme": "Education & Learning",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "BOOKS",
+        "phonetic": "/bʊks/",
+        "definition": "A written or printed work consisting of pages glued together.",
+        "example": "I read two books this week.",
+        "translation": "Những cuốn sách"
+        },
+        "sub_words": [
+        {
+            "word": "SUBJECT",
+            "clue_for_game": "A branch of knowledge studied or taught.",
+            "char_to_extract": "B",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsʌbdʒɪkt/",
+            "full_definition": "A branch of knowledge.",
+            "example": "My favorite subject.",
+            "translation": "Môn học"
+            }
+        },
+        {
+            "word": "WORDS",
+            "clue_for_game": "Units of language.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wɜːdz/",
+            "full_definition": "Single distinct meaningful elements of speech.",
+            "example": "Learn new words.",
+            "translation": "Từ vựng"
+            }
+        },
+        {
+            "word": "PROVE",
+            "clue_for_game": "To show that something is true.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/pruːv/",
+            "full_definition": "To demonstrate the truth.",
+            "example": "Prove your answer.",
+            "translation": "Chứng minh"
+            }
+        },
+        {
+            "word": "SKILL",
+            "clue_for_game": "The ability to do something well.",
+            "char_to_extract": "K",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skɪl/",
+            "full_definition": "The ability to do something well.",
+            "example": "A useful skill.",
+            "translation": "Kỹ năng"
+            }
+        },
+        {
+            "word": "SMART",
+            "clue_for_game": "Having or showing a quick-witted intelligence.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/smɑːt/",
+            "full_definition": "Intelligent.",
+            "example": "A smart student.",
+            "translation": "Thông minh"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 74,
+        "theme": "Education & Learning",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "LEARN",
+        "phonetic": "/lɜːn/",
+        "definition": "To gain knowledge or skill in a subject.",
+        "example": "It is never too late to learn.",
+        "translation": "Học hỏi"
+        },
+        "sub_words": [
+        {
+            "word": "SOLVE",
+            "clue_for_game": "To find an answer to a problem.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/sɒlv/",
+            "full_definition": "To find an answer.",
+            "example": "Solve a math problem.",
+            "translation": "Giải quyết"
+            }
+        },
+        {
+            "word": "WRITE",
+            "clue_for_game": "To mark letters or words on a surface.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/raɪt/",
+            "full_definition": "To trace or form characters.",
+            "example": "Write your name.",
+            "translation": "Viết"
+            }
+        },
+        {
+            "word": "HEAVY",
+            "clue_for_game": "Of great weight.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈhevi/",
+            "full_definition": "Of great weight; difficult to lift.",
+            "example": "A heavy schoolbag.",
+            "translation": "Nặng"
+            }
+        },
+        {
+            "word": "READS",
+            "clue_for_game": "Looks at and comprehends the meaning of written matter.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/riːdz/",
+            "full_definition": "Looks at written words.",
+            "example": "He reads every night.",
+            "translation": "Đọc"
+            }
+        },
+        {
+            "word": "THINK",
+            "clue_for_game": "To have a particular opinion, belief, or idea.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/θɪŋk/",
+            "full_definition": "To direct one's mind towards someone or something.",
+            "example": "Think carefully.",
+            "translation": "Suy nghĩ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 75,
+        "theme": "Education & Learning",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "STUDY",
+        "phonetic": "/ˈstʌdi/",
+        "definition": "To spend time learning about a subject.",
+        "example": "I need to study for the exam.",
+        "translation": "Học tập"
+        },
+        "sub_words": [
+        {
+            "word": "TESTS",
+            "clue_for_game": "Procedures intended to establish quality or reliability.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tests/",
+            "full_definition": "Procedures for testing.",
+            "example": "Weekly tests.",
+            "translation": "Những bài kiểm tra"
+            }
+        },
+        {
+            "word": "TUTOR",
+            "clue_for_game": "A private teacher.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtjuːtə(r)/",
+            "full_definition": "A private teacher.",
+            "example": "A math tutor.",
+            "translation": "Gia sư"
+            }
+        },
+        {
+            "word": "GUIDE",
+            "clue_for_game": "A person or thing that shows the way.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡaɪd/",
+            "full_definition": "Something that helps you to make a decision.",
+            "example": "A study guide.",
+            "translation": "Hướng dẫn"
+            }
+        },
+        {
+            "word": "IDEAS",
+            "clue_for_game": "Thoughts or suggestions as to a possible course of action.",
+            "char_to_extract": "D",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/aɪˈdɪəz/",
+            "full_definition": "Thoughts or concepts.",
+            "example": "Good ideas.",
+            "translation": "Ý tưởng"
+            }
+        },
+        {
+            "word": "ESSAY",
+            "clue_for_game": "A short piece of writing on a particular subject.",
+            "char_to_extract": "Y",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈeseɪ/",
+            "full_definition": "A short piece of writing.",
+            "example": "Write an essay.",
+            "translation": "Bài luận"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 76,
+        "theme": "Hobbies & Sports",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "SPORT",
+        "phonetic": "/spɔːt/",
+        "definition": "An activity involving physical exertion and skill.",
+        "example": "Football is my favorite sport.",
+        "translation": "Thể thao"
+        },
+        "sub_words": [
+        {
+            "word": "SKATE",
+            "clue_for_game": "To move on ice skates or roller skates.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/skeɪt/",
+            "full_definition": "To move on skates.",
+            "example": "Learn to skate.",
+            "translation": "Trượt băng / Trượt patin"
+            }
+        },
+        {
+            "word": "PITCH",
+            "clue_for_game": "A playing field for various sports.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɪtʃ/",
+            "full_definition": "A standard area of play.",
+            "example": "Football pitch.",
+            "translation": "Sân cỏ / Sân bóng"
+            }
+        },
+        {
+            "word": "COURT",
+            "clue_for_game": "An area bordered by lines for playing games.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kɔːt/",
+            "full_definition": "A rectangular area for playing games like tennis.",
+            "example": "Tennis court.",
+            "translation": "Sân đấu"
+            }
+        },
+        {
+            "word": "THROW",
+            "clue_for_game": "To propel something with force through the air.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/θrəʊ/",
+            "full_definition": "To propel with force.",
+            "example": "Throw the ball.",
+            "translation": "Ném"
+            }
+        },
+        {
+            "word": "MATCH",
+            "clue_for_game": "A contest in which people or teams compete.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/mætʃ/",
+            "full_definition": "A sporting contest.",
+            "example": "A football match.",
+            "translation": "Trận đấu"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 77,
+        "theme": "Hobbies & Sports",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "CHESS",
+        "phonetic": "/tʃes/",
+        "definition": "A board game for two players.",
+        "example": "Let's play a game of chess.",
+        "translation": "Cờ vua"
+        },
+        "sub_words": [
+        {
+            "word": "DANCE",
+            "clue_for_game": "To move rhythmically to music.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/dɑːns/",
+            "full_definition": "To move rhythmically.",
+            "example": "Learn to dance.",
+            "translation": "Khiêu vũ"
+            }
+        },
+        {
+            "word": "HIKES",
+            "clue_for_game": "Long walks, especially in the country.",
+            "char_to_extract": "H",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/haɪks/",
+            "full_definition": "Long walks.",
+            "example": "Mountain hikes.",
+            "translation": "Chuyến đi bộ đường dài"
+            }
+        },
+        {
+            "word": "FIELD",
+            "clue_for_game": "An area of open land or a sports ground.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/fiːld/",
+            "full_definition": "A sports ground.",
+            "example": "A rugby field.",
+            "translation": "Sân thi đấu / Cánh đồng"
+            }
+        },
+        {
+            "word": "BOATS",
+            "clue_for_game": "Small vessels propelled on water.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/bəʊts/",
+            "full_definition": "Small vessels on water.",
+            "example": "Rowing boats.",
+            "translation": "Những chiếc thuyền"
+            }
+        },
+        {
+            "word": "SAILS",
+            "clue_for_game": "Pieces of material extended on a mast to catch the wind.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/seɪlz/",
+            "full_definition": "Material on a mast.",
+            "example": "White sails.",
+            "translation": "Những cánh buồm"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 78,
+        "theme": "Hobbies & Sports",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "MUSIC",
+        "phonetic": "/ˈmjuːzɪk/",
+        "definition": "Vocal or instrumental sounds.",
+        "example": "Listening to music.",
+        "translation": "Âm nhạc"
+        },
+        "sub_words": [
+        {
+            "word": "CLIMB",
+            "clue_for_game": "To go or come up.",
+            "char_to_extract": "M",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/klaɪm/",
+            "full_definition": "To go up something.",
+            "example": "Climb a mountain.",
+            "translation": "Leo trèo"
+            }
+        },
+        {
+            "word": "GUITAR",
+            "clue_for_game": "A stringed musical instrument.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡɪˈtɑː(r)/",
+            "full_definition": "A stringed instrument.",
+            "example": "Play the guitar.",
+            "translation": "Đàn ghi-ta"
+            }
+        },
+        {
+            "word": "SONGS",
+            "clue_for_game": "Short poems or other sets of words set to music.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/sɒŋz/",
+            "full_definition": "Musical compositions.",
+            "example": "Sing songs.",
+            "translation": "Những bài hát"
+            }
+        },
+        {
+            "word": "PIANO",
+            "clue_for_game": "A large keyboard musical instrument.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pɪˈænəʊ/",
+            "full_definition": "Keyboard instrument.",
+            "example": "Piano lessons.",
+            "translation": "Đàn piano"
+            }
+        },
+        {
+            "word": "TRACK",
+            "clue_for_game": "A continuous recording or a path.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/træk/",
+            "full_definition": "A recording of a song.",
+            "example": "A music track.",
+            "translation": "Bản nhạc / Đường chạy"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 79,
+        "theme": "Hobbies & Sports",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "PAINT",
+        "phonetic": "/peɪnt/",
+        "definition": "A colored substance spread over a surface.",
+        "example": "I like to paint.",
+        "translation": "Sơn / Vẽ"
+        },
+        "sub_words": [
+        {
+            "word": "CAMPS",
+            "clue_for_game": "Places with temporary accommodation.",
+            "char_to_extract": "P",
+            "extract_index": 3,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kæmps/",
+            "full_definition": "Places with tents.",
+            "example": "Summer camps.",
+            "translation": "Khu trại"
+            }
+        },
+        {
+            "word": "DRAWN",
+            "clue_for_game": "Produced by making lines on paper (past participle of draw).",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/drɔːn/",
+            "full_definition": "Produced by drawing.",
+            "example": "A beautifully drawn picture.",
+            "translation": "Được vẽ"
+            }
+        },
+        {
+            "word": "RIDES",
+            "clue_for_game": "Journeys made on a horse, bicycle, or motorcycle.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/raɪdz/",
+            "full_definition": "Journeys on an animal or vehicle.",
+            "example": "Bike rides.",
+            "translation": "Những chuyến đi / Đạp xe"
+            }
+        },
+        {
+            "word": "TENNIS",
+            "clue_for_game": "A game played with rackets and a ball.",
+            "char_to_extract": "N",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtenɪs/",
+            "full_definition": "A racket sport.",
+            "example": "Play tennis.",
+            "translation": "Môn quần vợt"
+            }
+        },
+        {
+            "word": "KITES",
+            "clue_for_game": "Toys consisting of a light frame flown in the wind.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/kaɪts/",
+            "full_definition": "Flying toys.",
+            "example": "Flying kites.",
+            "translation": "Những con diều"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 80,
+        "theme": "Hobbies & Sports",
+        "difficulty": "A1-A2",
+        "main_word": {
+        "word": "GAMES",
+        "phonetic": "/ɡeɪmz/",
+        "definition": "Activities that one engages in for amusement.",
+        "example": "Video games.",
+        "translation": "Trò chơi"
+        },
+        "sub_words": [
+        {
+            "word": "MAGIC",
+            "clue_for_game": "The power of apparently influencing events using mysterious forces.",
+            "char_to_extract": "G",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmædʒɪk/",
+            "full_definition": "Mysterious power.",
+            "example": "Magic tricks.",
+            "translation": "Phép thuật / Ma thuật"
+            }
+        },
+        {
+            "word": "PLAYS",
+            "clue_for_game": "Engages in activity for enjoyment.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/pleɪz/",
+            "full_definition": "Engages in a game.",
+            "example": "He plays chess.",
+            "translation": "Chơi"
+            }
+        },
+        {
+            "word": "JUMPS",
+            "clue_for_game": "Pushes oneself off a surface into the air.",
+            "char_to_extract": "M",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/dʒʌmps/",
+            "full_definition": "Pushes into the air.",
+            "example": "She jumps high.",
+            "translation": "Nhảy"
+            }
+        },
+        {
+            "word": "CHEER",
+            "clue_for_game": "To shout for joy or in praise.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/tʃɪə(r)/",
+            "full_definition": "To shout loudly.",
+            "example": "Cheer for the team.",
+            "translation": "Cổ vũ"
+            }
+        },
+        {
+            "word": "KICKS",
+            "clue_for_game": "Strikes forcibly with the foot.",
+            "char_to_extract": "S",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/kɪks/",
+            "full_definition": "Strikes with the foot.",
+            "example": "He kicks the ball.",
+            "translation": "Đá"
+            }
+        }
+        ]
+    },
+        {
+        "level_id": 81,
+        "theme": "Science & Technology",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "CLOUD",
+        "phonetic": "/klaʊd/",
+        "definition": "A network of remote servers hosted on the internet to store, manage, and process data.",
+        "example": "All our photos are saved in the cloud.",
+        "translation": "Đám mây (Lưu trữ)"
+        },
+        "sub_words": [
+        {
+            "word": "CABLE",
+            "clue_for_game": "A thick wire used to carry electricity or electronic signals.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkeɪbl/",
+            "full_definition": "An encased group of insulated wires.",
+            "example": "Plug the cable into the computer.",
+            "translation": "Dây cáp"
+            }
+        },
+        {
+            "word": "LASER",
+            "clue_for_game": "A device that generates an intense beam of coherent monochromatic light.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈleɪzə(r)/",
+            "full_definition": "A concentrated beam of light.",
+            "example": "He used a laser pointer.",
+            "translation": "Tia laser"
+            }
+        },
+        {
+            "word": "DIODE",
+            "clue_for_game": "A semiconductor device with two terminals, allowing the flow of current in one direction only.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdaɪəʊd/",
+            "full_definition": "An electronic component that allows current to flow in one direction.",
+            "example": "A light-emitting diode (LED).",
+            "translation": "Đi-ốt"
+            }
+        },
+        {
+            "word": "SETUP",
+            "clue_for_game": "The way in which things are organized or arranged.",
+            "char_to_extract": "U",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsetʌp/",
+            "full_definition": "The way equipment or software is configured.",
+            "example": "The computer setup was easy.",
+            "translation": "Cài đặt / Thiết lập"
+            }
+        },
+        {
+            "word": "RADAR",
+            "clue_for_game": "A system for detecting the presence, direction, and speed of objects.",
+            "char_to_extract": "D",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈreɪdɑː(r)/",
+            "full_definition": "A system for detecting objects by using radio waves.",
+            "example": "The plane vanished from the radar.",
+            "translation": "Hệ thống radar"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 82,
+        "theme": "Science & Technology",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "SMART",
+        "phonetic": "/smɑːt/",
+        "definition": "Programmed to be capable of some independent action.",
+        "example": "She bought a new smart TV.",
+        "translation": "Thông minh"
+        },
+        "sub_words": [
+        {
+            "word": "RESET",
+            "clue_for_game": "To set again or differently, often restarting a device.",
+            "char_to_extract": "S",
+            "extract_index": 2,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˌriːˈset/",
+            "full_definition": "To cause a device to start working again.",
+            "example": "I had to reset my phone.",
+            "translation": "Khởi động lại / Đặt lại"
+            }
+        },
+        {
+            "word": "MACRO",
+            "clue_for_game": "A single instruction that expands automatically into a set of instructions.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmækrəʊ/",
+            "full_definition": "A computerized rule or set of instructions.",
+            "example": "He wrote a macro in Excel.",
+            "translation": "Lệnh macro"
+            }
+        },
+        {
+            "word": "GRAPH",
+            "clue_for_game": "A visual representation showing relations between variable quantities.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡrɑːf/",
+            "full_definition": "A diagram showing data.",
+            "example": "The graph shows a rise in sales.",
+            "translation": "Biểu đồ"
+            }
+        },
+        {
+            "word": "VIRUS",
+            "clue_for_game": "A piece of code that is capable of copying itself and corrupting the system.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈvaɪrəs/",
+            "full_definition": "A malicious software program.",
+            "example": "My laptop got a virus.",
+            "translation": "Phần mềm độc hại"
+            }
+        },
+        {
+            "word": "DIGIT",
+            "clue_for_game": "Any of the numerals from 0 to 9.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdɪdʒɪt/",
+            "full_definition": "A single number.",
+            "example": "A four-digit code.",
+            "translation": "Chữ số"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 83,
+        "theme": "Science & Technology",
+        "difficulty": "A2-B1",
+        "main_word": {
+        "word": "MEDIA",
+        "phonetic": "/ˈmiːdiə/",
+        "definition": "The main means of mass communication.",
+        "example": "Social media has changed how we connect.",
+        "translation": "Phương tiện truyền thông"
+        },
+        "sub_words": [
+        {
+            "word": "MODEM",
+            "clue_for_game": "A device that enables a computer to transmit data over telephone or cable lines.",
+            "char_to_extract": "M",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈməʊdem/",
+            "full_definition": "A hardware device that connects a computer to the internet.",
+            "example": "Restart the internet modem.",
+            "translation": "Bộ điều giải / Modem"
+            }
+        },
+        {
+            "word": "PIXEL",
+            "clue_for_game": "A minute area of illumination on a display screen.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpɪksl/",
+            "full_definition": "The smallest unit of a digital image.",
+            "example": "The camera has a 12-megapixel sensor.",
+            "translation": "Điểm ảnh"
+            }
+        },
+        {
+            "word": "AUDIO",
+            "clue_for_game": "Sound, especially when recorded, transmitted, or reproduced.",
+            "char_to_extract": "D",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɔːdiəʊ/",
+            "full_definition": "Sound signals.",
+            "example": "The audio quality is excellent.",
+            "translation": "Âm thanh"
+            }
+        },
+        {
+            "word": "LOGIN",
+            "clue_for_game": "The process of getting access to a computer system.",
+            "char_to_extract": "I",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈlɒɡɪn/",
+            "full_definition": "Credentials to access a system.",
+            "example": "Please enter your login details.",
+            "translation": "Sự đăng nhập"
+            }
+        },
+        {
+            "word": "FLASH",
+            "clue_for_game": "A type of non-volatile memory that can be erased and reprogrammed.",
+            "char_to_extract": "A",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/flæʃ/",
+            "full_definition": "A data storage technology.",
+            "example": "A USB flash drive.",
+            "translation": "Bộ nhớ flash"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 84,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "ROBOT",
+        "phonetic": "/ˈrəʊbɒt/",
+        "definition": "A machine capable of carrying out a complex series of actions automatically.",
+        "example": "The factory uses a robot to assemble cars.",
+        "translation": "Người máy"
+        },
+        "sub_words": [
+        {
+            "word": "DRONE",
+            "clue_for_game": "An unmanned aircraft or ship.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/drəʊn/",
+            "full_definition": "A remote-controlled pilotless aircraft.",
+            "example": "They used a drone to film the wedding.",
+            "translation": "Máy bay không người lái"
+            }
+        },
+        {
+            "word": "PROBE",
+            "clue_for_game": "An unmanned exploratory spacecraft.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/prəʊb/",
+            "full_definition": "An instrument used to explore or examine.",
+            "example": "A space probe sent to Mars.",
+            "translation": "Tàu dò / Đầu dò"
+            }
+        },
+        {
+            "word": "CYBER",
+            "clue_for_game": "Relating to or characteristic of the culture of computers and virtual reality.",
+            "char_to_extract": "B",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈsaɪbə(r)/",
+            "full_definition": "Relating to electronic communication networks.",
+            "example": "Cyber security is crucial.",
+            "translation": "Thuộc về không gian mạng"
+            }
+        },
+        {
+            "word": "VIDEO",
+            "clue_for_game": "The recording, reproducing, or broadcasting of moving visual images.",
+            "char_to_extract": "O",
+            "extract_index": 4,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈvɪdiəʊ/",
+            "full_definition": "Visual multimedia source.",
+            "example": "We watched a funny video.",
+            "translation": "Đoạn phim / Video"
+            }
+        },
+        {
+            "word": "BOOTH",
+            "clue_for_game": "A small enclosed compartment, often housing technological equipment.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/buːð/",
+            "full_definition": "A small enclosed space.",
+            "example": "A photo booth.",
+            "translation": "Buồng nhỏ / Quầy"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 85,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "SPACE",
+        "phonetic": "/speɪs/",
+        "definition": "The physical universe beyond the earth's atmosphere.",
+        "example": "Satellites are sent into space.",
+        "translation": "Vũ trụ / Không gian"
+        },
+        "sub_words": [
+        {
+            "word": "SCALE",
+            "clue_for_game": "An instrument for weighing, or a graduated range of values.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skeɪl/",
+            "full_definition": "A device or ratio of measure.",
+            "example": "The model is built on a large scale.",
+            "translation": "Tỷ lệ / Cái cân"
+            }
+        },
+        {
+            "word": "INPUT",
+            "clue_for_game": "Information fed into a data processing system or computer.",
+            "char_to_extract": "P",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɪnpʊt/",
+            "full_definition": "Data that is entered.",
+            "example": "Wait for user input.",
+            "translation": "Dữ liệu đầu vào"
+            }
+        },
+        {
+            "word": "ALARM",
+            "clue_for_game": "An electronic signal indicating a fault or warning.",
+            "char_to_extract": "A",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/əˈlɑːm/",
+            "full_definition": "A warning device.",
+            "example": "The fire alarm went off.",
+            "translation": "Còi báo động"
+            }
+        },
+        {
+            "word": "CLICK",
+            "clue_for_game": "To press a button on a computer mouse.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/klɪk/",
+            "full_definition": "To interact with a mouse.",
+            "example": "Click the link to open it.",
+            "translation": "Nhấp chuột"
+            }
+        },
+        {
+            "word": "PANEL",
+            "clue_for_game": "A flat board on which instruments or controls are fixed.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpænl/",
+            "full_definition": "A control board.",
+            "example": "A solar panel.",
+            "translation": "Bảng điều khiển"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 86,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "DEVICE",
+        "phonetic": "/dɪˈvaɪs/",
+        "definition": "A piece of mechanical or electronic equipment made for a particular purpose.",
+        "example": "A mobile device.",
+        "translation": "Thiết bị"
+        },
+        "sub_words": [
+        {
+            "word": "DRIVER",
+            "clue_for_game": "A program that controls the operation of a piece of hardware.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdraɪvə(r)/",
+            "full_definition": "Software controlling a hardware piece.",
+            "example": "Install the printer driver.",
+            "translation": "Trình điều khiển"
+            }
+        },
+        {
+            "word": "SCREEN",
+            "clue_for_game": "The flat panel on a TV or computer where images are shown.",
+            "char_to_extract": "E",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skriːn/",
+            "full_definition": "The display surface of an electronic device.",
+            "example": "A touch screen.",
+            "translation": "Màn hình"
+            }
+        },
+        {
+            "word": "VOLUME",
+            "clue_for_game": "The level of sound produced by a device.",
+            "char_to_extract": "V",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈvɒljuːm/",
+            "full_definition": "Quantity or power of sound.",
+            "example": "Turn up the volume.",
+            "translation": "Âm lượng"
+            }
+        },
+        {
+            "word": "MOBILE",
+            "clue_for_game": "Able to move or be moved freely or easily; a portable telephone.",
+            "char_to_extract": "I",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈməʊbaɪl/",
+            "full_definition": "Portable and easy to carry.",
+            "example": "A mobile phone.",
+            "translation": "Di động"
+            }
+        },
+        {
+            "word": "RECORD",
+            "clue_for_game": "To convert sound or performance into permanent form for later reproduction.",
+            "char_to_extract": "C",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/rɪˈkɔːd/",
+            "full_definition": "To capture data or sound.",
+            "example": "Record a video.",
+            "translation": "Ghi lại / Ghi âm"
+            }
+        },
+        {
+            "word": "UPDATE",
+            "clue_for_game": "A new version of software with improvements.",
+            "char_to_extract": "E",
+            "extract_index": 5,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˌʌpˈdeɪt/",
+            "full_definition": "An act of bringing something up to date.",
+            "example": "A software update.",
+            "translation": "Bản cập nhật"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 87,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "SYSTEM",
+        "phonetic": "/ˈsɪstəm/",
+        "definition": "A set of things working together as parts of a mechanism or an interconnecting network.",
+        "example": "The computer system crashed.",
+        "translation": "Hệ thống"
+        },
+        "sub_words": [
+        {
+            "word": "SIGNAL",
+            "clue_for_game": "An electrical impulse or radio wave transmitted or received.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsɪɡnəl/",
+            "full_definition": "A transmitted impulse.",
+            "example": "A strong Wi-Fi signal.",
+            "translation": "Tín hiệu"
+            }
+        },
+        {
+            "word": "SYMBOL",
+            "clue_for_game": "A mark or character used as a conventional representation of an object.",
+            "char_to_extract": "Y",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsɪmbl/",
+            "full_definition": "A shape or sign used to represent something.",
+            "example": "The chemical symbol for Oxygen.",
+            "translation": "Biểu tượng"
+            }
+        },
+        {
+            "word": "SERVER",
+            "clue_for_game": "A computer or program that manages access to a centralized resource or service.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsɜːvə(r)/",
+            "full_definition": "A central computer supplying data.",
+            "example": "The web server went down.",
+            "translation": "Máy chủ"
+            }
+        },
+        {
+            "word": "BUTTON",
+            "clue_for_game": "A small device on a machine that is pressed to operate it.",
+            "char_to_extract": "T",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbʌtn/",
+            "full_definition": "A knob on a piece of equipment.",
+            "example": "Press the power button.",
+            "translation": "Nút bấm"
+            }
+        },
+        {
+            "word": "MEMORY",
+            "clue_for_game": "The part of a computer in which data or program instructions can be stored.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmeməri/",
+            "full_definition": "Storage capacity in a computer.",
+            "example": "Out of memory.",
+            "translation": "Bộ nhớ"
+            }
+        },
+        {
+            "word": "CAMERA",
+            "clue_for_game": "A device for recording visual images in the form of photographs or video.",
+            "char_to_extract": "M",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkæmrə/",
+            "full_definition": "Equipment used for taking photographs or making films.",
+            "example": "A digital camera.",
+            "translation": "Máy ảnh / Máy quay"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 88,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "SEARCH",
+        "phonetic": "/sɜːtʃ/",
+        "definition": "To try to find something by looking or otherwise seeking carefully and thoroughly.",
+        "example": "Use Google to search for information.",
+        "translation": "Tìm kiếm"
+        },
+        "sub_words": [
+        {
+            "word": "SENSOR",
+            "clue_for_game": "A device which detects or measures a physical property.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈsensə(r)/",
+            "full_definition": "A device that responds to a physical stimulus.",
+            "example": "A motion sensor.",
+            "translation": "Cảm biến"
+            }
+        },
+        {
+            "word": "FOLDER",
+            "clue_for_game": "A directory on a computer containing related files.",
+            "char_to_extract": "E",
+            "extract_index": 4,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfəʊldə(r)/",
+            "full_definition": "A digital container for files.",
+            "example": "Create a new folder.",
+            "translation": "Thư mục"
+            }
+        },
+        {
+            "word": "FORMAT",
+            "clue_for_game": "The way in which data is arranged or set out.",
+            "char_to_extract": "A",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈfɔːmæt/",
+            "full_definition": "The structural layout of a document.",
+            "example": "A PDF format.",
+            "translation": "Định dạng"
+            }
+        },
+        {
+            "word": "CURSOR",
+            "clue_for_game": "A movable indicator on a computer screen.",
+            "char_to_extract": "R",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkɜːsə(r)/",
+            "full_definition": "A pointer on a screen.",
+            "example": "Move the cursor to the top.",
+            "translation": "Con trỏ chuột"
+            }
+        },
+        {
+            "word": "SECURE",
+            "clue_for_game": "Protected against attack or other criminal activity.",
+            "char_to_extract": "C",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/sɪˈkjʊə(r)/",
+            "full_definition": "Safe from unauthorized access.",
+            "example": "A secure connection.",
+            "translation": "Bảo mật / An toàn"
+            }
+        },
+        {
+            "word": "ATTACH",
+            "clue_for_game": "To include a file in an email or message.",
+            "char_to_extract": "H",
+            "extract_index": 5,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/əˈtætʃ/",
+            "full_definition": "To add a document to an email.",
+            "example": "Attach the PDF file.",
+            "translation": "Đính kèm"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 89,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "FOLDER",
+        "phonetic": "/ˈfəʊldə(r)/",
+        "definition": "A directory on a computer where files are stored.",
+        "example": "I saved the project in a new folder.",
+        "translation": "Thư mục"
+        },
+        "sub_words": [
+        {
+            "word": "OFFLINE",
+            "clue_for_game": "Not connected to the internet.",
+            "char_to_extract": "F",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˌɒfˈlaɪn/",
+            "full_definition": "Not controlled by or connected to a network.",
+            "example": "Play the game offline.",
+            "translation": "Ngoại tuyến"
+            }
+        },
+        {
+            "word": "ONLINE",
+            "clue_for_game": "Connected to the internet.",
+            "char_to_extract": "O",
+            "extract_index": 0,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˌɒnˈlaɪn/",
+            "full_definition": "Connected to a network.",
+            "example": "An online store.",
+            "translation": "Trực tuyến"
+            }
+        },
+        {
+            "word": "DELETE",
+            "clue_for_game": "To remove data from a computer's memory.",
+            "char_to_extract": "L",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/dɪˈliːt/",
+            "full_definition": "To erase a file or text.",
+            "example": "Delete the old files.",
+            "translation": "Xóa"
+            }
+        },
+        {
+            "word": "MODULE",
+            "clue_for_game": "Any of a number of distinct but interrelated units from which a program may be built up.",
+            "char_to_extract": "D",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmɒdjuːl/",
+            "full_definition": "A distinct component in software.",
+            "example": "A software module.",
+            "translation": "Mô-đun"
+            }
+        },
+        {
+            "word": "EXPORT",
+            "clue_for_game": "To transfer data in a format that can be used by other programs.",
+            "char_to_extract": "E",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ɪkˈspɔːt/",
+            "full_definition": "To send data to another application.",
+            "example": "Export the file to PDF.",
+            "translation": "Xuất dữ liệu"
+            }
+        },
+        {
+            "word": "ROUTER",
+            "clue_for_game": "A device that forwards data packets to the appropriate parts of a computer network.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈruːtə(r)/",
+            "full_definition": "A networking device.",
+            "example": "Reboot the Wi-Fi router.",
+            "translation": "Bộ định tuyến"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 90,
+        "theme": "Science & Technology",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "ONLINE",
+        "phonetic": "/ˌɒnˈlaɪn/",
+        "definition": "Controlled by or connected to another computer or to a network.",
+        "example": "I'm shopping online.",
+        "translation": "Trực tuyến"
+        },
+        "sub_words": [
+        {
+            "word": "DOMAIN",
+            "clue_for_game": "A distinct subset of the Internet with addresses sharing a common suffix.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dəˈmeɪn/",
+            "full_definition": "An internet address.",
+            "example": "A domain name.",
+            "translation": "Tên miền"
+            }
+        },
+        {
+            "word": "INSERT",
+            "clue_for_game": "To place, fit, or thrust something into another thing.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ɪnˈsɜːt/",
+            "full_definition": "To put something in.",
+            "example": "Insert an image here.",
+            "translation": "Chèn vào"
+            }
+        },
+        {
+            "word": "LAYOUT",
+            "clue_for_game": "The way in which text or pictures are set out on a page.",
+            "char_to_extract": "L",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈleɪaʊt/",
+            "full_definition": "The design or arrangement.",
+            "example": "A website layout.",
+            "translation": "Bố cục"
+            }
+        },
+        {
+            "word": "SWITCH",
+            "clue_for_game": "A device for making and breaking the connection in an electric circuit.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/swɪtʃ/",
+            "full_definition": "A device to turn current on/off.",
+            "example": "A network switch.",
+            "translation": "Công tắc / Bộ chuyển mạch"
+            }
+        },
+        {
+            "word": "ENGINE",
+            "clue_for_game": "A machine with moving parts that converts power into motion, or a search tool.",
+            "char_to_extract": "N",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈendʒɪn/",
+            "full_definition": "A program that performs a core function.",
+            "example": "A search engine.",
+            "translation": "Động cơ / Cỗ máy"
+            }
+        },
+        {
+            "word": "REVIEW",
+            "clue_for_game": "A formal assessment or examination of something.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/rɪˈvjuː/",
+            "full_definition": "An evaluation.",
+            "example": "Write an online review.",
+            "translation": "Bài đánh giá"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 91,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "RECIPE",
+        "phonetic": "/ˈresəpi/",
+        "definition": "A set of instructions for preparing a particular dish.",
+        "example": "I need a recipe for chocolate cake.",
+        "translation": "Công thức nấu ăn"
+        },
+        "sub_words": [
+        {
+            "word": "GRATER",
+            "clue_for_game": "A device having a surface covered with holes edged by slightly raised cutting edges.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɡreɪtə(r)/",
+            "full_definition": "A kitchen tool for grating food.",
+            "example": "A cheese grater.",
+            "translation": "Cái nạo / Dụng cụ bào"
+            }
+        },
+        {
+            "word": "PEELER",
+            "clue_for_game": "A device for removing the skin from fruit and vegetables.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpiːlə(r)/",
+            "full_definition": "A tool used to peel vegetables.",
+            "example": "A potato peeler.",
+            "translation": "Dao gọt vỏ"
+            }
+        },
+        {
+            "word": "MINCER",
+            "clue_for_game": "A machine for chopping meat into small pieces.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈmɪnsə(r)/",
+            "full_definition": "A machine for grinding meat.",
+            "example": "A meat mincer.",
+            "translation": "Máy xay thịt"
+            }
+        },
+        {
+            "word": "BOILER",
+            "clue_for_game": "A device for heating water.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbɔɪlə(r)/",
+            "full_definition": "A container for boiling water.",
+            "example": "A double boiler.",
+            "translation": "Nồi hơi"
+            }
+        },
+        {
+            "word": "PASTRY",
+            "clue_for_game": "A dough of flour, fat, and water, used as a base and covering in baked dishes.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpeɪstri/",
+            "full_definition": "Dough used for baking.",
+            "example": "A sweet pastry.",
+            "translation": "Bánh ngọt / Bột nhào"
+            }
+        },
+        {
+            "word": "BLENDS",
+            "clue_for_game": "Mixes a substance with another substance so that they combine together.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/blendz/",
+            "full_definition": "Mixes smoothly.",
+            "example": "He blends the soup.",
+            "translation": "Pha trộn / Xay"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 92,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "GARLIC",
+        "phonetic": "/ˈɡɑːlɪk/",
+        "definition": "A strong-smelling pungent-tasting bulb, used as a flavoring in cooking.",
+        "example": "Fry the onion and garlic.",
+        "translation": "Củ tỏi"
+        },
+        "sub_words": [
+        {
+            "word": "GRILL",
+            "clue_for_game": "A device on a cooker that radiates heat downwards for cooking food.",
+            "char_to_extract": "G",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ɡrɪl/",
+            "full_definition": "A cooking surface of parallel metal bars.",
+            "example": "Put it on the grill.",
+            "translation": "Vỉ nướng"
+            }
+        },
+        {
+            "word": "CARROT",
+            "clue_for_game": "A tapering orange-colored root eaten as a vegetable.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkærət/",
+            "full_definition": "An orange root vegetable.",
+            "example": "Chop the carrot.",
+            "translation": "Củ cà rốt"
+            }
+        },
+        {
+            "word": "FRYING",
+            "clue_for_game": "Cooking food in hot fat or oil.",
+            "char_to_extract": "R",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˈfraɪɪŋ/",
+            "full_definition": "The action of cooking in oil.",
+            "example": "A frying pan.",
+            "translation": "Đang chiên / Rán"
+            }
+        },
+        {
+            "word": "BOILED",
+            "clue_for_game": "Cooked in water that is boiling.",
+            "char_to_extract": "L",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/bɔɪld/",
+            "full_definition": "Cooked in boiling liquid.",
+            "example": "Boiled eggs.",
+            "translation": "Được luộc"
+            }
+        },
+        {
+            "word": "MIXING",
+            "clue_for_game": "Combining or putting together to form one substance or mass.",
+            "char_to_extract": "I",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˈmɪksɪŋ/",
+            "full_definition": "The action of mixing things.",
+            "example": "A mixing bowl.",
+            "translation": "Đang trộn"
+            }
+        },
+        {
+            "word": "SLICED",
+            "clue_for_game": "Cut into thin, flat pieces.",
+            "char_to_extract": "C",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/slaɪst/",
+            "full_definition": "Cut into slices.",
+            "example": "Sliced bread.",
+            "translation": "Được thái lát"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 93,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "PEPPER",
+        "phonetic": "/ˈpepə(r)/",
+        "definition": "A pungent, hot-tasting powder prepared from dried and ground peppercorns.",
+        "example": "Salt and pepper.",
+        "translation": "Hạt tiêu"
+        },
+        "sub_words": [
+        {
+            "word": "POTATO",
+            "clue_for_game": "A starchy plant tuber which is one of the most important food crops.",
+            "char_to_extract": "P",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/pəˈteɪtəʊ/",
+            "full_definition": "A starchy root vegetable.",
+            "example": "Mashed potato.",
+            "translation": "Khoai tây"
+            }
+        },
+        {
+            "word": "CELERY",
+            "clue_for_game": "A cultivated plant of the parsley family, with closely packed succulent leaf stalks.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈseləri/",
+            "full_definition": "A green vegetable with crunchy stalks.",
+            "example": "A stick of celery.",
+            "translation": "Cần tây"
+            }
+        },
+        {
+            "word": "CHOPPED",
+            "clue_for_game": "Cut into small pieces with repeated sharp blows using an axe or knife.",
+            "char_to_extract": "P",
+            "extract_index": 3,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/tʃɒpt/",
+            "full_definition": "Cut into chunks.",
+            "example": "Chopped onions.",
+            "translation": "Được băm nhỏ"
+            }
+        },
+        {
+            "word": "SPICES",
+            "clue_for_game": "Aromatic or pungent vegetable substances used to flavor food.",
+            "char_to_extract": "P",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spaɪsz/",
+            "full_definition": "Substances used to flavor food.",
+            "example": "A rack of spices.",
+            "translation": "Các loại gia vị"
+            }
+        },
+        {
+            "word": "CHEESE",
+            "clue_for_game": "A dairy product made from the curds of milk.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/tʃiːz/",
+            "full_definition": "Food made from milk.",
+            "example": "Melted cheese.",
+            "translation": "Phô mai"
+            }
+        },
+        {
+            "word": "RADISH",
+            "clue_for_game": "A swollen pungent-tasting edible root.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈrædɪʃ/",
+            "full_definition": "A small crisp root vegetable.",
+            "example": "A red radish.",
+            "translation": "Củ cải"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 94,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "BUTTER",
+        "phonetic": "/ˈbʌtə(r)/",
+        "definition": "A pale yellow edible fatty substance made by churning cream.",
+        "example": "Bread and butter.",
+        "translation": "Bơ"
+        },
+        "sub_words": [
+        {
+            "word": "BAKING",
+            "clue_for_game": "Cooking food by dry heat without direct exposure to a flame, typically in an oven.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/ˈbeɪkɪŋ/",
+            "full_definition": "Cooking by dry heat.",
+            "example": "Baking a cake.",
+            "translation": "Việc nướng bánh"
+            }
+        },
+        {
+            "word": "TURNIP",
+            "clue_for_game": "A round root with white or cream flesh which is eaten as a vegetable.",
+            "char_to_extract": "U",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtɜːnɪp/",
+            "full_definition": "A root vegetable.",
+            "example": "Mashed turnip.",
+            "translation": "Củ cải vàng / Củ cải tây"
+            }
+        },
+        {
+            "word": "TOMATO",
+            "clue_for_game": "A glossy red, or occasionally yellow, pulpy edible fruit.",
+            "char_to_extract": "T",
+            "extract_index": 4,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/təˈmɑːtəʊ/",
+            "full_definition": "A red juicy fruit used as a vegetable.",
+            "example": "Tomato soup.",
+            "translation": "Cà chua"
+            }
+        },
+        {
+            "word": "KETTLE",
+            "clue_for_game": "A vessel, usually with a handle and a spout, used for boiling water.",
+            "char_to_extract": "T",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈketl/",
+            "full_definition": "A container for boiling water.",
+            "example": "Put the kettle on.",
+            "translation": "Ấm đun nước"
+            }
+        },
+        {
+            "word": "YEASTS",
+            "clue_for_game": "Microscopic fungi used in baking and brewing.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/jiːsts/",
+            "full_definition": "Fungi used to make bread rise.",
+            "example": "Baking yeasts.",
+            "translation": "Nấm men"
+            }
+        },
+        {
+            "word": "ROASTS",
+            "clue_for_game": "Cooks by prolonged exposure to heat in an oven or over a fire.",
+            "char_to_extract": "R",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/rəʊsts/",
+            "full_definition": "Cooks food in an oven.",
+            "example": "He roasts the chicken.",
+            "translation": "Quay / Nướng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 95,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "CHEESE",
+        "phonetic": "/tʃiːz/",
+        "definition": "A food made from the pressed curds of milk.",
+        "example": "A slice of cheese.",
+        "translation": "Phô mai"
+        },
+        "sub_words": [
+        {
+            "word": "CARVES",
+            "clue_for_game": "Cuts a hard material in order to produce an object or design, or cuts meat into slices.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/kɑːvz/",
+            "full_definition": "Cuts meat into slices.",
+            "example": "He carves the turkey.",
+            "translation": "Thái / Lạng thịt"
+            }
+        },
+        {
+            "word": "DISHES",
+            "clue_for_game": "Shallow, flat-bottomed containers for cooking or serving food.",
+            "char_to_extract": "H",
+            "extract_index": 3,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈdɪʃɪz/",
+            "full_definition": "Containers for serving food.",
+            "example": "Wash the dishes.",
+            "translation": "Bát đĩa / Món ăn"
+            }
+        },
+        {
+            "word": "OMELET",
+            "clue_for_game": "A dish made from beaten eggs fried with butter or oil.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɒmlət/",
+            "full_definition": "A dish of beaten eggs.",
+            "example": "A cheese omelet.",
+            "translation": "Trứng tráng"
+            }
+        },
+        {
+            "word": "SKEWER",
+            "clue_for_game": "A long piece of wood or metal used for holding pieces of food, typically meat, together during cooking.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈskjuːə(r)/",
+            "full_definition": "A stick used to hold meat for cooking.",
+            "example": "Meat on a skewer.",
+            "translation": "Que xiên thịt"
+            }
+        },
+        {
+            "word": "SQUASH",
+            "clue_for_game": "A sweet liquid made from fruit juice, or an edible gourd.",
+            "char_to_extract": "S",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skwɒʃ/",
+            "full_definition": "A type of gourd vegetable.",
+            "example": "Butternut squash.",
+            "translation": "Quả bí"
+            }
+        },
+        {
+            "word": "SERVED",
+            "clue_for_game": "Presented food or drink to someone.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/sɜːvd/",
+            "full_definition": "Provided food to customers.",
+            "example": "Dinner is served.",
+            "translation": "Được phục vụ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 96,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "FLAVOR",
+        "phonetic": "/ˈfleɪvə(r)/",
+        "definition": "The distinctive taste of a food or drink.",
+        "example": "Vanilla flavor.",
+        "translation": "Hương vị"
+        },
+        "sub_words": [
+        {
+            "word": "FREEZE",
+            "clue_for_game": "To store food at a very low temperature in order to preserve it.",
+            "char_to_extract": "F",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/friːz/",
+            "full_definition": "To preserve food by keeping it below zero.",
+            "example": "Freeze the leftover soup.",
+            "translation": "Đóng băng"
+            }
+        },
+        {
+            "word": "OLIVES",
+            "clue_for_game": "Small oval fruits with a hard pit and bitter flesh, used for food and oil.",
+            "char_to_extract": "L",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈɒlɪvz/",
+            "full_definition": "Small bitter fruits.",
+            "example": "Black olives.",
+            "translation": "Quả ô-liu"
+            }
+        },
+        {
+            "word": "SALTED",
+            "clue_for_game": "Seasoned or preserved with salt.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/sɔːltɪd/",
+            "full_definition": "Containing or treated with salt.",
+            "example": "Salted butter.",
+            "translation": "Được ướp muối"
+            }
+        },
+        {
+            "word": "SAVORY",
+            "clue_for_game": "Belonging to the category that is salty or spicy rather than sweet.",
+            "char_to_extract": "V",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈseɪvəri/",
+            "full_definition": "Salty or spicy, not sweet.",
+            "example": "A savory dish.",
+            "translation": "Đậm đà / Vị mặn"
+            }
+        },
+        {
+            "word": "COOKED",
+            "clue_for_game": "Prepared food by heating it.",
+            "char_to_extract": "O",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/kʊkt/",
+            "full_definition": "Prepared by heating.",
+            "example": "Well cooked meat.",
+            "translation": "Được nấu chín"
+            }
+        },
+        {
+            "word": "POURING",
+            "clue_for_game": "Flowing rapidly in a steady stream.",
+            "char_to_extract": "R",
+            "extract_index": 3,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Verb",
+            "phonetic": "/pɔːrɪŋ/",
+            "full_definition": "Flowing steadily.",
+            "example": "Pouring the sauce.",
+            "translation": "Đang rót / Đổ"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 97,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "BAKING",
+        "phonetic": "/ˈbeɪkɪŋ/",
+        "definition": "The action of cooking food by dry heat without direct exposure to a flame.",
+        "example": "Baking is my favorite hobby.",
+        "translation": "Việc nướng bánh"
+        },
+        "sub_words": [
+        {
+            "word": "BATTER",
+            "clue_for_game": "A semi-liquid mixture of flour, egg, and milk or water used in cooking.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbætə(r)/",
+            "full_definition": "A liquid mixture for baking or frying.",
+            "example": "Pancake batter.",
+            "translation": "Bột nhão (chưa nướng)"
+            }
+        },
+        {
+            "word": "PANTRY",
+            "clue_for_game": "A small room or cupboard in which food, crockery, and cutlery are kept.",
+            "char_to_extract": "A",
+            "extract_index": 1,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈpæntri/",
+            "full_definition": "A room or closet for storing food.",
+            "example": "A well-stocked pantry.",
+            "translation": "Tủ chạn / Phòng để đồ ăn"
+            }
+        },
+        {
+            "word": "BAKERS",
+            "clue_for_game": "People whose trade is making and selling bread and cakes.",
+            "char_to_extract": "K",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈbeɪkəz/",
+            "full_definition": "Professionals who bake bread and cakes.",
+            "example": "The bakers start early.",
+            "translation": "Những người thợ nướng bánh"
+            }
+        },
+        {
+            "word": "WHISKS",
+            "clue_for_game": "Utensils for whipping eggs or cream.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/wɪsks/",
+            "full_definition": "Utensils used to beat ingredients.",
+            "example": "Wire whisks.",
+            "translation": "Dụng cụ đánh trứng"
+            }
+        },
+        {
+            "word": "MINCED",
+            "clue_for_game": "Cut up or ground into very small pieces.",
+            "char_to_extract": "N",
+            "extract_index": 2,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/mɪnst/",
+            "full_definition": "Chopped very finely.",
+            "example": "Minced beef.",
+            "translation": "Được băm nhỏ"
+            }
+        },
+        {
+            "word": "GRILLED",
+            "clue_for_game": "Cooked over a fire or on a grill.",
+            "char_to_extract": "G",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ɡrɪld/",
+            "full_definition": "Cooked on a grill.",
+            "example": "Grilled fish.",
+            "translation": "Được nướng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 98,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "BOILED",
+        "phonetic": "/bɔɪld/",
+        "definition": "Cooked in water that has reached boiling point.",
+        "example": "Boiled potatoes.",
+        "translation": "Được luộc"
+        },
+        "sub_words": [
+        {
+            "word": "BROTHS",
+            "clue_for_game": "Soups consisting of meat or vegetables cooked in water.",
+            "char_to_extract": "B",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/brɒθs/",
+            "full_definition": "Liquid in which meat or veg has been cooked.",
+            "example": "Chicken broths.",
+            "translation": "Nước dùng / Nước luộc"
+            }
+        },
+        {
+            "word": "CHOPPER",
+            "clue_for_game": "A person or thing that chops, in particular a short axe with a large blade.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈtʃɒpə(r)/",
+            "full_definition": "A tool used for chopping.",
+            "example": "A meat chopper.",
+            "translation": "Dao phay / Dụng cụ băm"
+            }
+        },
+        {
+            "word": "CHILLED",
+            "clue_for_game": "Cooled to a low temperature but not frozen.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/tʃɪld/",
+            "full_definition": "Made cold.",
+            "example": "A chilled drink.",
+            "translation": "Được ướp lạnh"
+            }
+        },
+        {
+            "word": "PEELED",
+            "clue_for_game": "Having the skin or rind removed.",
+            "char_to_extract": "L",
+            "extract_index": 3,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/piːld/",
+            "full_definition": "With the outer layer removed.",
+            "example": "Peeled carrots.",
+            "translation": "Đã được gọt vỏ"
+            }
+        },
+        {
+            "word": "HEATED",
+            "clue_for_game": "Made warm or hot.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Adjective",
+            "phonetic": "/ˈhiːtɪd/",
+            "full_definition": "Made hot.",
+            "example": "Heated oven.",
+            "translation": "Được làm nóng"
+            }
+        },
+        {
+            "word": "DOUGH",
+            "clue_for_game": "A thick, malleable mixture of flour and liquid, used for baking into bread or pastry.",
+            "char_to_extract": "D",
+            "extract_index": 0,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/dəʊ/",
+            "full_definition": "A mixture for baking.",
+            "example": "Pizza dough.",
+            "translation": "Cục bột nhào"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 99,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "COOKIE",
+        "phonetic": "/ˈkʊki/",
+        "definition": "A small sweet cake, typically round and flat.",
+        "example": "A chocolate chip cookie.",
+        "translation": "Bánh quy"
+        },
+        "sub_words": [
+        {
+            "word": "CRUMBS",
+            "clue_for_game": "Small fragments of bread, cake, or biscuit.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/krʌmz/",
+            "full_definition": "Small pieces of baked food.",
+            "example": "Brush away the crumbs.",
+            "translation": "Mảnh vụn bánh"
+            }
+        },
+        {
+            "word": "SPOONS",
+            "clue_for_game": "Utensils consisting of a small, shallow bowl on a handle.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/spuːnz/",
+            "full_definition": "Utensils for eating soup.",
+            "example": "Two wooden spoons.",
+            "translation": "Những cái thìa"
+            }
+        },
+        {
+            "word": "SCOOPS",
+            "clue_for_game": "Utensils resembling a spoon, with a short handle and a deep bowl.",
+            "char_to_extract": "O",
+            "extract_index": 2,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/skuːps/",
+            "full_definition": "Deep spoons for serving ice cream.",
+            "example": "Two scoops of vanilla.",
+            "translation": "Muỗng múc (kem)"
+            }
+        },
+        {
+            "word": "SKILLET",
+            "clue_for_game": "A frying pan.",
+            "char_to_extract": "K",
+            "extract_index": 1,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈskɪlɪt/",
+            "full_definition": "A heavy iron frying pan.",
+            "example": "Cook the eggs in a skillet.",
+            "translation": "Chảo rán"
+            }
+        },
+        {
+            "word": "ICINGS",
+            "clue_for_game": "Sweet mixtures, typically of sugar and water, used to coat or decorate cakes.",
+            "char_to_extract": "I",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈaɪsɪŋz/",
+            "full_definition": "Sweet coatings for cakes.",
+            "example": "Different colored icings.",
+            "translation": "Lớp kem phủ bánh"
+            }
+        },
+        {
+            "word": "PIECES",
+            "clue_for_game": "Portions of an object or of material, produced by cutting, tearing, or breaking the whole.",
+            "char_to_extract": "E",
+            "extract_index": 2,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/piːsz/",
+            "full_definition": "Portions or slices.",
+            "example": "Cut the cake into pieces.",
+            "translation": "Những mảnh / Miếng"
+            }
+        }
+        ]
+    },
+    {
+        "level_id": 100,
+        "theme": "Food & Cooking",
+        "difficulty": "B1-B2",
+        "main_word": {
+        "word": "KITCHEN",
+        "phonetic": "/ˈkɪtʃɪn/",
+        "definition": "A room or area where food is prepared and cooked.",
+        "example": "The kitchen smells amazing.",
+        "translation": "Nhà bếp"
+        },
+        "sub_words": [
+        {
+            "word": "KNIVES",
+            "clue_for_game": "Instruments composed of a blade fixed into a handle, used for cutting.",
+            "char_to_extract": "K",
+            "extract_index": 0,
+            "map_to_main_index": 0,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/naɪvz/",
+            "full_definition": "Sharp tools for cutting.",
+            "example": "A set of kitchen knives.",
+            "translation": "Những con dao"
+            }
+        },
+        {
+            "word": "SLICER",
+            "clue_for_game": "An instrument with a sharp blade for cutting food into thin pieces.",
+            "char_to_extract": "I",
+            "extract_index": 2,
+            "map_to_main_index": 1,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈslaɪsə(r)/",
+            "full_definition": "A machine or tool for slicing.",
+            "example": "A cheese slicer.",
+            "translation": "Máy/Dụng cụ thái lát"
+            }
+        },
+        {
+            "word": "TOASTS",
+            "clue_for_game": "Slices of bread browned on both sides by exposure to radiant heat.",
+            "char_to_extract": "T",
+            "extract_index": 0,
+            "map_to_main_index": 2,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/təʊsts/",
+            "full_definition": "Browned slices of bread.",
+            "example": "Two toasts with jam.",
+            "translation": "Những lát bánh mì nướng"
+            }
+        },
+        {
+            "word": "CLEAVER",
+            "clue_for_game": "A tool with a heavy broad blade, used by butchers for chopping meat.",
+            "char_to_extract": "C",
+            "extract_index": 0,
+            "map_to_main_index": 3,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈkliːvə(r)/",
+            "full_definition": "A heavy chopping knife.",
+            "example": "A meat cleaver.",
+            "translation": "Dao phay (băm thịt)"
+            }
+        },
+        {
+            "word": "HEATER",
+            "clue_for_game": "A device for warming the air or water.",
+            "char_to_extract": "H",
+            "extract_index": 0,
+            "map_to_main_index": 4,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈhiːtə(r)/",
+            "full_definition": "A device that provides heat.",
+            "example": "A water heater.",
+            "translation": "Bình đun / Lò sưởi"
+            }
+        },
+        {
+            "word": "RECIPES",
+            "clue_for_game": "Sets of instructions for preparing particular dishes.",
+            "char_to_extract": "E",
+            "extract_index": 1,
+            "map_to_main_index": 5,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈresəpiz/",
+            "full_definition": "Instructions for cooking.",
+            "example": "A book of recipes.",
+            "translation": "Những công thức nấu ăn"
+            }
+        },
+        {
+            "word": "BLENDER",
+            "clue_for_game": "A machine used to puree, crush, or emulsify food and other substances.",
+            "char_to_extract": "N",
+            "extract_index": 3,
+            "map_to_main_index": 6,
+            "details": {
+            "type": "Noun",
+            "phonetic": "/ˈblendə(r)/",
+            "full_definition": "An electrical appliance for mixing food.",
+            "example": "Put the fruit in the blender.",
+            "translation": "Máy xay sinh tố"
+            }
+        }
+        ]
     }
 ]

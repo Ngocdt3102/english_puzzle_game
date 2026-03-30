@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
+import '../../logic/settings_provider.dart'; // --- THÊM SETTINGS PROVIDER ---
 
 class MainWordView extends StatelessWidget {
   const MainWordView({super.key});
@@ -12,16 +13,20 @@ class MainWordView extends StatelessWidget {
     final gameProvider = context.watch<GameProvider>();
     final mainWordDisplay = gameProvider.mainWordDisplay;
 
+    // --- KÉO BỘ MÀU TỪ SETTINGS ---
+    final themeIndex = context.watch<SettingsProvider>().themeIndex;
+    final appColors = AppColors.getTheme(themeIndex);
+
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
       child: Column(
         children: [
-          const Text(
+          Text(
             "TARGET",
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w900,
-              color: Colors.black45,
+              color: appColors.textMain.withOpacity(0.5), // Chữ tương phản mờ
               letterSpacing: 3,
             ),
           ),
@@ -34,7 +39,7 @@ class MainWordView extends StatelessWidget {
               mainWordDisplay.length,
               (index) => _buildLetterBox(
                 mainWordDisplay[index],
-                // THÊM DÒNG NÀY: Truyền chìa khóa đích (bãi đáp) vào từng ô vuông
+                appColors, // Truyền bộ màu xuống hàm vẽ ô chữ
                 key: gameProvider.getTargetKey(index),
               ),
             ),
@@ -44,27 +49,35 @@ class MainWordView extends StatelessWidget {
     );
   }
 
-  // THÊM DÒNG NÀY: Cập nhật hàm nhận thêm tham số Key
-  Widget _buildLetterBox(String letter, {Key? key}) {
+  // --- Cập nhật hàm nhận thêm tham số appColors ---
+  Widget _buildLetterBox(String letter, AppColors appColors, {Key? key}) {
     bool hasLetter = letter.isNotEmpty;
 
     return AnimatedContainer(
-      key: key, // THÊM DÒNG NÀY: Gắn chìa khóa vào Container để lưu tọa độ
+      key: key,
       duration: const Duration(milliseconds: 400),
-      curve: Curves.elasticOut, // Hiệu ứng nảy lên
+      curve: Curves.elasticOut,
       width: 50,
       height: 60,
       decoration: BoxDecoration(
-        color: hasLetter ? AppColors.secondary : Colors.white.withOpacity(0.4),
+        // Ô trống sẽ dùng màu nền tối/sáng tùy Theme thay vì fix cứng màu trắng
+        color: hasLetter
+            ? appColors.secondary
+            : appColors.defaultTile.withOpacity(0.3),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(
-          color: hasLetter ? AppColors.secondary : Colors.white,
+          // Viền của ô trống sẽ mờ đi để không bị chói
+          color: hasLetter
+              ? appColors.secondary
+              : appColors.textMain.withOpacity(0.2),
           width: 2,
         ),
         boxShadow: hasLetter
             ? [
                 BoxShadow(
-                  color: AppColors.secondary.withOpacity(0.6),
+                  color: appColors.secondary.withOpacity(
+                    0.6,
+                  ), // Bóng đổ theo màu phụ
                   blurRadius: 15,
                   spreadRadius: 2,
                   offset: const Offset(0, 5),
@@ -75,10 +88,10 @@ class MainWordView extends StatelessWidget {
       alignment: Alignment.center,
       child: Text(
         letter,
-        style: const TextStyle(
+        style: TextStyle(
           fontSize: 28,
           fontWeight: FontWeight.w900,
-          color: Colors.white,
+          color: appColors.textLight, // Màu chữ sáng nổi bật trên nền màu
         ),
       ),
     );

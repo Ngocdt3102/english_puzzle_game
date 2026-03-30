@@ -3,7 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
-import 'shake_widget.dart'; // THÊM DÒNG IMPORT NÀY
+import '../../logic/settings_provider.dart';
+import 'shake_widget.dart';
 
 class CrosswordGrid extends StatelessWidget {
   const CrosswordGrid({super.key});
@@ -17,13 +18,17 @@ class CrosswordGrid extends StatelessWidget {
     final solvedList = gameProvider.subWordSolved;
     final inputsList = gameProvider.subWordInputs;
 
+    // --- LẤY BỘ MÀU THEME HIỆN TẠI ---
+    final settings = context.watch<SettingsProvider>();
+    final appColors = AppColors.getTheme(settings.themeIndex);
+
     // 2. TẦNG PHÒNG THỦ
     if (subWords.isEmpty ||
         solvedList.length != subWords.length ||
         inputsList.length != subWords.length) {
-      return const Expanded(
+      return Expanded(
         child: Center(
-          child: CircularProgressIndicator(color: AppColors.primary),
+          child: CircularProgressIndicator(color: appColors.primary),
         ),
       );
     }
@@ -33,18 +38,15 @@ class CrosswordGrid extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
         itemCount: subWords.length,
         itemBuilder: (context, index) {
-          // 3. TRUY XUẤT AN TOÀN
           bool isSelected = gameProvider.selectedSubWordIndex == index;
           bool isSolved = solvedList[index];
           String currentInput = inputsList[index];
           String targetWord = subWords[index].word;
 
-          // THÊM MỚI: Lấy giá trị trigger từ Provider. Chỉ hàng nào đang bị lỗi mới nhận giá trị > 0
           int shakeTrigger = (gameProvider.errorSubWordIndex == index)
               ? gameProvider.wrongShakeTrigger
               : 0;
 
-          // BỌC GESTURE DETECTOR TRONG SHAKE WIDGET
           return ShakeWidget(
             trigger: shakeTrigger,
             child: GestureDetector(
@@ -54,20 +56,21 @@ class CrosswordGrid extends StatelessWidget {
                 margin: const EdgeInsets.only(bottom: 15),
                 padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
+                  // Nền hàng: Dùng màu tile mặc định để thích ứng Dark/Light
                   color: isSelected
-                      ? Colors.white
-                      : Colors.white.withOpacity(0.5),
+                      ? appColors.defaultTile
+                      : appColors.defaultTile.withOpacity(0.4),
                   borderRadius: BorderRadius.circular(15),
                   border: Border.all(
                     color: isSelected
-                        ? AppColors.primary.withOpacity(0.5)
+                        ? appColors.primary.withOpacity(0.5)
                         : Colors.transparent,
                     width: 2,
                   ),
                   boxShadow: isSelected
                       ? [
                           BoxShadow(
-                            color: AppColors.primary.withOpacity(0.1),
+                            color: appColors.primary.withOpacity(0.1),
                             blurRadius: 10,
                             offset: const Offset(0, 4),
                           ),
@@ -76,6 +79,7 @@ class CrosswordGrid extends StatelessWidget {
                 ),
                 child: Wrap(
                   spacing: 6,
+                  runSpacing: 8,
                   alignment: WrapAlignment.center,
                   children: List.generate(targetWord.length, (charIndex) {
                     String char = charIndex < currentInput.length
@@ -89,6 +93,7 @@ class CrosswordGrid extends StatelessWidget {
                       isSelected: isSelected,
                       isSolved: isSolved,
                       isTargetChar: charIndex == subWords[index].extractIndex,
+                      appColors: appColors, // Truyền màu xuống
                     );
                   }),
                 ),
@@ -101,41 +106,40 @@ class CrosswordGrid extends StatelessWidget {
   }
 
   Widget _buildCharBox({
-    Key? key, // THÊM DÒNG NÀY: Nhận chìa khóa định vị tọa độ
+    Key? key,
     required String char,
     required bool isSelected,
     required bool isSolved,
     required bool isTargetChar,
+    required AppColors appColors, // Nhận bộ màu
   }) {
-    // FIX: Sử dụng BoxShadow để tạo hiệu ứng 3D thay vì dùng Border không đồng nhất
-
-    // Màu nền chính của ô chữ
+    // Màu nền ô chữ
     Color bgColor = isSolved
-        ? AppColors.correctTile
-        : (isSelected ? AppColors.selectedTile : AppColors.defaultTile);
+        ? appColors.correctTile
+        : (isSelected ? appColors.selectedTile : appColors.defaultTile);
 
-    // Màu của viền ngoài
-    Color borderColor = isTargetChar ? AppColors.primary : Colors.black12;
+    // Màu viền (Nổi bật ô trích xuất chữ)
+    Color borderColor = isTargetChar
+        ? appColors.primary
+        : appColors.textMain.withOpacity(0.1);
 
-    // Màu của hiệu ứng đổ bóng 3D (đáy chữ)
+    // Màu bóng đổ 3D (Đáy chữ)
     Color shadowColor = isTargetChar
-        ? AppColors.primary
-        : (isSolved ? Colors.green.shade800 : Colors.grey.shade400);
+        ? appColors.primary.withOpacity(0.8)
+        : (isSolved
+              ? appColors.correctTile.withOpacity(0.6)
+              : appColors.textMain.withOpacity(0.2));
 
     return AnimatedContainer(
-      key:
-          key, // THÊM DÒNG NÀY: Gắn chìa khóa vào Container để làm điểm xuất phát
+      key: key,
       duration: const Duration(milliseconds: 300),
       width: 40,
       height: 48,
-      margin: const EdgeInsets.only(
-        bottom: 4,
-      ), // Tạo khoảng trống để hiện bóng đổ 3D
+      margin: const EdgeInsets.only(bottom: 4),
       decoration: BoxDecoration(
         color: bgColor,
         borderRadius: BorderRadius.circular(8),
         border: Border.all(color: borderColor, width: isTargetChar ? 2 : 1),
-        // HIỆU ỨNG 3D MỚI: Dùng bóng đổ cứng (blurRadius = 0) dịch xuống dưới (offset Y = 4)
         boxShadow: [
           BoxShadow(
             color: shadowColor,
@@ -150,7 +154,7 @@ class CrosswordGrid extends StatelessWidget {
         style: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.bold,
-          color: isSolved ? Colors.white : AppColors.textMain,
+          color: isSolved ? Colors.white : appColors.textMain,
         ),
       ),
     );

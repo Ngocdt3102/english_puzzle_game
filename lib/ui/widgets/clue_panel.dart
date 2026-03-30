@@ -1,3 +1,4 @@
+import 'package:english_puzzle_gam/logic/settings_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -16,6 +17,9 @@ class CluePanel extends StatelessWidget {
 
     final selectedIndex = gameProvider.selectedSubWordIndex;
     final subWord = currentLevel.subWords[selectedIndex];
+
+    final settings = context.watch<SettingsProvider>();
+    final appColors = AppColors.getTheme(settings.themeIndex);
 
     return Container(
       width: double.infinity,
@@ -37,17 +41,17 @@ class CluePanel extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Icon(
+              Icon(
                 Icons.help_outline_rounded,
-                color: AppColors.primary,
+                color: appColors.primary,
                 size: 20,
               ),
               const SizedBox(width: 8),
               Text(
                 "CLUE ${selectedIndex + 1}",
-                style: const TextStyle(
+                style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  color: AppColors.primary,
+                  color: appColors.primary,
                   letterSpacing: 1.2,
                 ),
               ),
@@ -59,10 +63,10 @@ class CluePanel extends StatelessWidget {
           Text(
             subWord.clue,
             textAlign: TextAlign.center,
-            style: const TextStyle(
+            style: TextStyle(
               fontSize: 18,
               fontWeight: FontWeight.w600,
-              color: AppColors.textMain,
+              color: appColors.textMain,
               height: 1.3,
             ),
           ),

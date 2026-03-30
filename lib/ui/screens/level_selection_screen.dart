@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart'; // Thêm để dùng Haptic
 import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
+import '../../logic/settings_provider.dart'; // Import Settings
 import 'game_screen.dart';
 
 class LevelSelectionScreen extends StatelessWidget {
@@ -14,13 +16,17 @@ class LevelSelectionScreen extends StatelessWidget {
     final totalLevels = provider.totalLevels;
     final completedLevels = provider.completedLevels;
 
+    // --- 1. LẤY BỘ MÀU THEME ĐỘNG ---
+    final settings = context.watch<SettingsProvider>();
+    final appColors = AppColors.getTheme(settings.themeIndex);
+
     return Scaffold(
       body: Container(
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,
             end: Alignment.bottomCenter,
-            colors: [AppColors.bgStart, AppColors.bgEnd],
+            colors: [appColors.bgStart, appColors.bgEnd],
           ),
         ),
         child: SafeArea(
@@ -32,25 +38,25 @@ class LevelSelectionScreen extends StatelessWidget {
                 child: Row(
                   children: [
                     IconButton(
-                      icon: const Icon(
+                      icon: Icon(
                         Icons.arrow_back_ios_new_rounded,
-                        color: AppColors.primary,
+                        color: appColors.primary,
                       ),
                       onPressed: () => Navigator.pop(context),
                     ),
-                    const Expanded(
+                    Expanded(
                       child: Text(
                         "SELECT LEVEL",
                         textAlign: TextAlign.center,
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w900,
-                          color: AppColors.primary,
+                          color: appColors.primary,
                           letterSpacing: 2,
                         ),
                       ),
                     ),
-                    const SizedBox(width: 48), // Cân bằng UI
+                    const SizedBox(width: 48),
                   ],
                 ),
               ),
@@ -61,14 +67,13 @@ class LevelSelectionScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(20),
                   physics: const BouncingScrollPhysics(),
                   gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 4, // 4 ô 1 hàng
+                    crossAxisCount: 4,
                     crossAxisSpacing: 15,
                     mainAxisSpacing: 15,
                   ),
                   itemCount: totalLevels,
                   itemBuilder: (context, index) {
                     int levelId = index + 1;
-                    // Logic mở khóa: Level 1 luôn mở. Level khác mở nếu Level trước đó đã hoàn thành.
                     bool isCompleted = completedLevels.contains(levelId);
                     bool isUnlocked =
                         levelId == 1 || completedLevels.contains(levelId - 1);
@@ -76,6 +81,8 @@ class LevelSelectionScreen extends StatelessWidget {
                     return _buildLevelBox(
                       context,
                       provider,
+                      settings, // Truyền settings xuống
+                      appColors, // Truyền màu xuống
                       levelId,
                       isCompleted,
                       isUnlocked,
@@ -90,10 +97,11 @@ class LevelSelectionScreen extends StatelessWidget {
     );
   }
 
-  // --- WIDGET Ô LEVEL ---
   Widget _buildLevelBox(
     BuildContext context,
     GameProvider provider,
+    SettingsProvider settings,
+    AppColors appColors,
     int levelId,
     bool isCompleted,
     bool isUnlocked,
@@ -101,17 +109,24 @@ class LevelSelectionScreen extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         if (isUnlocked) {
-          // Bấm vào thì load level đó và nhảy sang GameScreen
+          // Rung nhẹ khi bấm nếu cài đặt cho phép
+          if (settings.isHapticEnabled) HapticFeedback.lightImpact();
+
           provider.loadLevel(levelId);
           Navigator.push(
             context,
             MaterialPageRoute(builder: (_) => const GameScreen()),
           );
         } else {
-          // Hiện thông báo nhẹ nếu chưa mở khóa
+          // Rung cảnh báo nếu bấm vào ô khóa
+          if (settings.isHapticEnabled) HapticFeedback.vibrate();
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
-              content: Text("Bạn cần hoàn thành Level ${levelId - 1} trước!"),
+              backgroundColor: appColors.primary,
+              content: Text(
+                "Bạn cần hoàn thành Level ${levelId - 1} trước!",
+                style: TextStyle(color: appColors.textLight),
+              ),
               duration: const Duration(seconds: 1),
             ),
           );
@@ -120,54 +135,67 @@ class LevelSelectionScreen extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-          // Màu sắc: Đã qua -> Vàng cam (Secondary), Đang chơi -> Trắng, Khóa -> Xám mờ
+          // Màu sắc ô linh hoạt theo Theme
           color: isCompleted
-              ? AppColors.secondary
-              : (isUnlocked ? Colors.white : Colors.white.withOpacity(0.3)),
+              ? appColors.correctTile
+              : (isUnlocked
+                    ? appColors.defaultTile
+                    : appColors.textMain.withOpacity(0.1)),
           borderRadius: BorderRadius.circular(15),
           border: Border.all(
             color: isUnlocked
                 ? (isCompleted
-                      ? AppColors.secondary
-                      : AppColors.primary.withOpacity(0.5))
+                      ? appColors.correctTile
+                      : appColors.primary.withOpacity(0.5))
                 : Colors.transparent,
             width: 2,
           ),
           boxShadow: isUnlocked
               ? [
                   BoxShadow(
-                    color: Colors.black.withOpacity(0.1),
+                    color:
+                        (isCompleted
+                                ? appColors.correctTile
+                                : appColors.primary)
+                            .withOpacity(0.2),
                     blurRadius: 8,
                     offset: const Offset(0, 4),
                   ),
                 ]
               : [],
         ),
-        child: Center(child: isLockedDisplay(levelId, isCompleted, isUnlocked)),
+        child: Center(
+          child: _buildIconOrText(levelId, isCompleted, isUnlocked, appColors),
+        ),
       ),
     );
   }
 
-  // Hàm phụ trợ chọn nội dung hiển thị trong ô
-  Widget isLockedDisplay(int levelId, bool isCompleted, bool isUnlocked) {
+  Widget _buildIconOrText(
+    int levelId,
+    bool isCompleted,
+    bool isUnlocked,
+    AppColors appColors,
+  ) {
     if (!isUnlocked) {
-      // TRẠNG THÁI KHÓA: Hình ổ khóa
-      return Icon(Icons.lock_rounded, color: Colors.grey.shade400, size: 28);
+      return Icon(
+        Icons.lock_rounded,
+        color: appColors.textMain.withOpacity(0.3),
+        size: 24,
+      );
     } else if (isCompleted) {
-      // TRẠNG THÁI HOÀN THÀNH: Icon V tick
-      return const Icon(
+      return Icon(
         Icons.check_circle_rounded,
-        color: Colors.white,
-        size: 32,
+        color: appColors.textLight,
+        size: 28,
       );
     } else {
-      // TRẠNG THÁI MỞ KHÓA (CHƯA CHƠI): Hiện số Level
       return Text(
         "$levelId",
-        style: const TextStyle(
-          fontSize: 24,
+        style: TextStyle(
+          fontSize: 22,
           fontWeight: FontWeight.w900,
-          color: AppColors.primary,
+          color: appColors.primary,
         ),
       );
     }
