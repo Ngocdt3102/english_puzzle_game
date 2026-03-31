@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
-import '../../logic/settings_provider.dart'; // --- THÊM SETTINGS PROVIDER ---
+import '../../logic/settings_provider.dart';
 
 class MainWordView extends StatelessWidget {
   const MainWordView({super.key});
@@ -13,33 +13,35 @@ class MainWordView extends StatelessWidget {
     final gameProvider = context.watch<GameProvider>();
     final mainWordDisplay = gameProvider.mainWordDisplay;
 
-    // --- KÉO BỘ MÀU TỪ SETTINGS ---
     final themeIndex = context.watch<SettingsProvider>().themeIndex;
     final appColors = AppColors.getTheme(themeIndex);
 
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+      width: double.infinity, // Bắt buộc để canh trái mượt mà
+      // Margin đã được thu nhỏ tối đa để nhường chỗ
+      margin: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start, // CANH TRÁI THEO Ô ĐỎ
         children: [
           Text(
             "TARGET",
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 12,
               fontWeight: FontWeight.w900,
-              color: appColors.textMain.withOpacity(0.5), // Chữ tương phản mờ
+              color: appColors.textMain.withOpacity(0.5),
               letterSpacing: 3,
             ),
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 6),
           Wrap(
-            spacing: 8,
-            runSpacing: 10,
-            alignment: WrapAlignment.center,
+            spacing: 6,
+            runSpacing: 8,
+            alignment: WrapAlignment.start, // CANH TRÁI CÁC Ô CHỮ
             children: List.generate(
               mainWordDisplay.length,
               (index) => _buildLetterBox(
                 mainWordDisplay[index],
-                appColors, // Truyền bộ màu xuống hàm vẽ ô chữ
+                appColors,
                 key: gameProvider.getTargetKey(index),
               ),
             ),
@@ -49,7 +51,6 @@ class MainWordView extends StatelessWidget {
     );
   }
 
-  // --- Cập nhật hàm nhận thêm tham số appColors ---
   Widget _buildLetterBox(String letter, AppColors appColors, {Key? key}) {
     bool hasLetter = letter.isNotEmpty;
 
@@ -57,16 +58,14 @@ class MainWordView extends StatelessWidget {
       key: key,
       duration: const Duration(milliseconds: 400),
       curve: Curves.elasticOut,
-      width: 50,
-      height: 60,
+      width: 38, // Kích thước gọn nhẹ
+      height: 46,
       decoration: BoxDecoration(
-        // Ô trống sẽ dùng màu nền tối/sáng tùy Theme thay vì fix cứng màu trắng
         color: hasLetter
             ? appColors.secondary
             : appColors.defaultTile.withOpacity(0.3),
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(10),
         border: Border.all(
-          // Viền của ô trống sẽ mờ đi để không bị chói
           color: hasLetter
               ? appColors.secondary
               : appColors.textMain.withOpacity(0.2),
@@ -75,12 +74,10 @@ class MainWordView extends StatelessWidget {
         boxShadow: hasLetter
             ? [
                 BoxShadow(
-                  color: appColors.secondary.withOpacity(
-                    0.6,
-                  ), // Bóng đổ theo màu phụ
-                  blurRadius: 15,
-                  spreadRadius: 2,
-                  offset: const Offset(0, 5),
+                  color: appColors.secondary.withOpacity(0.5),
+                  blurRadius: 10,
+                  spreadRadius: 1,
+                  offset: const Offset(0, 4),
                 ),
               ]
             : [],
@@ -89,9 +86,9 @@ class MainWordView extends StatelessWidget {
       child: Text(
         letter,
         style: TextStyle(
-          fontSize: 28,
+          fontSize: 22,
           fontWeight: FontWeight.w900,
-          color: appColors.textLight, // Màu chữ sáng nổi bật trên nền màu
+          color: appColors.textLight,
         ),
       ),
     );

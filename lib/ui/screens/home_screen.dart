@@ -3,11 +3,13 @@ import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
-import '../../logic/settings_provider.dart'; // THÊM SETTINGS PROVIDER
+import '../../logic/settings_provider.dart';
 import '../widgets/home_animations.dart';
-import '../widgets/settings_overlay.dart'; // THÊM SETTINGS OVERLAY
+import '../widgets/settings_overlay.dart';
 import 'dictionary_screen.dart';
-import 'level_selection_screen.dart';
+import 'mile_stone_screen.dart'; // Import Milestone
+import 'store_screen.dart'; // Import Store
+import 'topic_selection_screen.dart';
 import 'tutorial_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -15,10 +17,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // 1. LẤY THÔNG TIN TIẾN ĐỘ VÀ BỘ MÀU THEME
     final gameProvider = context.watch<GameProvider>();
-    final currentLevel = gameProvider.currentLevelId;
     final totalWords = gameProvider.unlockedWords.length;
+    final totalCompletedLevels = gameProvider.completedLevels.length;
 
     final settings = context.watch<SettingsProvider>();
     final appColors = AppColors.getTheme(settings.themeIndex);
@@ -36,9 +37,9 @@ class HomeScreen extends StatelessWidget {
         child: SafeArea(
           child: Column(
             children: [
-              const SizedBox(height: 20),
+              const SizedBox(height: 10),
 
-              // --- HEADER: HƯỚNG DẪN & CÀI ĐẶT & RESET ---
+              // --- HEADER: HƯỚNG DẪN, CÀI ĐẶT & CỬA HÀNG (COINS) ---
               Padding(
                 padding: const EdgeInsets.symmetric(
                   horizontal: 20,
@@ -61,17 +62,17 @@ class HomeScreen extends StatelessWidget {
 
                     Row(
                       children: [
-                        // NÚT CÀI ĐẶT (MỚI THÊM)
+                        // NÚT STORE & HIỂN THỊ COINS (THIẾT KẾ MỚI)
+                        _buildCoinStoreButton(
+                          context,
+                          gameProvider.coins,
+                          appColors,
+                        ),
+                        const SizedBox(width: 12),
+                        // NÚT CÀI ĐẶT
                         _buildHeaderCircleButton(
                           icon: Icons.settings_rounded,
                           onTap: () => SettingsOverlay.show(context),
-                          appColors: appColors,
-                        ),
-                        const SizedBox(width: 15),
-                        // NÚT RESET
-                        _buildHeaderCircleButton(
-                          icon: Icons.refresh_rounded,
-                          onTap: () => _showResetDialog(context, appColors),
                           appColors: appColors,
                         ),
                       ],
@@ -88,19 +89,65 @@ class HomeScreen extends StatelessWidget {
               const Spacer(flex: 1),
 
               // --- KHU VỰC THỐNG KÊ NHANH ---
-              _buildStatsCard(totalWords, appColors),
+              _buildStatsCard(totalWords, totalCompletedLevels, appColors),
 
-              const SizedBox(height: 40),
+              const SizedBox(height: 30),
 
-              // --- NÚT PLAY / SELECT LEVEL ---
-              _buildPlayButton(context, currentLevel, appColors),
+              // --- NÚT CHÍNH: PLAY ---
+              _buildChooseTopicButton(context, appColors),
 
               const SizedBox(height: 20),
 
-              // --- NÚT MỞ TỪ ĐIỂN ---
-              _buildDictionaryButton(context, appColors),
+              // --- HÀNG NÚT PHỤ: DICTIONARY & MILESTONE ---
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 40),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: _buildSecondaryButton(
+                        context,
+                        "DICTIONARY",
+                        Icons.menu_book_rounded,
+                        () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const DictionaryScreen(),
+                          ),
+                        ),
+                        appColors,
+                      ),
+                    ),
+                    const SizedBox(width: 15),
+                    Expanded(
+                      child: _buildSecondaryButton(
+                        context,
+                        "JOURNEY",
+                        Icons.auto_graph_rounded,
+                        () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (_) => const MilestoneScreen(),
+                          ),
+                        ),
+                        appColors,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
-              const Spacer(flex: 1),
+              // NÚT RESET NHỎ Ở DƯỚI CÙNG (TRÁNH BẤM NHẦM)
+              TextButton(
+                onPressed: () => _showResetDialog(context, appColors),
+                child: Text(
+                  "Reset Data",
+                  style: TextStyle(
+                    color: appColors.textMain.withOpacity(0.3),
+                    fontSize: 12,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 10),
             ],
           ),
         ),
@@ -108,7 +155,58 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  // Hàm phụ vẽ các nút tròn nhỏ trên Header
+  // NÚT CỬA HÀNG VÀ COINS
+  Widget _buildCoinStoreButton(
+    BuildContext context,
+    int coins,
+    AppColors appColors,
+  ) {
+    return GestureDetector(
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => const StoreScreen()),
+      ),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+        decoration: BoxDecoration(
+          color: Colors.amber.shade600, // Màu vàng đặc trưng của Coin
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.1),
+              blurRadius: 8,
+              offset: const Offset(0, 3),
+            ),
+          ],
+        ),
+        child: Row(
+          children: [
+            const Icon(
+              Icons.monetization_on_rounded,
+              color: Colors.white,
+              size: 20,
+            ),
+            const SizedBox(width: 6),
+            Text(
+              "$coins",
+              style: const TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.w900,
+                fontSize: 16,
+              ),
+            ),
+            const SizedBox(width: 4),
+            const Icon(
+              Icons.add_circle_outline_rounded,
+              color: Colors.white70,
+              size: 14,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   Widget _buildHeaderCircleButton({
     required IconData icon,
     required VoidCallback onTap,
@@ -177,7 +275,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildStatsCard(int totalWords, AppColors appColors) {
+  Widget _buildStatsCard(int totalWords, int totalLevels, AppColors appColors) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 12),
       decoration: BoxDecoration(
@@ -188,15 +286,15 @@ class HomeScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(
-            Icons.military_tech_rounded,
+            Icons.emoji_events_rounded,
             color: Colors.orange,
             size: 28,
           ),
           const SizedBox(width: 8),
           Text(
-            "Words Unlocked: $totalWords",
+            "Unlocked: $totalWords Words | $totalLevels Levels",
             style: TextStyle(
-              fontSize: 16,
+              fontSize: 14,
               fontWeight: FontWeight.bold,
               color: appColors.textMain,
             ),
@@ -206,22 +304,16 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildPlayButton(
-    BuildContext context,
-    int currentLevel,
-    AppColors appColors,
-  ) {
+  Widget _buildChooseTopicButton(BuildContext context, AppColors appColors) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const LevelSelectionScreen()),
-            );
-          },
+          onTap: () => Navigator.push(
+            context,
+            MaterialPageRoute(builder: (_) => const TopicSelectionScreen()),
+          ),
           borderRadius: BorderRadius.circular(25),
           child: Container(
             width: double.infinity,
@@ -240,17 +332,17 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  "SELECT LEVEL",
+                  "< PLAY >",
                   style: TextStyle(
-                    fontSize: 24,
+                    fontSize: 26,
                     fontWeight: FontWeight.w900,
                     color: appColors.textLight,
-                    letterSpacing: 2,
+                    letterSpacing: 3,
                   ),
                 ),
                 const SizedBox(height: 5),
                 Text(
-                  "Current: Level $currentLevel",
+                  "Select a topic to start",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,
@@ -266,57 +358,44 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildDictionaryButton(BuildContext context, AppColors appColors) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 40),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (_) => const DictionaryScreen()),
-            );
-          },
-          borderRadius: BorderRadius.circular(20),
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: 15),
-            decoration: BoxDecoration(
-              color: appColors.defaultTile,
-              borderRadius: BorderRadius.circular(20),
-              border: Border.all(
-                color: appColors.textMain.withOpacity(0.1),
-                width: 2,
+  // NÚT PHỤ (DÙNG CHO DICTIONARY VÀ MILESTONE)
+  Widget _buildSecondaryButton(
+    BuildContext context,
+    String label,
+    IconData icon,
+    VoidCallback onTap,
+    AppColors appColors,
+  ) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20),
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 15),
+          decoration: BoxDecoration(
+            color: appColors.defaultTile,
+            borderRadius: BorderRadius.circular(20),
+            border: Border.all(
+              color: appColors.textMain.withOpacity(0.1),
+              width: 2,
+            ),
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(icon, color: appColors.secondary, size: 20),
+              const SizedBox(width: 8),
+              Text(
+                label,
+                style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w900,
+                  color: appColors.textMain,
+                  letterSpacing: 1,
+                ),
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withOpacity(0.05),
-                  blurRadius: 10,
-                  offset: const Offset(0, 4),
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(
-                  Icons.menu_book_rounded,
-                  color: appColors.secondary,
-                  size: 24,
-                ),
-                const SizedBox(width: 10),
-                Text(
-                  "MY DICTIONARY",
-                  style: TextStyle(
-                    fontSize: 18,
-                    fontWeight: FontWeight.w900,
-                    color: appColors.textMain,
-                    letterSpacing: 1.5,
-                  ),
-                ),
-              ],
-            ),
+            ],
           ),
         ),
       ),
@@ -337,40 +416,23 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
         content: Text(
-          "Tất cả tiến độ và từ vựng của bạn sẽ bị xóa. Bạn có chắc chắn không?",
+          "Tất cả tiến độ, vàng và từ vựng của bạn sẽ bị xóa. Bạn có chắc không?",
           style: TextStyle(color: appColors.textMain),
         ),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text(
-              "Hủy",
-              style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold),
-            ),
+            child: const Text("Hủy", style: TextStyle(color: Colors.grey)),
           ),
           ElevatedButton(
-            style: ElevatedButton.styleFrom(
-              backgroundColor: Colors.redAccent,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-            ),
+            style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent),
             onPressed: () {
               context.read<GameProvider>().resetData();
               Navigator.pop(ctx);
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text("Đã xóa dữ liệu thành công!"),
-                  backgroundColor: Colors.green,
-                ),
-              );
             },
             child: const Text(
               "Xóa sạch",
-              style: TextStyle(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ],

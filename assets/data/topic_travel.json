@@ -1,0 +1,97 @@
+{
+    "topic_id": "TRAVEL_01",
+    "topic_name": "Travel & Airport",
+    "levels": [
+        {
+        "level_id": 1,
+        "difficulty": "A1",
+        "main_word": {
+        "word": "TRIP",
+        "type": "Noun",
+        "phonetic": "/trɪp/",
+        "definition": "A journey or excursion, especially for pleasure.",
+        "definition_vi": "Một chuyến đi chơi hay du ngoạn, thường là để giải trí hoặc nghỉ ngơi.",
+        "example": "We went on a trip to the mountains.",
+        "example_vi": "Chúng tôi đã đi dã ngoại trên núi.",
+        "translation": "Chuyến đi",
+        "synonyms": [],
+        "antonyms": [],
+        "audio_file": "assets/sounds/words/trip.mp3"
+        },
+        "sub_words": [
+            {
+                "word": "TICKET",
+                "clue_for_game": "A piece of paper or card that gives the holder a certain right.",
+                "char_to_extract": "T",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈtɪkɪt/",
+                    "full_definition": "A piece of paper that proves you have paid for a journey.",
+                    "full_definition_vi": "Một tờ giấy nhỏ chứng minh bạn đã trả tiền cho một dịch vụ hoặc chuyến đi.",
+                    "example": "Show your ticket to the inspector.",
+                    "example_vi": "Vui lòng xuất trình vé cho người soát vé.",
+                    "translation": "Vé",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "TRAIN",
+                "clue_for_game": "A series of railway carriages or wagons moved as a unit by a locomotive.",
+                "char_to_extract": "R",
+                "extract_index": 1,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/treɪn/",
+                    "full_definition": "A series of railway carriages.",
+                    "full_definition_vi": "Một đoàn xe gồm nhiều toa nối liền nhau và chạy trên đường ray.",
+                    "example": "We took the train to London.",
+                    "example_vi": "Chúng tôi đi tàu hỏa đến London.",
+                    "translation": "Tàu hỏa",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "FLIGHT",
+                "clue_for_game": "A journey made by air, especially in an aeroplane.",
+                "char_to_extract": "I",
+                "extract_index": 2,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/flaɪt/",
+                    "full_definition": "A journey made by air.",
+                    "full_definition_vi": "Một chuyến đi bằng đường hàng không, thường là bằng máy bay.",
+                    "example": "My flight was delayed by two hours.",
+                    "example_vi": "Chuyến bay của tôi đã bị hoãn hai tiếng.",
+                    "translation": "Chuyến bay",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "PASSPORT",
+                "clue_for_game": "An official document issued by a government.",
+                "char_to_extract": "P",
+                "extract_index": 0,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈpɑːspɔːt/",
+                    "full_definition": "An official document identifying the holder.",
+                    "full_definition_vi": "Một loại giấy tờ chính thức do chính phủ cấp để nhận dạng công dân khi ra nước ngoài.",
+                    "example": "Don't forget to bring your passport.",
+                    "example_vi": "Đừng quên mang theo hộ chiếu của bạn nhé.",
+                    "translation": "Hộ chiếu",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                }
+            ]
+        }
+    ]
+}

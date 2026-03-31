@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
+import '../../logic/game_provider.dart'; // Thêm để gọi resetData
 import '../../logic/settings_provider.dart';
 
 class SettingsOverlay {
@@ -10,7 +11,6 @@ class SettingsOverlay {
     showModalBottomSheet(
       context: context,
       backgroundColor: Colors.transparent,
-      // Cho phép BottomSheet có thể kéo cao hơn nếu cần
       isScrollControlled: true,
       builder: (bottomSheetContext) {
         return Consumer<SettingsProvider>(
@@ -18,12 +18,11 @@ class SettingsOverlay {
             final appColors = AppColors.getTheme(settings.themeIndex);
 
             return Container(
-              // padding đáy nên linh hoạt hơn
               padding: const EdgeInsets.only(
                 top: 15,
                 left: 25,
                 right: 25,
-                bottom: 20,
+                bottom: 30, // Tăng nhẹ bottom padding cho nút Reset
               ),
               decoration: BoxDecoration(
                 color: appColors.defaultTile,
@@ -32,8 +31,7 @@ class SettingsOverlay {
                 ),
               ),
               child: Column(
-                mainAxisSize:
-                    MainAxisSize.min, // Quan trọng: Co giãn theo nội dung
+                mainAxisSize: MainAxisSize.min,
                 children: [
                   // Thanh Drag nhỏ
                   Container(
@@ -58,7 +56,6 @@ class SettingsOverlay {
                   ),
                   const SizedBox(height: 20),
 
-                  // --- GIẢI PHÁP SỬA LỖI OVERFLOW: Bọc nội dung vào ScrollView ---
                   Flexible(
                     child: SingleChildScrollView(
                       physics: const BouncingScrollPhysics(),
@@ -142,8 +139,15 @@ class SettingsOverlay {
                               ),
                             ],
                           ),
-                          // Thêm khoảng đệm cuối để không bị sát mép màn hình khi cuộn
-                          const SizedBox(height: 20),
+
+                          const SizedBox(height: 30),
+                          Divider(color: appColors.textMain.withOpacity(0.1)),
+                          const SizedBox(height: 10),
+
+                          // --- NÚT RESET DATA MỚI ---
+                          _buildResetButton(context, appColors, settings),
+
+                          const SizedBox(height: 10),
                         ],
                       ),
                     ),
@@ -157,7 +161,128 @@ class SettingsOverlay {
     );
   }
 
-  // ... (Giữ nguyên các hàm _buildSwitchTile và _buildThemeOption của bạn)
+  // --- WIDGET NÚT RESET ---
+  static Widget _buildResetButton(
+    BuildContext context,
+    AppColors appColors,
+    SettingsProvider settings,
+  ) {
+    return InkWell(
+      onTap: () {
+        if (settings.isHapticEnabled) HapticFeedback.mediumImpact();
+        // Gọi lại logic Reset Dialog mà bạn đã có ở HomeScreen
+        _showResetConfirmation(context, appColors);
+      },
+      borderRadius: BorderRadius.circular(15),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 12.0, horizontal: 10),
+        child: Row(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.redAccent.withOpacity(0.1),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(
+                Icons.refresh_rounded,
+                color: Colors.redAccent,
+                size: 22,
+              ),
+            ),
+            const SizedBox(width: 15),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    "Reset Game Progress",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.redAccent,
+                    ),
+                  ),
+                  Text(
+                    "Delete all coins, words, and levels",
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: appColors.textMain.withOpacity(0.5),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(
+              Icons.chevron_right_rounded,
+              color: appColors.textMain.withOpacity(0.3),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // --- HỘP THOẠI XÁC NHẬN RESET ---
+  static void _showResetConfirmation(
+    BuildContext context,
+    AppColors appColors,
+  ) {
+    showDialog(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        backgroundColor: appColors.defaultTile,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        title: const Text(
+          "Reset Game?",
+          style: TextStyle(
+            color: Colors.redAccent,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        content: Text(
+          "Tất cả tiến độ, vàng và từ vựng của bạn sẽ bị xóa vĩnh viễn. Bạn có chắc không?",
+          style: TextStyle(color: appColors.textMain),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(ctx),
+            child: const Text("Hủy", style: TextStyle(color: Colors.grey)),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.redAccent,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+            ),
+            onPressed: () {
+              // Gọi hàm reset từ GameProvider
+              context.read<GameProvider>().resetData();
+              Navigator.pop(ctx); // Đóng Dialog
+              Navigator.pop(context); // Đóng luôn Settings BottomSheet
+
+              ScaffoldMessenger.of(context).showSnackBar(
+                const SnackBar(
+                  content: Text("Dữ liệu đã được xóa sạch!"),
+                  backgroundColor: Colors.green,
+                ),
+              );
+            },
+            child: const Text(
+              "Xác nhận xóa",
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // --- CÁC WIDGET PHỤ TRỢ (GIỮ NGUYÊN) ---
   static Widget _buildSwitchTile({
     required IconData icon,
     required String title,
@@ -225,10 +350,7 @@ class SettingsOverlay {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(
-          horizontal: 18,
-          vertical: 12,
-        ), // Giảm nhẹ padding ngang
+        padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
         decoration: BoxDecoration(
           color: isSelected
               ? color.withOpacity(0.2)

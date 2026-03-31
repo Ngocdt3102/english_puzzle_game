@@ -1,0 +1,97 @@
+{
+    "topic_id": "HEALTH_01",
+    "topic_name": "Health & Body",
+    "levels": [
+        {
+        "level_id": 1,
+        "difficulty": "A1",
+        "main_word": {
+        "word": "BONE",
+        "type": "Noun",
+        "phonetic": "/bəʊn/",
+        "definition": "Any of the pieces of hard, whitish tissue making up the skeleton.",
+        "definition_vi": "Bất kỳ mảnh mô cứng, màu trắng nào tạo nên bộ xương của cơ thể.",
+        "example": "The dog chewed on a bone.",
+        "example_vi": "Con chó đang gặm một khúc xương.",
+        "translation": "Xương",
+        "synonyms": [],
+        "antonyms": [],
+        "audio_file": "assets/sounds/words/bone.mp3"
+        },
+        "sub_words": [
+            {
+                "word": "BRAIN",
+                "clue_for_game": "The organ inside the head that controls thought, memory, feeling.",
+                "char_to_extract": "B",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/breɪn/",
+                    "full_definition": "The organ inside the head.",
+                    "full_definition_vi": "Cơ quan nội tạng nằm trong hộp sọ, đảm nhiệm việc điều khiển suy nghĩ và cảm giác.",
+                    "example": "The brain is the control center of the body.",
+                    "example_vi": "Não bộ là trung tâm điều khiển của cơ thể.",
+                    "translation": "Bộ não",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "TOOTH",
+                "clue_for_game": "One of the hard white objects in the mouth.",
+                "char_to_extract": "O",
+                "extract_index": 1,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/tuːθ/",
+                    "full_definition": "Hard, white structure in the mouth.",
+                    "full_definition_vi": "Một trong những cấu trúc cứng, màu trắng mọc trong miệng dùng để nhai.",
+                    "example": "I have a loose tooth.",
+                    "example_vi": "Tôi có một chiếc răng bị lung lay.",
+                    "translation": "Cái răng",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "NERVE",
+                "clue_for_game": "A whitish fiber that transmits impulses of sensation.",
+                "char_to_extract": "N",
+                "extract_index": 0,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/nɜːv/",
+                    "full_definition": "A fibre that carries information in the body.",
+                    "full_definition_vi": "Một sợi dây màu trắng truyền tín hiệu cảm giác giữa não và các bộ phận khác.",
+                    "example": "He damaged a nerve in his arm.",
+                    "example_vi": "Anh ấy bị tổn thương một dây thần kinh ở cánh tay.",
+                    "translation": "Dây thần kinh",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "HEART",
+                "clue_for_game": "A hollow muscular organ that pumps the blood.",
+                "char_to_extract": "E",
+                "extract_index": 1,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/hɑːt/",
+                    "full_definition": "The organ that pumps blood.",
+                    "full_definition_vi": "Cơ quan co bóp nằm trong lồng ngực có nhiệm vụ bơm máu đi khắp cơ thể.",
+                    "example": "Exercise is good for the heart.",
+                    "example_vi": "Tập thể dục rất tốt cho tim mạch.",
+                    "translation": "Trái tim",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                }
+            ]
+        }
+    ]
+}

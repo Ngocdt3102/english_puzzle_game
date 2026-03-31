@@ -1,24 +1,20 @@
 class LevelModel {
   final int levelId;
-  final String theme;
   final String difficulty;
   final MainWord mainWord;
   final List<SubWord> subWords;
 
   LevelModel({
     required this.levelId,
-    required this.theme,
     required this.difficulty,
     required this.mainWord,
     required this.subWords,
   });
 
-  // Chuyển đổi từ JSON sang Object LevelModel
   factory LevelModel.fromJson(Map<String, dynamic> json) {
     return LevelModel(
       levelId: json['level_id'],
-      theme: json['theme'],
-      difficulty: json['difficulty'],
+      difficulty: json['difficulty'] ?? 'A1', // Gắn mặc định nếu thiếu
       mainWord: MainWord.fromJson(json['main_word']),
       subWords: (json['sub_words'] as List)
           .map((item) => SubWord.fromJson(item))
@@ -29,28 +25,44 @@ class LevelModel {
 
 class MainWord {
   final String word;
+  final String type; // --- MỚI: Từ loại ---
   final String phonetic;
   final String definition;
+  final String definitionVi; // --- MỚI: Định nghĩa tiếng Việt ---
   final String example;
-  final String translation; // --- MỚI THÊM ---
+  final String exampleVi; // --- MỚI: Ví dụ tiếng Việt ---
+  final String translation;
+  final List<String> synonyms; // --- MỚI ---
+  final List<String> antonyms; // --- MỚI ---
+  final String audioFile; // --- MỚI ---
 
   MainWord({
     required this.word,
+    required this.type,
     required this.phonetic,
     required this.definition,
+    required this.definitionVi,
     required this.example,
-    required this.translation, // --- MỚI THÊM ---
+    required this.exampleVi,
+    required this.translation,
+    required this.synonyms,
+    required this.antonyms,
+    required this.audioFile,
   });
 
   factory MainWord.fromJson(Map<String, dynamic> json) {
     return MainWord(
-      word: json['word']
-          .toString()
-          .toUpperCase(), // Đảm bảo luôn viết hoa để so khớp
-      phonetic: json['phonetic'],
-      definition: json['definition'],
-      example: json['example'],
-      translation: json['translation'] ?? '', // MỚI THÊM (Có bảo vệ Null)
+      word: json['word'].toString().toUpperCase(),
+      type: json['type'] ?? 'Noun',
+      phonetic: json['phonetic'] ?? '',
+      definition: json['definition'] ?? '',
+      definitionVi: json['definition_vi'] ?? '',
+      example: json['example'] ?? '',
+      exampleVi: json['example_vi'] ?? '',
+      translation: json['translation'] ?? '',
+      synonyms: List<String>.from(json['synonyms'] ?? []),
+      antonyms: List<String>.from(json['antonyms'] ?? []),
+      audioFile: json['audio_file'] ?? '',
     );
   }
 }
@@ -75,7 +87,7 @@ class SubWord {
   factory SubWord.fromJson(Map<String, dynamic> json) {
     return SubWord(
       word: json['word'].toString().toUpperCase(),
-      clue: json['clue_for_game'],
+      clue: json['clue_for_game'] ?? '',
       charToExtract: json['char_to_extract'].toString().toUpperCase(),
       extractIndex: json['extract_index'],
       mapToMainIndex: json['map_to_main_index'],
@@ -88,24 +100,36 @@ class WordDetails {
   final String type;
   final String phonetic;
   final String fullDefinition;
+  final String fullDefinitionVi; // --- MỚI: Định nghĩa tiếng Việt ---
   final String example;
-  final String translation; // --- MỚI THÊM ---
+  final String exampleVi; // --- MỚI: Ví dụ tiếng Việt ---
+  final String translation;
+  final List<String> synonyms; // --- MỚI ---
+  final List<String> antonyms; // --- MỚI ---
 
   WordDetails({
     required this.type,
     required this.phonetic,
     required this.fullDefinition,
+    required this.fullDefinitionVi,
     required this.example,
-    required this.translation, // --- MỚI THÊM ---
+    required this.exampleVi,
+    required this.translation,
+    required this.synonyms,
+    required this.antonyms,
   });
 
   factory WordDetails.fromJson(Map<String, dynamic> json) {
     return WordDetails(
-      type: json['type'],
-      phonetic: json['phonetic'],
-      fullDefinition: json['full_definition'],
-      example: json['example'],
-      translation: json['translation'] ?? '', // MỚI THÊM (Có bảo vệ Null)
+      type: json['type'] ?? '',
+      phonetic: json['phonetic'] ?? '',
+      fullDefinition: json['full_definition'] ?? '',
+      fullDefinitionVi: json['full_definition_vi'] ?? '',
+      example: json['example'] ?? '',
+      exampleVi: json['example_vi'] ?? '',
+      translation: json['translation'] ?? '',
+      synonyms: List<String>.from(json['synonyms'] ?? []),
+      antonyms: List<String>.from(json['antonyms'] ?? []),
     );
   }
 }

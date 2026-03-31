@@ -13,95 +13,87 @@ class CrosswordGrid extends StatelessWidget {
   Widget build(BuildContext context) {
     final gameProvider = context.watch<GameProvider>();
 
-    // 1. LẤY DỮ LIỆU AN TOÀN
     final subWords = gameProvider.currentLevel?.subWords ?? [];
     final solvedList = gameProvider.subWordSolved;
     final inputsList = gameProvider.subWordInputs;
 
-    // --- LẤY BỘ MÀU THEME HIỆN TẠI ---
     final settings = context.watch<SettingsProvider>();
     final appColors = AppColors.getTheme(settings.themeIndex);
 
-    // 2. TẦNG PHÒNG THỦ
     if (subWords.isEmpty ||
         solvedList.length != subWords.length ||
         inputsList.length != subWords.length) {
-      return Expanded(
-        child: Center(
-          child: CircularProgressIndicator(color: appColors.primary),
-        ),
-      );
+      return Center(child: CircularProgressIndicator(color: appColors.primary));
     }
 
-    return Expanded(
-      child: ListView.builder(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
-        itemCount: subWords.length,
-        itemBuilder: (context, index) {
-          bool isSelected = gameProvider.selectedSubWordIndex == index;
-          bool isSolved = solvedList[index];
-          String currentInput = inputsList[index];
-          String targetWord = subWords[index].word;
+    // Không còn shrinkWrap: true và NeverScrollable nữa. Trả lại khả năng cuộn tự nhiên.
+    return ListView.builder(
+      physics: const BouncingScrollPhysics(),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      itemCount: subWords.length,
+      itemBuilder: (context, index) {
+        bool isSelected = gameProvider.selectedSubWordIndex == index;
+        bool isSolved = solvedList[index];
+        String currentInput = inputsList[index];
+        String targetWord = subWords[index].word;
 
-          int shakeTrigger = (gameProvider.errorSubWordIndex == index)
-              ? gameProvider.wrongShakeTrigger
-              : 0;
+        int shakeTrigger = (gameProvider.errorSubWordIndex == index)
+            ? gameProvider.wrongShakeTrigger
+            : 0;
 
-          return ShakeWidget(
-            trigger: shakeTrigger,
-            child: GestureDetector(
-              onTap: () => gameProvider.selectSubWord(index),
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                margin: const EdgeInsets.only(bottom: 15),
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  // Nền hàng: Dùng màu tile mặc định để thích ứng Dark/Light
+        return ShakeWidget(
+          trigger: shakeTrigger,
+          child: GestureDetector(
+            onTap: () => gameProvider.selectSubWord(index),
+            child: AnimatedContainer(
+              duration: const Duration(milliseconds: 200),
+              margin: const EdgeInsets.only(bottom: 12),
+              padding: const EdgeInsets.all(12),
+              decoration: BoxDecoration(
+                color: isSelected
+                    ? appColors.defaultTile
+                    : appColors.defaultTile.withOpacity(0.4),
+                borderRadius: BorderRadius.circular(15),
+                border: Border.all(
                   color: isSelected
-                      ? appColors.defaultTile
-                      : appColors.defaultTile.withOpacity(0.4),
-                  borderRadius: BorderRadius.circular(15),
-                  border: Border.all(
-                    color: isSelected
-                        ? appColors.primary.withOpacity(0.5)
-                        : Colors.transparent,
-                    width: 2,
-                  ),
-                  boxShadow: isSelected
-                      ? [
-                          BoxShadow(
-                            color: appColors.primary.withOpacity(0.1),
-                            blurRadius: 10,
-                            offset: const Offset(0, 4),
-                          ),
-                        ]
-                      : [],
+                      ? appColors.primary.withOpacity(0.5)
+                      : Colors.transparent,
+                  width: 2,
                 ),
-                child: Wrap(
-                  spacing: 6,
-                  runSpacing: 8,
-                  alignment: WrapAlignment.center,
-                  children: List.generate(targetWord.length, (charIndex) {
-                    String char = charIndex < currentInput.length
-                        ? currentInput[charIndex]
-                        : "";
-                    return _buildCharBox(
-                      key: charIndex == subWords[index].extractIndex
-                          ? gameProvider.getSourceKey(index, charIndex)
-                          : null,
-                      char: char,
-                      isSelected: isSelected,
-                      isSolved: isSolved,
-                      isTargetChar: charIndex == subWords[index].extractIndex,
-                      appColors: appColors, // Truyền màu xuống
-                    );
-                  }),
-                ),
+                boxShadow: isSelected
+                    ? [
+                        BoxShadow(
+                          color: appColors.primary.withOpacity(0.1),
+                          blurRadius: 10,
+                          offset: const Offset(0, 4),
+                        ),
+                      ]
+                    : [],
+              ),
+              child: Wrap(
+                spacing: 6,
+                runSpacing: 8,
+                alignment: WrapAlignment.center,
+                children: List.generate(targetWord.length, (charIndex) {
+                  String char = charIndex < currentInput.length
+                      ? currentInput[charIndex]
+                      : "";
+                  return _buildCharBox(
+                    key: charIndex == subWords[index].extractIndex
+                        ? gameProvider.getSourceKey(index, charIndex)
+                        : null,
+                    char: char,
+                    isSelected: isSelected,
+                    isSolved: isSolved,
+                    isTargetChar: charIndex == subWords[index].extractIndex,
+                    appColors: appColors,
+                  );
+                }),
               ),
             ),
-          );
-        },
-      ),
+          ),
+        );
+      },
     );
   }
 
@@ -111,19 +103,16 @@ class CrosswordGrid extends StatelessWidget {
     required bool isSelected,
     required bool isSolved,
     required bool isTargetChar,
-    required AppColors appColors, // Nhận bộ màu
+    required AppColors appColors,
   }) {
-    // Màu nền ô chữ
     Color bgColor = isSolved
         ? appColors.correctTile
         : (isSelected ? appColors.selectedTile : appColors.defaultTile);
 
-    // Màu viền (Nổi bật ô trích xuất chữ)
     Color borderColor = isTargetChar
         ? appColors.primary
         : appColors.textMain.withOpacity(0.1);
 
-    // Màu bóng đổ 3D (Đáy chữ)
     Color shadowColor = isTargetChar
         ? appColors.primary.withOpacity(0.8)
         : (isSolved
@@ -133,9 +122,9 @@ class CrosswordGrid extends StatelessWidget {
     return AnimatedContainer(
       key: key,
       duration: const Duration(milliseconds: 300),
-      width: 40,
-      height: 48,
-      margin: const EdgeInsets.only(bottom: 4),
+      width: 36, // Trả lại kích thước vừa phải
+      height: 44,
+      margin: const EdgeInsets.only(bottom: 2),
       decoration: BoxDecoration(
         color: bgColor,
         borderRadius: BorderRadius.circular(8),
@@ -152,7 +141,7 @@ class CrosswordGrid extends StatelessWidget {
       child: Text(
         char,
         style: TextStyle(
-          fontSize: 22,
+          fontSize: 20,
           fontWeight: FontWeight.bold,
           color: isSolved ? Colors.white : appColors.textMain,
         ),

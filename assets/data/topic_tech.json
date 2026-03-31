@@ -1,0 +1,97 @@
+{
+    "topic_id": "TECH_01",
+    "topic_name": "Technology",
+    "levels": [
+        {
+        "level_id": 1,
+        "difficulty": "A1",
+        "main_word": {
+        "word": "CODE",
+        "type": "Noun",
+        "phonetic": "/kəʊd/",
+        "definition": "System of words, letters, figures, or symbols used to represent others.",
+        "definition_vi": "Hệ thống các từ, chữ cái, con số hoặc ký hiệu dùng để lập trình hoặc mã hóa thông tin.",
+        "example": "He writes code for a software company.",
+        "example_vi": "Anh ấy viết mã nguồn cho một công ty phần mềm.",
+        "translation": "Mã (Lập trình)",
+        "synonyms": [],
+        "antonyms": [],
+        "audio_file": "assets/sounds/words/code.mp3"
+        },
+        "sub_words": [
+            {
+                "word": "CLICK",
+                "clue_for_game": "A short, sharp sound, or a press of a button on a mouse.",
+                "char_to_extract": "C",
+                "extract_index": 0,
+                "map_to_main_index": 0,
+                "details": {
+                    "type": "Verb",
+                    "phonetic": "/klɪk/",
+                    "full_definition": "To press a button on a computer mouse.",
+                    "full_definition_vi": "Hành động nhấn một nút trên chuột máy tính.",
+                    "example": "Click the link to open the page.",
+                    "example_vi": "Nhấp vào liên kết để mở trang web.",
+                    "translation": "Nhấp chuột",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "MOUSE",
+                "clue_for_game": "A small handheld device for controlling the cursor.",
+                "char_to_extract": "O",
+                "extract_index": 1,
+                "map_to_main_index": 1,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/maʊs/",
+                    "full_definition": "A handheld hardware input device.",
+                    "full_definition_vi": "Một thiết bị nhỏ gọn cầm tay dùng để điều khiển con trỏ trên màn hình.",
+                    "example": "Use the mouse to drag the file.",
+                    "example_vi": "Sử dụng chuột để kéo tệp tin này.",
+                    "translation": "Chuột máy tính",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "DRIVER",
+                "clue_for_game": "A program that controls the operation of a device.",
+                "char_to_extract": "D",
+                "extract_index": 0,
+                "map_to_main_index": 2,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/ˈdraɪvə(r)/",
+                    "full_definition": "A program that controls a piece of hardware.",
+                    "full_definition_vi": "Một chương trình phần mềm giúp điều khiển hoạt động của một thiết bị phần cứng.",
+                    "example": "You need to update the printer driver.",
+                    "example_vi": "Bạn cần cập nhật trình điều khiển của máy in.",
+                    "translation": "Trình điều khiển",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                },
+                {
+                "word": "SCREEN",
+                "clue_for_game": "The flat panel on a television or computer monitor.",
+                "char_to_extract": "E",
+                "extract_index": 4,
+                "map_to_main_index": 3,
+                "details": {
+                    "type": "Noun",
+                    "phonetic": "/skriːn/",
+                    "full_definition": "The surface on which images are displayed.",
+                    "full_definition_vi": "Bề mặt phẳng của máy tính hoặc ti vi nơi hiển thị hình ảnh.",
+                    "example": "He stared at the computer screen.",
+                    "example_vi": "Anh ấy dán mắt vào màn hình máy tính.",
+                    "translation": "Màn hình",
+                    "synonyms": [],
+                    "antonyms": []
+                    }
+                }
+            ]
+        }
+    ]
+}

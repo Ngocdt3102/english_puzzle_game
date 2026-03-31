@@ -5,48 +5,78 @@ import 'package:flutter/services.dart';
 import '../models/level_model.dart';
 
 class LevelRepository {
-  // Biến tạm để lưu trữ danh sách các màn chơi sau khi load từ JSON
-  List<LevelModel> _allLevels = [];
+  // 1. VŨ KHÍ BÍ MẬT: BỘ NHỚ ĐỆM (CACHE)
+  // Lưu trữ các chủ đề đã tải. Key là tên file (vd: 'topic_food').
+  // Giúp app không phải đọc lại file tĩnh nhiều lần, tiết kiệm CPU và Pin.
+  final Map<String, List<LevelModel>> _levelsCache = {};
 
-  /// Hàm khởi tạo dữ liệu từ file batch_0.json
-  /// Ngọc nên gọi hàm này một lần khi ứng dụng bắt đầu hoặc khi vào màn hình Game
-  Future<void> init() async {
+  // Danh sách màn chơi của chủ đề đang được chọn hiện tại
+  List<LevelModel> _currentTopicLevels = [];
+
+  // Lưu lại tên chủ đề đang chơi để UI biết (tùy chọn)
+  String currentTopicName = "";
+
+  /// Hàm nạp dữ liệu động theo tên file.
+  /// Ngọc gọi hàm này khi người dùng bấm vào một Thẻ chủ đề ở màn hình Home.
+  /// Ví dụ: await repository.loadTopic('topic_food');
+  Future<void> loadTopic(String fileName) async {
     try {
-      // 1. Đọc tệp JSON từ thư mục assets
+      // 1. Kiểm tra Cache: Nếu đã nạp rồi thì lấy ra dùng luôn, bỏ qua bước đọc file
+      if (_levelsCache.containsKey(fileName)) {
+        _currentTopicLevels = _levelsCache[fileName]!;
+        print("⚡ Đã lấy dữ liệu '$fileName' từ Cache siêu tốc!");
+        return;
+      }
+
+      // 2. Nếu chưa có trong Cache, tiến hành đọc file JSON
       final String jsonString = await rootBundle.loadString(
-        'assets/data/batch_0.json',
+        'assets/data/$fileName.json',
       );
 
-      // 2. Giải mã chuỗi JSON thành List động
-      final List<dynamic> jsonResponse = json.decode(jsonString);
+      // 3. Giải mã JSON
+      // LƯU Ý QUAN TRỌNG: Cấu trúc V2 bắt đầu bằng Object {}, nên cast sang Map
+      final Map<String, dynamic> jsonResponse = json.decode(jsonString);
 
-      // 3. Map từng phần tử trong List sang đối tượng LevelModel
-      _allLevels = jsonResponse
+      // Lấy tên chủ đề để hiển thị lên UI (Appbar)
+      currentTopicName = jsonResponse['topic_name'] ?? "Chủ đề";
+
+      // Trích xuất mảng "levels" từ bên trong Object
+      final List<dynamic> levelsData = jsonResponse['levels'];
+
+      // 4. Map dữ liệu thô sang Object Dart
+      final List<LevelModel> parsedLevels = levelsData
           .map((data) => LevelModel.fromJson(data))
           .toList();
 
-      print("Đã nạp thành công ${_allLevels.length} màn chơi từ batch_0.json");
+      // 5. Lưu vào Cache để dùng cho lần sau và cập nhật danh sách hiện tại
+      _levelsCache[fileName] = parsedLevels;
+      _currentTopicLevels = parsedLevels;
+
+      print(
+        "✅ Đã nạp thành công ${_currentTopicLevels.length} màn chơi từ $fileName.json",
+      );
     } catch (e) {
-      print("Lỗi khi nạp dữ liệu: $e");
-      // Ngọc có thể ném lỗi (throw) để UI xử lý thông báo cho người dùng
+      print("❌ Lỗi khi nạp dữ liệu chủ đề $fileName: $e");
+      // Ném lỗi để UI (Provider) có thể show SnackBar báo lỗi cho người dùng
       rethrow;
     }
   }
 
-  /// Hàm lấy dữ liệu của một màn chơi cụ thể theo levelId
-  // Thêm dấu ? để cho phép trả về null
+  /// Hàm lấy dữ liệu của một màn chơi cụ thể theo levelId trong CHỦ ĐỀ HIỆN TẠI
   LevelModel? getLevelById(int id) {
     try {
-      return _allLevels.firstWhere((level) => level.levelId == id);
+      return _currentTopicLevels.firstWhere((level) => level.levelId == id);
     } catch (e) {
-      // Nếu không tìm thấy, trả về null để Provider xử lý nhẹ nhàng
       return null;
     }
   }
 
-  /// Trả về tổng số màn chơi hiện có
-  int get totalLevels => _allLevels.length;
+  /// Trả về tổng số màn chơi của chủ đề hiện tại
+  int get totalLevels => _currentTopicLevels.length;
 
-  /// Kiểm tra xem đã nạp dữ liệu chưa
-  bool get isInitialized => _allLevels.isNotEmpty;
+  /// Trả về danh sách toàn bộ level hiện tại (Phục vụ cho màn hình Chọn Màn - Level Selection)
+  List<LevelModel> get currentLevels => _currentTopicLevels;
+
+  /// Kiểm tra xem Repository đã sẵn sàng chưa
+  bool get isInitialized => _currentTopicLevels.isNotEmpty;
 }

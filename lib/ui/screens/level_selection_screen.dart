@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart'; // Thêm để dùng Haptic
+import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../../core/constants/colors.dart';
 import '../../logic/game_provider.dart';
-import '../../logic/settings_provider.dart'; // Import Settings
+import '../../logic/settings_provider.dart';
 import 'game_screen.dart';
 
 class LevelSelectionScreen extends StatelessWidget {
@@ -13,8 +13,12 @@ class LevelSelectionScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<GameProvider>();
-    final totalLevels = provider.totalLevels;
+
+    // --- LẤY DANH SÁCH LEVEL THỰC TẾ TỪ JSON VÀ ID CHỦ ĐỀ HIỆN TẠI ---
+    final currentLevels = provider.currentTopicLevels;
+    final totalLevels = currentLevels.length;
     final completedLevels = provider.completedLevels;
+    final currentTopicId = provider.currentTopicId;
 
     // --- 1. LẤY BỘ MÀU THEME ĐỘNG ---
     final settings = context.watch<SettingsProvider>();
@@ -73,19 +77,31 @@ class LevelSelectionScreen extends StatelessWidget {
                   ),
                   itemCount: totalLevels,
                   itemBuilder: (context, index) {
-                    int levelId = index + 1;
-                    bool isCompleted = completedLevels.contains(levelId);
+                    // 1. Lấy ID thật sự ghi trong file JSON
+                    int actualLevelId = currentLevels[index].levelId;
+
+                    // 2. Kiểm tra hoàn thành bằng Khóa kết hợp (Ví dụ: FOOD_01_1)
+                    bool isCompleted = completedLevels.contains(
+                      "${currentTopicId}_$actualLevelId",
+                    );
+
+                    // 3. Logic mở khóa: Ô đầu tiên luôn mở. Ô sau mở nếu ô trước nó (trong file JSON) đã hoàn thành.
                     bool isUnlocked =
-                        levelId == 1 || completedLevels.contains(levelId - 1);
+                        index == 0 ||
+                        completedLevels.contains(
+                          "${currentTopicId}_${currentLevels[index - 1].levelId}",
+                        );
 
                     return _buildLevelBox(
                       context,
                       provider,
-                      settings, // Truyền settings xuống
-                      appColors, // Truyền màu xuống
-                      levelId,
+                      settings,
+                      appColors,
+                      actualLevelId, // Truyền ID thực tế xuống để load game
                       isCompleted,
                       isUnlocked,
+                      index +
+                          1, // Truyền số thứ tự (1, 2, 3...) để hiển thị giao diện
                     );
                   },
                 ),
@@ -102,9 +118,10 @@ class LevelSelectionScreen extends StatelessWidget {
     GameProvider provider,
     SettingsProvider settings,
     AppColors appColors,
-    int levelId,
+    int actualLevelId,
     bool isCompleted,
     bool isUnlocked,
+    int displayIndex, // Số thứ tự hiển thị ra màn hình
   ) {
     return GestureDetector(
       onTap: () {
@@ -112,7 +129,8 @@ class LevelSelectionScreen extends StatelessWidget {
           // Rung nhẹ khi bấm nếu cài đặt cho phép
           if (settings.isHapticEnabled) HapticFeedback.lightImpact();
 
-          provider.loadLevel(levelId);
+          // Nạp dữ liệu bằng ID thật của level
+          provider.loadLevel(actualLevelId);
           Navigator.push(
             context,
             MaterialPageRoute(builder: (_) => const GameScreen()),
@@ -124,7 +142,7 @@ class LevelSelectionScreen extends StatelessWidget {
             SnackBar(
               backgroundColor: appColors.primary,
               content: Text(
-                "Bạn cần hoàn thành Level ${levelId - 1} trước!",
+                "Bạn cần hoàn thành Level ${displayIndex - 1} trước!",
                 style: TextStyle(color: appColors.textLight),
               ),
               duration: const Duration(seconds: 1),
@@ -165,14 +183,19 @@ class LevelSelectionScreen extends StatelessWidget {
               : [],
         ),
         child: Center(
-          child: _buildIconOrText(levelId, isCompleted, isUnlocked, appColors),
+          child: _buildIconOrText(
+            displayIndex,
+            isCompleted,
+            isUnlocked,
+            appColors,
+          ),
         ),
       ),
     );
   }
 
   Widget _buildIconOrText(
-    int levelId,
+    int displayIndex,
     bool isCompleted,
     bool isUnlocked,
     AppColors appColors,
@@ -191,7 +214,7 @@ class LevelSelectionScreen extends StatelessWidget {
       );
     } else {
       return Text(
-        "$levelId",
+        "$displayIndex",
         style: TextStyle(
           fontSize: 22,
           fontWeight: FontWeight.w900,

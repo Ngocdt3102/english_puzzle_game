@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -6,8 +7,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../data/models/learned_word.dart';
 import '../data/models/level_model.dart';
 import '../data/repositories/level_repository.dart';
-// Nhớ thêm dòng import TTS này nếu bạn đang dùng chức năng đọc giọng nói nhé
-// import '../core/services/tts_service.dart';
 
 class GameProvider extends ChangeNotifier {
   final LevelRepository _repository;
@@ -15,34 +14,44 @@ class GameProvider extends ChangeNotifier {
 
   GameProvider(this._repository);
 
+  // --- QUẢN LÝ CHỦ ĐỀ & TIẾN ĐỘ ---
+  String currentTopicId = "";
+  List<String> completedLevels = []; // Lưu kiểu "TOPICID_LEVELID"
+
+  // --- DỮ LIỆU MÀN CHƠI HIỆN TẠI ---
   LevelModel? currentLevel;
   int currentLevelId = 1;
-
   List<String> subWordInputs = [];
   List<bool> subWordSolved = [];
   List<LearnedWord> unlockedWords = [];
   List<String> mainWordDisplay = [];
 
+  // --- TRẠNG THÁI GAME ---
   int selectedSubWordIndex = 0;
   bool isLevelCompleted = false;
-  int hints = 3;
+  bool isKeyboardVisible = true;
 
-  // --- Biến điều khiển rung lắc ---
+  // --- HỆ THỐNG KINH TẾ (COINS & HINTS) ---
+  int hints = 3;
+  int coins = 50;
+  int hintsUsedThisLevel = 0;
+  List<bool> hintUsedOnSubWord = [];
+  int lastCoinsEarned = 0;
+
+  // --- HIỆU ỨNG & KEY ---
   int wrongShakeTrigger = 0;
   int errorSubWordIndex = -1;
-
-  // --- THÊM MỚI: Biến quản lý tọa độ bay ---
   Map<String, GlobalKey> sourceKeys = {};
   Map<int, GlobalKey> targetKeys = {};
   FlyingData? currentFlyingData;
 
-  List<int> completedLevels = [];
+  // --- GETTERS ---
   int get totalLevels => _repository.totalLevels;
-  bool isKeyboardVisible = true;
+  List<LevelModel> get currentTopicLevels => _repository.currentLevels;
 
-  // --- HÀM LẤY CHÌA KHÓA TỌA ĐỘ ---
+  // --- QUẢN LÝ TỌA ĐỘ ---
   GlobalKey getSourceKey(int wordIndex, int charIndex) {
-    String keyStr = "${wordIndex}_${charIndex}";
+    String keyStr = "${wordIndex}_$charIndex";
     sourceKeys.putIfAbsent(keyStr, () => GlobalKey());
     return sourceKeys[keyStr]!;
   }
@@ -52,11 +61,12 @@ class GameProvider extends ChangeNotifier {
     return targetKeys[targetIndex]!;
   }
 
-  // --- 1. KHỞI TẠO & ĐỌC DỮ LIỆU TỪ Ổ CỨNG ---
+  // --- 1. KHỞI TẠO DỮ LIỆU ---
   Future<void> initPrefs() async {
     _prefs = await SharedPreferences.getInstance();
     currentLevelId = _prefs!.getInt('currentLevelId') ?? 1;
     hints = _prefs!.getInt('hints') ?? 3;
+    coins = _prefs!.getInt('coins') ?? 50;
 
     String? wordsJson = _prefs!.getString('unlockedWords');
     if (wordsJson != null) {
@@ -68,17 +78,17 @@ class GameProvider extends ChangeNotifier {
 
     String? compLevelsJson = _prefs!.getString('completedLevels');
     if (compLevelsJson != null) {
-      completedLevels = List<int>.from(json.decode(compLevelsJson));
+      List<dynamic> decoded = json.decode(compLevelsJson);
+      completedLevels = decoded.map((e) => e.toString()).toList();
     }
-
-    await loadLevel(currentLevelId);
   }
 
-  // --- 2. LƯU DỮ LIỆU VÀO Ổ CỨNG ---
+  // --- 2. LƯU DỮ LIỆU ---
   void _saveProgress() {
     if (_prefs == null) return;
     _prefs!.setInt('currentLevelId', currentLevelId);
     _prefs!.setInt('hints', hints);
+    _prefs!.setInt('coins', coins);
 
     List<Map<String, dynamic>> wordsMap = unlockedWords
         .map((w) => w.toJson())
@@ -87,20 +97,19 @@ class GameProvider extends ChangeNotifier {
     _prefs!.setString('completedLevels', json.encode(completedLevels));
   }
 
-  // --- 3. XÓA TOÀN BỘ DỮ LIỆU (RESET) ---
+  // --- 3. RESET DATA ---
   Future<void> resetData() async {
-    if (_prefs != null) {
-      await _prefs!.clear();
-    }
+    if (_prefs != null) await _prefs!.clear();
     unlockedWords.clear();
     completedLevels.clear();
-
     currentLevelId = 1;
     hints = 3;
-    await loadLevel(1);
+    coins = 50;
+    // Không gọi loadLevel(1) ở đây vì chưa có Topic nạp vào, tránh lỗi crash
+    notifyListeners();
   }
 
-  // --- LOGIC SỬ DỤNG GỢI Ý ---
+  // --- 4. LOGIC CHƠI GAME ---
   void useHint() {
     if (hints <= 0 || isLevelCompleted || currentLevel == null) return;
     if (subWordSolved[selectedSubWordIndex]) return;
@@ -111,7 +120,10 @@ class GameProvider extends ChangeNotifier {
     if (currentInput.length < targetWord.length) {
       String nextChar = targetWord[currentInput.length];
       subWordInputs[selectedSubWordIndex] += nextChar.toUpperCase();
+
       hints--;
+      hintsUsedThisLevel++;
+      hintUsedOnSubWord[selectedSubWordIndex] = true;
 
       if (subWordInputs[selectedSubWordIndex].length == targetWord.length) {
         _checkSubWordAnswer();
@@ -122,57 +134,153 @@ class GameProvider extends ChangeNotifier {
     }
   }
 
-  // --- LOGIC TẢI LEVEL ---
   Future<void> loadLevel(int id) async {
     final nextLevelData = _repository.getLevelById(id);
-
     if (nextLevelData != null) {
       currentLevelId = id;
+      currentLevel = nextLevelData;
 
-      List<String> newSubWordInputs = List.generate(
-        nextLevelData.subWords.length,
-        (_) => "",
-      );
-      List<bool> newSubWordSolved = List.generate(
+      subWordInputs = List.generate(nextLevelData.subWords.length, (_) => "");
+      subWordSolved = List.generate(
         nextLevelData.subWords.length,
         (_) => false,
       );
-      List<String> newMainWordDisplay = List.generate(
+      mainWordDisplay = List.generate(
         nextLevelData.mainWord.word.length,
         (_) => "",
       );
 
-      currentLevel = nextLevelData;
-      subWordInputs = newSubWordInputs;
-      subWordSolved = newSubWordSolved;
-      mainWordDisplay = newMainWordDisplay;
+      hintUsedOnSubWord = List.generate(
+        nextLevelData.subWords.length,
+        (_) => false,
+      );
+      hintsUsedThisLevel = 0;
+      lastCoinsEarned = 0;
 
       selectedSubWordIndex = 0;
       isLevelCompleted = false;
       isKeyboardVisible = true;
-
-      // Xóa điểm neo tọa độ cũ khi qua màn mới
       sourceKeys.clear();
       targetKeys.clear();
-
       notifyListeners();
-    } else {
-      print("Không tìm thấy dữ liệu cho Level $id");
     }
+  }
+
+  // --- 5. LOGIC THƯỞNG COIN & MỐC ---
+  int _getMilestoneReward(int milestoneIndex) {
+    if (milestoneIndex == 1) return 20;
+    int reward = 20;
+    for (int i = 2; i <= milestoneIndex; i++) {
+      reward = (reward * 2) + 10;
+    }
+    return reward;
+  }
+
+  void _checkWinCondition() {
+    if (!mainWordDisplay.contains("")) {
+      isLevelCompleted = true;
+      String progressKey = "${currentTopicId}_$currentLevelId";
+
+      if (!completedLevels.contains(progressKey)) {
+        completedLevels.add(progressKey);
+
+        int earned = 0;
+        if (hintsUsedThisLevel == 0)
+          earned += 20;
+        else if (hintsUsedThisLevel == 1)
+          earned += 18;
+        else if (hintsUsedThisLevel == 2)
+          earned += 15;
+        else if (hintsUsedThisLevel == 3)
+          earned += 10;
+
+        for (bool used in hintUsedOnSubWord) {
+          earned += used ? 2 : 5;
+        }
+
+        int totalComp = completedLevels.length;
+        if (totalComp > 0 && totalComp % 5 == 0) {
+          earned += _getMilestoneReward(totalComp ~/ 5);
+        }
+
+        coins += earned;
+        lastCoinsEarned = earned;
+      }
+
+      var mainWord = currentLevel!.mainWord;
+      if (!unlockedWords.any((w) => w.word == mainWord.word)) {
+        unlockedWords.insert(
+          0,
+          LearnedWord(
+            word: mainWord.word,
+            topic: _repository.currentTopicName,
+            phonetic: mainWord.phonetic,
+            type: mainWord.type,
+            definition: mainWord.definition,
+            definitionVi: mainWord.definitionVi,
+            example: mainWord.example,
+            exampleVi: mainWord.exampleVi,
+            translation: mainWord.translation,
+            synonyms: mainWord.synonyms,
+            antonyms: mainWord.antonyms,
+            audioFile: mainWord.audioFile,
+          ),
+        );
+      }
+      _saveProgress();
+      notifyListeners();
+    }
+  }
+
+  // --- 6. HÀM LOAD TOPIC ĐA NĂNG ---
+  Future<void> loadTopicData(String topicId, String fileName) async {
+    currentTopicId = topicId;
+    await _repository.loadTopic(fileName);
+
+    final levels = _repository.currentLevels;
+    int highestCompletedIndex = -1;
+
+    for (int i = 0; i < levels.length; i++) {
+      if (completedLevels.contains("${currentTopicId}_${levels[i].levelId}")) {
+        highestCompletedIndex = i;
+      }
+    }
+
+    int nextLevelToLoad;
+    if (highestCompletedIndex == -1) {
+      nextLevelToLoad = levels.first.levelId;
+    } else if (highestCompletedIndex < levels.length - 1) {
+      nextLevelToLoad = levels[highestCompletedIndex + 1].levelId;
+    } else {
+      nextLevelToLoad = levels.last.levelId;
+    }
+
+    await loadLevel(nextLevelToLoad);
   }
 
   void loadNextLevel() {
-    int nextId = currentLevelId + 1;
-    if (nextId <= _repository.totalLevels) {
-      hints++;
-      _saveProgress();
-      loadLevel(nextId);
-    } else {
-      print("Chúc mừng! Bạn đã hoàn thành toàn bộ màn chơi!");
+    final currentIndex = _repository.currentLevels.indexWhere(
+      (l) => l.levelId == currentLevelId,
+    );
+    if (currentIndex != -1 &&
+        currentIndex < _repository.currentLevels.length - 1) {
+      loadLevel(_repository.currentLevels[currentIndex + 1].levelId);
     }
   }
 
-  // --- LOGIC BÀN PHÍM ---
+  // --- 7. CỬA HÀNG (STORE) ---
+  bool buyItem(int cost, int hintAmount) {
+    if (coins >= cost) {
+      coins -= cost;
+      hints += hintAmount;
+      _saveProgress();
+      notifyListeners();
+      return true;
+    }
+    return false;
+  }
+
+  // --- 8. LOGIC GIAO DIỆN ---
   void hideKeyboard() {
     isKeyboardVisible = false;
     notifyListeners();
@@ -184,17 +292,39 @@ class GameProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // --- TỰ ĐỘNG CHUYỂN QUA TỪ PHỤ TIẾP THEO ---
+  void _autoSelectNextSubWord() {
+    int nextIndex = -1;
+    // Tìm từ sau index hiện tại
+    for (int i = selectedSubWordIndex + 1; i < subWordSolved.length; i++) {
+      if (!subWordSolved[i]) {
+        nextIndex = i;
+        break;
+      }
+    }
+    // Nếu không thấy, quay lại tìm từ đầu danh sách
+    if (nextIndex == -1) {
+      for (int i = 0; i < selectedSubWordIndex; i++) {
+        if (!subWordSolved[i]) {
+          nextIndex = i;
+          break;
+        }
+      }
+    }
+
+    if (nextIndex != -1) {
+      selectedSubWordIndex = nextIndex;
+      isKeyboardVisible = true;
+    }
+  }
+
   void inputLetter(String letter) {
     if (currentLevel == null ||
         subWordSolved[selectedSubWordIndex] ||
-        isLevelCompleted) {
+        isLevelCompleted)
       return;
-    }
-
     String targetWord = currentLevel!.subWords[selectedSubWordIndex].word;
-    String currentInput = subWordInputs[selectedSubWordIndex];
-
-    if (currentInput.length < targetWord.length) {
+    if (subWordInputs[selectedSubWordIndex].length < targetWord.length) {
       subWordInputs[selectedSubWordIndex] += letter.toUpperCase();
       if (subWordInputs[selectedSubWordIndex].length == targetWord.length) {
         _checkSubWordAnswer();
@@ -205,31 +335,24 @@ class GameProvider extends ChangeNotifier {
 
   void deleteLetter() {
     if (subWordInputs[selectedSubWordIndex].isNotEmpty &&
-        !subWordSolved[selectedSubWordIndex] &&
-        !isLevelCompleted) {
+        !subWordSolved[selectedSubWordIndex]) {
       subWordInputs[selectedSubWordIndex] = subWordInputs[selectedSubWordIndex]
           .substring(0, subWordInputs[selectedSubWordIndex].length - 1);
       notifyListeners();
-    } else if (subWordInputs[selectedSubWordIndex].isEmpty &&
-        !subWordSolved[selectedSubWordIndex] &&
-        !isLevelCompleted) {
+    } else {
       errorSubWordIndex = selectedSubWordIndex;
       wrongShakeTrigger++;
       notifyListeners();
     }
   }
 
-  // --- LOGIC KIỂM TRA ĐÁP ÁN (ĐÃ NÂNG CẤP THÊM HIỆU ỨNG BAY) ---
   void _checkSubWordAnswer() async {
-    // Thêm async ở đây
     var subWordData = currentLevel!.subWords[selectedSubWordIndex];
-
     if (subWordInputs[selectedSubWordIndex] == subWordData.word) {
-      // TRƯỜNG HỢP ĐÚNG
       subWordSolved[selectedSubWordIndex] = true;
-
-      // --- LOGIC BAY LÊN ---
       int mapToIndex = subWordData.mapToMainIndex;
+
+      // Xử lý animation bay
       GlobalKey sourceKey = getSourceKey(
         selectedSubWordIndex,
         subWordData.extractIndex,
@@ -242,93 +365,62 @@ class GameProvider extends ChangeNotifier {
             sourceKey.currentContext!.findRenderObject() as RenderBox;
         RenderBox targetBox =
             targetKey.currentContext!.findRenderObject() as RenderBox;
-
-        Offset startPos = sourceBox.localToGlobal(Offset.zero);
-        Offset endPos = targetBox.localToGlobal(Offset.zero);
-
         currentFlyingData = FlyingData(
           letter: subWordData.charToExtract,
-          start: startPos,
-          end: endPos,
-          startSize: sourceBox.size, // Lấy kích thước ô nhỏ
-          endSize: targetBox.size, // Lấy kích thước ô lớn
+          start: sourceBox.localToGlobal(Offset.zero),
+          end: targetBox.localToGlobal(Offset.zero),
+          startSize: sourceBox.size,
+          endSize: targetBox.size,
         );
-        notifyListeners(); // Hiện chữ bay
-
-        // Đợi chữ bay xong (600ms)
+        notifyListeners();
         await Future.delayed(const Duration(milliseconds: 600));
-
-        currentFlyingData = null; // Tắt chữ bay
+        currentFlyingData = null;
       }
 
-      // SAU KHI BAY XONG MỚI GẮN CHỮ VÀO TỪ CHÍNH
       mainWordDisplay[mapToIndex] = subWordData.charToExtract;
 
+      // Thêm từ phụ vào kho từ vựng
       if (!unlockedWords.any((w) => w.word == subWordData.word)) {
         unlockedWords.add(
           LearnedWord(
             word: subWordData.word,
+            topic: _repository.currentTopicName,
             phonetic: subWordData.details.phonetic,
-            definition: subWordData.details.fullDefinition,
-            example: subWordData.details.example,
             type: subWordData.details.type,
+            definition: subWordData.details.fullDefinition,
+            definitionVi: subWordData.details.fullDefinitionVi,
+            example: subWordData.details.example,
+            exampleVi: subWordData.details.exampleVi,
             translation: subWordData.details.translation,
+            synonyms: subWordData.details.synonyms,
+            antonyms: subWordData.details.antonyms,
+            audioFile: '',
           ),
         );
-        _saveProgress();
       }
+
+      // TỰ ĐỘNG CHUYỂN TỪ
+      _autoSelectNextSubWord();
+
       _checkWinCondition();
-      notifyListeners(); // Cập nhật lại UI hiển thị chữ chính
+      _saveProgress();
+      notifyListeners();
     } else {
-      // TRƯỜNG HỢP SAI (Rung lắc)
       errorSubWordIndex = selectedSubWordIndex;
       wrongShakeTrigger++;
-
       subWordInputs[selectedSubWordIndex] = subWordInputs[selectedSubWordIndex]
           .substring(0, subWordInputs[selectedSubWordIndex].length - 1);
-
-      notifyListeners();
-    }
-  }
-
-  void _checkWinCondition() {
-    if (!mainWordDisplay.contains("")) {
-      isLevelCompleted = true;
-      var mainWord = currentLevel!.mainWord;
-
-      // TTSService.speak(mainWord.word);
-
-      if (!completedLevels.contains(currentLevelId)) {
-        completedLevels.add(currentLevelId);
-      }
-
-      if (!unlockedWords.any((w) => w.word == mainWord.word)) {
-        unlockedWords.insert(
-          0,
-          LearnedWord(
-            word: mainWord.word,
-            phonetic: mainWord.phonetic,
-            definition: mainWord.definition,
-            example: mainWord.example,
-            type: "Target Word",
-            translation: mainWord.translation,
-          ),
-        );
-      }
-      _saveProgress();
       notifyListeners();
     }
   }
 }
 
-// LỚP CHỨA DỮ LIỆU BAY NẰM NGOÀI CÙNG
 class FlyingData {
   final String letter;
   final Offset start;
   final Offset end;
-  final Size startSize; // Kích thước lúc xuất phát
-  final Size endSize; // Kích thước lúc hạ cánh
-
+  final Size startSize;
+  final Size endSize;
   FlyingData({
     required this.letter,
     required this.start,
