@@ -121,10 +121,10 @@ class _TopicSelectionScreenState extends State<TopicSelectionScreen> {
                       physics: const BouncingScrollPhysics(),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
+                            crossAxisCount: 3,
                             crossAxisSpacing: 16,
                             mainAxisSpacing: 16,
-                            childAspectRatio: 0.8, // Kéo dài thẻ ra một chút
+                            childAspectRatio: 0.7, // Kéo dài thẻ ra một chút
                           ),
                       itemCount: appTopics.length,
                       itemBuilder: (context, index) {
@@ -227,15 +227,7 @@ class _TopicSelectionScreenState extends State<TopicSelectionScreen> {
                 bottom: -20,
                 child: Transform.rotate(
                   angle: -pi / 12,
-                  child: Text(
-                    topic.icon,
-                    style: TextStyle(
-                      fontSize: 100,
-                      color: Colors.black.withOpacity(
-                        0.05,
-                      ), // Chỉ làm mờ, không in đè lên nội dung
-                    ),
-                  ),
+                  child: Icon(topic.icon, size: 24, color: appColors.primary),
                 ),
               ),
 
@@ -257,9 +249,10 @@ class _TopicSelectionScreenState extends State<TopicSelectionScreen> {
                             color: appColors.primary.withOpacity(0.1),
                             shape: BoxShape.circle,
                           ),
-                          child: Text(
+                          child: Icon(
                             topic.icon,
-                            style: const TextStyle(fontSize: 24),
+                            size: 24,
+                            color: appColors.primary,
                           ),
                         ),
 

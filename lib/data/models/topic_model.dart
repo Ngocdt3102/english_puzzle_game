@@ -1,12 +1,12 @@
-// Đường dẫn: lib/data/models/topic_model.dart
+import 'package:flutter/material.dart';
 
 class TopicModel {
   final String id;
   final String title;
-  final String icon;
-  final String fileName; // Tên file JSON (không có đuôi .json)
+  final IconData icon; // Đã đổi sang kiểu IconData
+  final String fileName;
   final int totalLevels;
-  final List<int> levelIds; // MỚI: Danh sách ID các level thuộc chủ đề này
+  final List<int> levelIds;
 
   TopicModel({
     required this.id,
@@ -18,40 +18,54 @@ class TopicModel {
   });
 }
 
-// DANH SÁCH DỮ LIỆU THẬT CỦA APP
-// Sau này mỗi lần Ngọc nhờ AI làm thêm 1 file JSON mới, bạn chỉ cần vào đây thêm 1 block mới là xong.
+// DANH SÁCH DỮ LIỆU ĐÃ CẬP NHẬT ICON
 final List<TopicModel> appTopics = [
   TopicModel(
     id: 'FOOD_01',
     title: 'Food & Drinks',
-    icon: '🍔',
-    fileName: 'topic_food', // Sẽ gọi file assets/data/topic_food.json
+    icon: Icons.fastfood_rounded, // Sử dụng hệ thống Icon
+    fileName: 'topic_food',
+    totalLevels: 50,
+    levelIds: List.generate(50, (index) => index + 1),
+  ),
+  TopicModel(
+    id: 'ANIMAL_01',
+    title: 'Animals',
+    icon: Icons.pets_rounded,
+    fileName: 'topic_animal',
+    totalLevels: 50,
+    levelIds: List.generate(50, (index) => index + 1),
+  ),
+  TopicModel(
+    id: 'WEATHER_NATURE_01',
+    title: 'Weather & Nature',
+    icon: Icons.wb_sunny_rounded,
+    fileName: 'topic_weather',
     totalLevels: 50,
     levelIds: List.generate(50, (index) => index + 1),
   ),
   TopicModel(
     id: 'TRAVEL_01',
-    title: 'Travel & Airport',
-    icon: '✈️',
+    title: 'Travel & Transport',
+    icon: Icons.flight_takeoff_rounded,
     fileName: 'topic_travel',
-    totalLevels: 5,
-    // Giả sử chủ đề Travel chứa các level từ 6 đến 10
-    levelIds: [6, 7, 8, 9, 10],
+    totalLevels: 50,
+    levelIds: List.generate(50, (index) => index + 1),
   ),
   TopicModel(
     id: 'TECH_01',
     title: 'Technology',
-    icon: '💻',
+    icon: Icons.biotech_rounded,
     fileName: 'topic_tech',
-    totalLevels: 5,
-    levelIds: [11, 12, 13, 14, 15],
+    totalLevels: 50,
+    levelIds: List.generate(50, (index) => index + 1),
   ),
   TopicModel(
     id: 'HEALTH_01',
     title: 'Health & Body',
-    icon: '❤️',
+    icon: Icons.favorite_rounded,
     fileName: 'topic_health',
-    totalLevels: 5,
-    levelIds: [16, 17, 18, 19, 20],
+    totalLevels: 50,
+    levelIds: List.generate(50, (index) => index + 1),
   ),
 ];

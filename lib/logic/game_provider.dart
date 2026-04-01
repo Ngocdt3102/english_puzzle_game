@@ -83,16 +83,29 @@ class GameProvider extends ChangeNotifier {
     }
   }
 
-  // --- 2. LƯU DỮ LIỆU ---
+  // --- 2. LƯU DỮ LIỆU (CÓ LỌC TRÙNG LẶP TỪ) ---
   void _saveProgress() {
     if (_prefs == null) return;
     _prefs!.setInt('currentLevelId', currentLevelId);
     _prefs!.setInt('hints', hints);
     _prefs!.setInt('coins', coins);
 
+    // BỘ LỌC TRÙNG LẶP (ANTI-DUPLICATE)
+    final uniqueWordsMap = <String, LearnedWord>{};
+    for (var w in unlockedWords) {
+      // Key là chữ viết hoa, giá trị là model LearnedWord.
+      // Từ nào vô sau mà trùng Key sẽ ghi đè từ trước, đảm bảo mỗi từ chỉ có 1 bản.
+      uniqueWordsMap[w.word.toUpperCase()] = w;
+    }
+
+    // Đồng bộ lại danh sách sạch sẽ lên RAM
+    unlockedWords = uniqueWordsMap.values.toList();
+
+    // Chuyển danh sách sạch thành JSON và lưu vào ổ cứng
     List<Map<String, dynamic>> wordsMap = unlockedWords
         .map((w) => w.toJson())
         .toList();
+
     _prefs!.setString('unlockedWords', json.encode(wordsMap));
     _prefs!.setString('completedLevels', json.encode(completedLevels));
   }
@@ -105,7 +118,6 @@ class GameProvider extends ChangeNotifier {
     currentLevelId = 1;
     hints = 3;
     coins = 50;
-    // Không gọi loadLevel(1) ở đây vì chưa có Topic nạp vào, tránh lỗi crash
     notifyListeners();
   }
 
@@ -208,6 +220,8 @@ class GameProvider extends ChangeNotifier {
       }
 
       var mainWord = currentLevel!.mainWord;
+      // Việc add thẳng vào đầu danh sách vẫn giữ nguyên để từ mới nổi lên đầu từ điển,
+      // hàm _saveProgress() sẽ lo phần dọn dẹp nếu bị trùng sau đó.
       if (!unlockedWords.any((w) => w.word == mainWord.word)) {
         unlockedWords.insert(
           0,
