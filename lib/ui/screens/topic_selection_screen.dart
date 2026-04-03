@@ -35,7 +35,7 @@ class _TopicSelectionScreenState extends State<TopicSelectionScreen> {
       final gameProvider = Provider.of<GameProvider>(context, listen: false);
 
       // Nạp dữ liệu với khóa kết hợp
-      await gameProvider.loadTopicData(topic.id, topic.fileName);
+      await gameProvider.loadTopicData(topic.id, topic.title, topic.fileName);
 
       if (mounted) {
         setState(() => isLoading = false);
@@ -121,10 +121,10 @@ class _TopicSelectionScreenState extends State<TopicSelectionScreen> {
                       physics: const BouncingScrollPhysics(),
                       gridDelegate:
                           const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 3,
+                            crossAxisCount: 2,
                             crossAxisSpacing: 16,
                             mainAxisSpacing: 16,
-                            childAspectRatio: 0.7, // Kéo dài thẻ ra một chút
+                            childAspectRatio: 0.65, // Kéo dài thẻ ra một chút
                           ),
                       itemCount: appTopics.length,
                       itemBuilder: (context, index) {

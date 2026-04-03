@@ -13,13 +13,17 @@ class LevelRepository {
   // Danh sách màn chơi của chủ đề đang được chọn hiện tại
   List<LevelModel> _currentTopicLevels = [];
 
-  // Lưu lại tên chủ đề đang chơi để UI biết (tùy chọn)
+  // Tên chủ đề đang chơi (Luôn được cập nhật mới nhất từ UI truyền vào)
   String currentTopicName = "";
 
-  /// Hàm nạp dữ liệu động theo tên file.
-  /// Ngọc gọi hàm này khi người dùng bấm vào một Thẻ chủ đề ở màn hình Home.
-  /// Ví dụ: await repository.loadTopic('topic_food');
-  Future<void> loadTopic(String fileName) async {
+  /// Hàm nạp dữ liệu động theo tên file VÀ tên chủ đề.
+  /// Gọi hàm này khi người dùng bấm vào một Thẻ chủ đề ở màn hình chọn Mode.
+  Future<void> loadTopic(String fileName, String topicName) async {
+    // 🔥 BẢN FIX QUAN TRỌNG:
+    // Ép ghi nhận tên chủ đề mới ngay lập tức để tránh lỗi lưu nhầm từ vựng.
+    // Dù có chạy vào Cache hay không thì biến này vẫn phải được update chuẩn xác.
+    currentTopicName = topicName;
+
     try {
       // 1. Kiểm tra Cache: Nếu đã nạp rồi thì lấy ra dùng luôn, bỏ qua bước đọc file
       if (_levelsCache.containsKey(fileName)) {
@@ -34,11 +38,7 @@ class LevelRepository {
       );
 
       // 3. Giải mã JSON
-      // LƯU Ý QUAN TRỌNG: Cấu trúc V2 bắt đầu bằng Object {}, nên cast sang Map
       final Map<String, dynamic> jsonResponse = json.decode(jsonString);
-
-      // Lấy tên chủ đề để hiển thị lên UI (Appbar)
-      currentTopicName = jsonResponse['topic_name'] ?? "Chủ đề";
 
       // Trích xuất mảng "levels" từ bên trong Object
       final List<dynamic> levelsData = jsonResponse['levels'];
@@ -57,7 +57,6 @@ class LevelRepository {
       );
     } catch (e) {
       print("❌ Lỗi khi nạp dữ liệu chủ đề $fileName: $e");
-      // Ném lỗi để UI (Provider) có thể show SnackBar báo lỗi cho người dùng
       rethrow;
     }
   }

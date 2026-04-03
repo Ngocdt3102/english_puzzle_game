@@ -16,6 +16,8 @@ class GameProvider extends ChangeNotifier {
 
   // --- QUẢN LÝ CHỦ ĐỀ & TIẾN ĐỘ ---
   String currentTopicId = "";
+  // 🔥 BẢN FIX: Thêm biến lưu tên chủ đề chính xác từ UI truyền vào
+  String currentTopicName = "";
   List<String> completedLevels = []; // Lưu kiểu "TOPICID_LEVELID"
 
   // --- DỮ LIỆU MÀN CHƠI HIỆN TẠI ---
@@ -90,18 +92,13 @@ class GameProvider extends ChangeNotifier {
     _prefs!.setInt('hints', hints);
     _prefs!.setInt('coins', coins);
 
-    // BỘ LỌC TRÙNG LẶP (ANTI-DUPLICATE)
+    // BỘ LỌC TRÙNG LẶP KÉP (ANTI-DUPLICATE)
     final uniqueWordsMap = <String, LearnedWord>{};
     for (var w in unlockedWords) {
-      // Key là chữ viết hoa, giá trị là model LearnedWord.
-      // Từ nào vô sau mà trùng Key sẽ ghi đè từ trước, đảm bảo mỗi từ chỉ có 1 bản.
       uniqueWordsMap[w.word.toUpperCase()] = w;
     }
 
-    // Đồng bộ lại danh sách sạch sẽ lên RAM
     unlockedWords = uniqueWordsMap.values.toList();
-
-    // Chuyển danh sách sạch thành JSON và lưu vào ổ cứng
     List<Map<String, dynamic>> wordsMap = unlockedWords
         .map((w) => w.toJson())
         .toList();
@@ -220,36 +217,49 @@ class GameProvider extends ChangeNotifier {
       }
 
       var mainWord = currentLevel!.mainWord;
-      // Việc add thẳng vào đầu danh sách vẫn giữ nguyên để từ mới nổi lên đầu từ điển,
-      // hàm _saveProgress() sẽ lo phần dọn dẹp nếu bị trùng sau đó.
-      if (!unlockedWords.any((w) => w.word == mainWord.word)) {
-        unlockedWords.insert(
-          0,
-          LearnedWord(
-            word: mainWord.word,
-            topic: _repository.currentTopicName,
-            phonetic: mainWord.phonetic,
-            type: mainWord.type,
-            definition: mainWord.definition,
-            definitionVi: mainWord.definitionVi,
-            example: mainWord.example,
-            exampleVi: mainWord.exampleVi,
-            translation: mainWord.translation,
-            synonyms: mainWord.synonyms,
-            antonyms: mainWord.antonyms,
-            audioFile: mainWord.audioFile,
-          ),
-        );
-      }
+
+      // 🔥 BẢN FIX QUAN TRỌNG:
+      // Xóa từ này nếu nó đang tồn tại ở bất kỳ chủ đề nào khác (xóa bóng ma)
+      unlockedWords.removeWhere(
+        (w) => w.word.toUpperCase() == mainWord.word.toUpperCase(),
+      );
+
+      // Luôn luôn thêm lại từ với Topic mới nhất
+      unlockedWords.insert(
+        0,
+        LearnedWord(
+          word: mainWord.word,
+          topic: currentTopicName, // Dùng biến an toàn của Provider
+          phonetic: mainWord.phonetic,
+          type: mainWord.type,
+          definition: mainWord.definition,
+          definitionVi: mainWord.definitionVi,
+          example: mainWord.example,
+          exampleVi: mainWord.exampleVi,
+          translation: mainWord.translation,
+          synonyms: mainWord.synonyms,
+          antonyms: mainWord.antonyms,
+          audioFile: mainWord.audioFile,
+        ),
+      );
+
       _saveProgress();
       notifyListeners();
     }
   }
 
   // --- 6. HÀM LOAD TOPIC ĐA NĂNG ---
-  Future<void> loadTopicData(String topicId, String fileName) async {
+  // 🔥 BẢN FIX: Thêm tham số topicName
+  Future<void> loadTopicData(
+    String topicId,
+    String topicName,
+    String fileName,
+  ) async {
     currentTopicId = topicId;
-    await _repository.loadTopic(fileName);
+    currentTopicName = topicName; // Ghi nhớ tên ngay khi vừa bấm nút
+
+    // Gọi hàm bên Repository với tham số mới
+    await _repository.loadTopic(fileName, topicName);
 
     final levels = _repository.currentLevels;
     int highestCompletedIndex = -1;
@@ -306,17 +316,14 @@ class GameProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-  // --- TỰ ĐỘNG CHUYỂN QUA TỪ PHỤ TIẾP THEO ---
   void _autoSelectNextSubWord() {
     int nextIndex = -1;
-    // Tìm từ sau index hiện tại
     for (int i = selectedSubWordIndex + 1; i < subWordSolved.length; i++) {
       if (!subWordSolved[i]) {
         nextIndex = i;
         break;
       }
     }
-    // Nếu không thấy, quay lại tìm từ đầu danh sách
     if (nextIndex == -1) {
       for (int i = 0; i < selectedSubWordIndex; i++) {
         if (!subWordSolved[i]) {
@@ -393,29 +400,29 @@ class GameProvider extends ChangeNotifier {
 
       mainWordDisplay[mapToIndex] = subWordData.charToExtract;
 
-      // Thêm từ phụ vào kho từ vựng
-      if (!unlockedWords.any((w) => w.word == subWordData.word)) {
-        unlockedWords.add(
-          LearnedWord(
-            word: subWordData.word,
-            topic: _repository.currentTopicName,
-            phonetic: subWordData.details.phonetic,
-            type: subWordData.details.type,
-            definition: subWordData.details.fullDefinition,
-            definitionVi: subWordData.details.fullDefinitionVi,
-            example: subWordData.details.example,
-            exampleVi: subWordData.details.exampleVi,
-            translation: subWordData.details.translation,
-            synonyms: subWordData.details.synonyms,
-            antonyms: subWordData.details.antonyms,
-            audioFile: '',
-          ),
-        );
-      }
+      // 🔥 BẢN FIX QUAN TRỌNG: Xóa bóng ma từ phụ trước khi thêm mới
+      unlockedWords.removeWhere(
+        (w) => w.word.toUpperCase() == subWordData.word.toUpperCase(),
+      );
 
-      // TỰ ĐỘNG CHUYỂN TỪ
+      unlockedWords.add(
+        LearnedWord(
+          word: subWordData.word,
+          topic: currentTopicName, // Dùng biến an toàn của Provider
+          phonetic: subWordData.details.phonetic,
+          type: subWordData.details.type,
+          definition: subWordData.details.fullDefinition,
+          definitionVi: subWordData.details.fullDefinitionVi,
+          example: subWordData.details.example,
+          exampleVi: subWordData.details.exampleVi,
+          translation: subWordData.details.translation,
+          synonyms: subWordData.details.synonyms,
+          antonyms: subWordData.details.antonyms,
+          audioFile: '',
+        ),
+      );
+
       _autoSelectNextSubWord();
-
       _checkWinCondition();
       _saveProgress();
       notifyListeners();
