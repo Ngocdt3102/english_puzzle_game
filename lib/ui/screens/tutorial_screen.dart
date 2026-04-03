@@ -13,7 +13,7 @@ class TutorialScreen extends StatelessWidget {
     final appColors = AppColors.getTheme(settings.themeIndex);
 
     return DefaultTabController(
-      length: 3, // 3 Tab nội dung
+      length: 4, // ĐÃ NÂNG CẤP LÊN 4 TAB
       child: Scaffold(
         body: Container(
           width: double.infinity,
@@ -32,6 +32,8 @@ class TutorialScreen extends StatelessWidget {
 
                 // --- TAB BAR NAVIGATION ---
                 TabBar(
+                  isScrollable: true, // Bật cuộn để 4 Tab không bị ép méo chữ
+                  tabAlignment: TabAlignment.start,
                   indicatorColor: appColors.secondary,
                   labelColor: appColors.primary,
                   unselectedLabelColor: appColors.textMain.withOpacity(0.5),
@@ -43,6 +45,10 @@ class TutorialScreen extends StatelessWidget {
                     Tab(
                       text: "CÁCH CHƠI",
                       icon: Icon(Icons.videogame_asset_rounded),
+                    ),
+                    Tab(
+                      text: "LUYỆN TẬP", // TAB MỚI
+                      icon: Icon(Icons.school_rounded),
                     ),
                     Tab(
                       text: "VÀNG & THƯỞNG",
@@ -60,6 +66,7 @@ class TutorialScreen extends StatelessWidget {
                   child: TabBarView(
                     children: [
                       _buildHowToPlayTab(appColors),
+                      _buildPracticeTab(appColors), // Giao diện Tab Luyện tập
                       _buildEconomyTab(appColors),
                       _buildStoreTipsTab(appColors),
                     ],
@@ -164,7 +171,45 @@ class TutorialScreen extends StatelessWidget {
     );
   }
 
-  // TAB 2: KINH TẾ (VÀNG)
+  // TAB 2: LUYỆN TẬP (MỚI)
+  Widget _buildPracticeTab(AppColors appColors) {
+    return ListView(
+      padding: const EdgeInsets.all(20),
+      children: [
+        _buildInfoCard(
+          appColors,
+          icon: Icons.lock_open_rounded,
+          title: "Điều Kiện Mở Khóa",
+          desc:
+              "Chế độ Luyện Tập chỉ mở khi bạn thu thập được ít nhất 30 từ vựng từ việc giải đố các màn chơi.",
+          isHighlight: true,
+        ),
+        _buildInfoCard(
+          appColors,
+          icon: Icons.checklist_rounded,
+          title: "Bài: Trắc Nghiệm",
+          desc:
+              "Hệ thống hiển thị từ Tiếng Anh. Nhiệm vụ của bạn là chọn đúng nghĩa Tiếng Việt trong 4 đáp án cho sẵn.",
+        ),
+        _buildInfoCard(
+          appColors,
+          icon: Icons.headphones_rounded,
+          title: "Bài: Luyện Nghe",
+          desc:
+              "Lắng nghe AI phát âm chuẩn bản ngữ và dùng bàn phím để gõ lại chính xác từ vựng Tiếng Anh đó.",
+        ),
+        _buildInfoCard(
+          appColors,
+          icon: Icons.keyboard_rounded,
+          title: "Bài: Luyện Viết",
+          desc:
+              "Dựa vào nghĩa Tiếng Việt và phiên âm quốc tế (IPA) trên màn hình để nhớ và gõ lại từ Tiếng Anh.",
+        ),
+      ],
+    );
+  }
+
+  // TAB 3: KINH TẾ (VÀNG)
   Widget _buildEconomyTab(AppColors appColors) {
     return ListView(
       padding: const EdgeInsets.all(20),
@@ -194,7 +239,7 @@ class TutorialScreen extends StatelessWidget {
     );
   }
 
-  // TAB 3: CỬA HÀNG & MẸO
+  // TAB 4: CỬA HÀNG & MẸO
   Widget _buildStoreTipsTab(AppColors appColors) {
     return ListView(
       padding: const EdgeInsets.all(20),

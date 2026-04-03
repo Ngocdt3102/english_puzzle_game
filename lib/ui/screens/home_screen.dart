@@ -8,8 +8,8 @@ import '../widgets/home_animations.dart';
 import '../widgets/settings_overlay.dart';
 import 'dictionary_screen.dart';
 import 'mile_stone_screen.dart'; // Import Milestone
+import 'mode_selection_screen.dart';
 import 'store_screen.dart'; // Import Store
-import 'topic_selection_screen.dart';
 import 'tutorial_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -94,7 +94,7 @@ class HomeScreen extends StatelessWidget {
               const SizedBox(height: 30),
 
               // --- NÚT CHÍNH: PLAY ---
-              _buildChooseTopicButton(context, appColors),
+              _buildStartButton(context, appColors),
 
               const SizedBox(height: 20),
 
@@ -304,15 +304,16 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Widget _buildChooseTopicButton(BuildContext context, AppColors appColors) {
+  Widget _buildStartButton(BuildContext context, AppColors appColors) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 40),
       child: Material(
         color: Colors.transparent,
         child: InkWell(
+          // ĐIỂM THAY ĐỔI 1: Điều hướng sang ModeSelectionScreen
           onTap: () => Navigator.push(
             context,
-            MaterialPageRoute(builder: (_) => const TopicSelectionScreen()),
+            MaterialPageRoute(builder: (_) => const ModeSelectionScreen()),
           ),
           borderRadius: BorderRadius.circular(25),
           child: Container(
@@ -331,8 +332,9 @@ class HomeScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
+                // ĐIỂM THAY ĐỔI 2: Đổi chữ PLAY thành START
                 Text(
-                  "< PLAY >",
+                  "< START >",
                   style: TextStyle(
                     fontSize: 26,
                     fontWeight: FontWeight.w900,
@@ -341,8 +343,9 @@ class HomeScreen extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 5),
+                // ĐIỂM THAY ĐỔI 3: Đổi sub-title cho phù hợp với việc chọn Chế độ
                 Text(
-                  "Select a topic to start",
+                  "Choose a mode to begin",
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.bold,

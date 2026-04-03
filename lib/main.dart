@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'core/services/tts_service.dart';
 import 'data/repositories/level_repository.dart';
 import 'logic/game_provider.dart';
+import 'logic/practice_provider.dart';
 import 'logic/settings_provider.dart';
 import 'ui/screens/dictionary_screen.dart';
 // Đừng quên import màn hình Game của bạn vào đây nhé!
@@ -41,6 +42,7 @@ void main() async {
       providers: [
         ChangeNotifierProvider.value(value: gameProvider),
         ChangeNotifierProvider.value(value: settingsProvider),
+        ChangeNotifierProvider(create: (_) => PracticeProvider()),
       ],
       child: const MyApp(),
     ),
